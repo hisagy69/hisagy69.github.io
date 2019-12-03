@@ -1,0 +1,23 @@
+.about-block,.main{margin-top:100px}
+body{background:#fff;font-family:sans-serif;color:#32325f}
+.name{color:#95989a;font-size:20px;font-weight:700}
+.subtitle{font-size:20px;font-weight:400;margin-bottom:13px}
+.title{font-size:48px;font-weight:700}
+.block-text,.description,.price,.price-tag{font-weight:400}
+.header-title{margin-bottom:26px}
+.price-tag{font-size:20px}
+.price{font-size:48px}
+img{max-width:100%}
+.description{font-size:20px;line-height:26px}
+.hero{background:#f4f5f7;padding:70px 0 190px}
+.section{padding:100px 0}
+.about-section{padding:90px 0 131px}
+.block-text{color:#525f7f;font-size:16px}
+.people-section{background:#f4f5f7;padding:90px 0 112px}
+.section-image{margin-top:64px}
+.images{max-width:362px;height:254px;overflow:hidden}
+.images img{width:100%;height:100%}
+footer{background:#32325f;color:#fff;padding:78px 0 104px}
+.footer-title{font-size:24px;font-weight:700;margin-bottom:34px}
+.footer-subtitle{font-size:16px;font-weight:700;line-height:1.4}
+footer a{text-decoration:none;color:#fff}
