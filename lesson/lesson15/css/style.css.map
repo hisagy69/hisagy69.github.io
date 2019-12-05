@@ -4,6 +4,7 @@
     "sources": [
         "../sass/style.sass",
         "../sass/_normalize.scss",
+        "../sass/_inteface.sass",
         "../sass/_variables.sass",
         "../sass/_grid.sass",
         "../sass/templates/_header.sass"
