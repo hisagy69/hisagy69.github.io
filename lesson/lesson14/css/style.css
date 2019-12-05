@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header, .hero {
+    background: #131313;
+}
+.header__container {
+    padding: 24px 0 22px 0;
+}
+.menu {
+    display: flex;
+}
+.logo {
+    color: #E3B873;
+    display: block;
+    Font-size: 14px;
+}
+.menu__logo {
+    margin-right: 82px;
+}
+.nav {
+    display: flex;
+}
+.nav__item {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.item_primary {
+    color: #E3B873;
+}
+.menu__contacts {
+    margin-left: 120px;
+}
+.phone {
+    color: #E3B873;
+    font-weight: 500;
+    font-size: 14px;
+}
+.contacts__phone {
+    margin-right: 45px;
+}
+.button {
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.contacts__button {
+    padding: 13px 21px 14px 20px;
+}
+.button_primary {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: none;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.instagram {
+    color: #E3B873;
+    font-size: 14px;
+    text-decoration: none;
+}
+.hero__instagram {
+    background: #131313;
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    height: 100%;
+}
+.line {
+    width: 51px;
+    height: 1px;
+    background: #E3B873;
+    margin-left: 8px;
+}
+.hero__content {
+    background: url("/img/main.jpg") rgba(0, 0, 0, 0.7) no-repeat;
+    max-width: 1356px;
+    width: 100%;
+    padding: 194px 0 185px 60px;
+}
+.content__container {
+    display: block;
+}
+.title {
+    color: #fff;
+    font-size: 40px;
+    display: block;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.hero__title {
+    margin-bottom: 19px;
+}
+.title_primary {
+    color: #E3B873;
+}
+.text {
+    font-size: 22px;
+    line-height: 1.3;
+    color: #fff;
+}
+.hero__text {
+    margin-bottom: 41px;
+}
+.hero__button {
+    padding: 19px 26px 16px;
+}
+.button_outline {
+    background-color: transparent;
+    margin-left: 20px;
+}
+.scroll-down {
+    background: #131313;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 34px 49px 34px 48px;
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.scroll-icon {
+    border: 1px solid #E3B873;
+    border-radius: 50%;
+    background: transparent;
+    width: 29px;
+    height: 29px;
+    margin-left: 12px;
+    padding: 7px 0px 12px 8px;
+}
