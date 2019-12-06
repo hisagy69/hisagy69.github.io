@@ -434,6 +434,9 @@ template {
         background: rgba(255, 255, 255, 0.9);
         color: #131313; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   font-family: "Futura Book", sans-serif;
   font-size: 14px; }
