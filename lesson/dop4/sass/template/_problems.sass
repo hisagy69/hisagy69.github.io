@@ -1,0 +1,29 @@
+.problems
+  &__list
+    text-align: left
+    ul
+      list-style: none
+      li
+        min-height: 100px
+        font-size: 18px
+        font-weight: 300
+        color: $darkblue // #001e33
+        &::before
+          position: relative
+          right: 30px
+          top: 25px
+          content: ""
+          display: block
+          width: 20px
+          height: 20px
+          background: $baseblue
+          border-radius: 50%
+  &__wrapper
+    margin: 0 auto
+    padding: 30px
+    max-width: 700px
+    border: 2px solid $baseblue
+    p
+      margin-bottom: 10px
+      font-size: 24px
+      color: $darkblue // #001e33
