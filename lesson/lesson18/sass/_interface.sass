@@ -1,0 +1,19 @@
+.button
+  padding: 13px 20px
+  border: none
+  border-radius: 2px
+  text-transform: uppercase
+  font-size: 0.93rem
+  &:hover
+    cursor: pointer
+  &_primary
+    background-color: $primary
+    color: $light
+    box-shadow: 0px 5px 15px rgba($primary, 0.2)
+    transition: box-shadow 0.3s
+    &:hover
+      box-shadow: none
+  &_outline
+    border: 1px solid $light
+    background: transparent
+    color: $light
