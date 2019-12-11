@@ -560,6 +560,8 @@ body {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .menu__logo {
+    margin: 0; }
   .nav {
     display: none; }
   .hero__instagram {
@@ -568,6 +570,8 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .menu__logo {
+    margin: 0; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -589,5 +593,7 @@ body {
     display: none; } }
 
 @media screen and (max-height: 520px) {
+  .menu__logo {
+    margin: 0; }
   .hero__scroll-down {
     display: none; } }
