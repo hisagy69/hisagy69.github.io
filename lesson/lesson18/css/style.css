@@ -357,13 +357,17 @@ body {
 img {
   max-width: 100%; }
 
+sup {
+  font-size: 0.5rem; }
+
 .section {
   padding: 50px 0; }
   .section-title {
     text-align: center; }
     .section-title__heading {
       font-family: "Yeseva One", cursive;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 1.42rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -375,13 +379,13 @@ img {
         height: 2px;
         background: #e3b873;
         vertical-align: text-top;
-        margin: 0 10px; }
+        margin: 0 8px; }
     .section-title__description {
       margin: auto;
-      margin-top: 1.64rem;
-      font-size: 1.07rem;
+      margin-top: 1.3rem;
+      font-size: 1.43rem;
       line-height: 135.84%;
-      max-width: 21.86rem; }
+      max-width: 53rem; }
 
 .header {
   width: 100%;
@@ -574,7 +578,7 @@ img {
   justify-content: space-between; }
 
 .col {
-  flex-basis: 32%; }
+  flex-basis: 31.38%; }
 
 .card__text {
   position: relative;
@@ -595,7 +599,7 @@ img {
   padding: 0 0 0 1rem;
   margin: 0;
   font-size: 1.07rem;
-  line-height: 1.79rem;
+  line-height: 1.857rem;
   color: #959595;
   margin-bottom: 2.5rem; }
 
@@ -608,7 +612,8 @@ img {
   text-transform: uppercase;
   background: #e3b873;
   color: #fff;
-  padding: 1.214rem 2.6rem; }
+  padding: 1.214rem 2.56rem;
+  width: 228px; }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -626,6 +631,9 @@ img {
     margin-bottom: 2.78rem; }
   .design__card {
     margin-bottom: 5.7rem; }
+
+.heading_color {
+  color: #fff; }
 
 .card__image {
   width: 100%;
@@ -655,6 +663,7 @@ img {
   margin-bottom: 2.5rem; }
 
 .card__pricetag {
+  font-weight: 200;
   position: absolute;
   left: 0;
   bottom: -1.79rem;
@@ -663,11 +672,12 @@ img {
   text-transform: uppercase;
   background: #e3b873;
   color: #fff;
-  padding: 1.214rem 2.6rem; }
+  padding: 1.214rem 2.56rem;
+  width: 228px; }
 
 .row {
   display: flex;
-  font-display: column; }
+  flex-direction: column; }
 
 @media screen and (max-width: 1270px) {
   html {
@@ -715,8 +725,13 @@ img {
     display: none; } }
 
 @media screen and (min-width: 760px) {
+  .design {
+    background: #fff; }
+    .design__section-title {
+      color: #000;
+      margin-bottom: 3.2rem; }
   .row {
-    font-display: row;
+    flex-direction: row;
     justify-content: space-between; }
   .card {
-    flex-basis: 32%; } }
+    flex-basis: 31.38%; } }
