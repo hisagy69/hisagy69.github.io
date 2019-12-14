@@ -330,7 +330,8 @@ template {
     color: #fff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s;
-    padding: 18px 26px; }
+    padding: 18px 26px;
+    border: none; }
     .button_primary:hover {
       box-shadow: none; }
   .button_outline {
@@ -338,6 +339,39 @@ template {
     background: transparent;
     color: #fff;
     padding: 17px 44px; }
+
+.label {
+  font-size: 1.07rem; }
+  .label_light {
+    color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  font-size: 1.285rem;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  padding: 0.5rem 0; }
+  .input::placeholder {
+    color: #fff; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox:checked + .policy__label::before {
+    background: #e3b873 url("../img/check.svg") center/0.8rem no-repeat; }
+
+.policy__label {
+  display: flex;
+  align-items: center; }
+  .policy__label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid #e3b873;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0.64rem; }
 
 .container {
   width: 85%;
@@ -678,6 +712,60 @@ sup {
 .row {
   display: flex;
   flex-direction: column; }
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 19, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal_visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal__dialog {
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    max-width: 36.36rem;
+    position: relative;
+    padding: 2.357rem 3.5rem 1.928rem;
+    color: #fff; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 12px; }
+  .modal__title {
+    text-align: center;
+    font-family: "Yeseva One", cursive;
+    font-size: 1.357rem;
+    margin: 0;
+    margin-bottom: 2.428rem; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__policy {
+    margin-bottom: 2.7rem; }
+  .modal__button {
+    align-self: flex-end; }
+
+.form__input {
+  margin-bottom: 3.428rem; }
+  .form__input:last-of-type {
+    margin-bottom: 1rem; }
 
 @media screen and (max-width: 1270px) {
   html {

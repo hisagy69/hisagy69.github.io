@@ -1,0 +1,53 @@
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background: rgba($dark, 0.6)
+  display: flex
+  align-items: center
+  justify-content: center
+  &_visible
+    opacity: 1
+    visibility: visible
+  &__dialog
+    background: $dark url("../img/bg-lines.svg") no-repeat center
+    max-width: 36.36rem
+    position: relative
+    padding: 2.357rem 3.5rem 1.928rem
+    color: $light
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url("../img/close.svg") no-repeat center
+    border: none
+    outline: none
+    cursor: pointer
+    margin: 12px
+  &__title
+    text-align: center
+    font-family: "Yeseva One", cursive
+    font-size: 1.357rem
+    margin: 0
+    margin-bottom: 2.428rem
+  &__form
+    display: flex
+    flex-direction: column
+  &__policy
+    margin-bottom: 2.7rem
+  &__button
+    align-self: flex-end
+.form
+  &__input
+    margin-bottom: 3.428rem
+    &:last-of-type
+      margin-bottom: 1rem
