@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   modalBtn.forEach(element => {
     //перехватывает событие клик по элементу
     element.addEventListener("click", toggleModal);
-  })
+  });
   modalClose.addEventListener("click", toggleModal);//когда один элемент, перебор создавать не надо
+
+  //усложненное задание
+  document.addEventListener("keypress", (event) => {
+    console.log(event);
+  });
+  document.addEventListener("KeyEscape", toggleModal);
+
 });

@@ -58,4 +58,23 @@
     justify-content: space-between
   .card
     flex-basis: 31.38%
-    
+@media screen and ( max-width: 800px )
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__title
+      min-height: 2.571rem
+    &__text
+      margin-left: 0
+@media screen and (max-width: 890px)
+  .card
+    &__title
+      min-height: 2.571rem
+@media screen and (max-width: 920px)
+  .row
+    flex-direction: column
+    align-items: center
