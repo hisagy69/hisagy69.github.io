@@ -758,7 +758,7 @@ sup {
   .form__input:last-of-type {
     margin-bottom: 1rem; }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1290px) {
   html {
     font-size: 12px; }
   .nav__item {
@@ -813,7 +813,9 @@ sup {
     flex-direction: row;
     justify-content: space-between; }
   .card {
-    flex-basis: 31.38%; } }
+    flex-basis: 31.38%; }
+  .types__card {
+    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 800px) {
   .row {
@@ -833,4 +835,6 @@ sup {
 @media screen and (max-width: 920px) {
   .row {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .card__text {
+    margin-left: 0; } }
