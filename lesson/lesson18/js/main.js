@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   modalClose.addEventListener("click", toggleModal);//когда один элемент, перебор создавать не надо
 
   //усложненное задание
-  document.addEventListener("keypress", (event) => {
+/*   document.addEventListener("keypress", (event) => {
     console.log(event);
-  });
-  document.addEventListener("KeyEscape", toggleModal);
+  }); */
+
 
 });
