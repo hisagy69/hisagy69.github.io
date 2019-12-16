@@ -12,12 +12,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //перехватывает событие клик по элементу
     element.addEventListener("click", toggleModal);
   });
-  modalClose.addEventListener("click", toggleModal);//когда один элемент, перебор создавать не надо
+  modalClose.addEventListener("click", toggleModal);
 
-  //усложненное задание
-/*   document.addEventListener("keypress", (event) => {
-    console.log(event);
-  }); */
+  //усложненное задание esc
+  document.addEventListener("keydown", (event) => {
+    if(document.querySelector(".modal").classList.contains("modal_visible")) { //contains- содержит. Ищит наличие класса внутри класса модал
+      if (event.keyCode == 27) {
+        toggleModal();
+      }
+    }
+  })
 
-
+  // усложненное задание клик вне области
+  modal.addEventListener("click", (event) => {
+    event.target.toggleModal();
+  })
 });
+//задать чтобы при клике по модал диалог не исчезало
+//добавить, чтобы esc не открывало форму
+//повешать событие на все кнопки

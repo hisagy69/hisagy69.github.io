@@ -322,7 +322,8 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.96rem; }
+  font-size: 0.96rem;
+  outline: none; }
   .button:hover {
     cursor: pointer; }
   .button_primary {
@@ -339,6 +340,9 @@ template {
     background: transparent;
     color: #fff;
     padding: 17px 44px; }
+
+.modal__button {
+  outline: none; }
 
 .label {
   font-size: 1.07rem; }
