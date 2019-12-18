@@ -1,10 +1,12 @@
 .swiper
+  &-container-horizontal
+    padding-top: 1.5rem
   &-slide
     display: flex
     flex-wrap: wrap
     &__text
       flex-basis: 50%
-      margin-bottom: 2.42rem
+      margin-bottom: 2.1rem
       &-text
         padding-bottom: 2rem
     &__heading
@@ -12,9 +14,10 @@
       text-transform: uppercase
       font-size: 1.285rem
       font-family: "Yeseva One"
-      line-height: 1.78rem
+      line-height: 0.2rem
     &__description
-      font-size: 1.071rem
+      line-height: 140%
+      font-size: 1.06rem
       font-family: "Futura Book"
   &-pagination
     &-bulets
@@ -41,3 +44,7 @@
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: 0
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 9px
+  width: 10px
+  height: 10px
