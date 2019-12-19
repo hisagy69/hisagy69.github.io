@@ -6,7 +6,7 @@
       margin-right: 1rem
 @media screen and ( max-width: 992px )
   .menu
-    &__logo
+    &__logo, &__contacts
       margin: 0
   .nav
     display: none
@@ -16,8 +16,12 @@
     &__content
       margin-left: 0
 @media screen and ( max-width: 570px)
+  .container
+    width: 90%
+  .header
+    padding: 22px 0
   .menu
-    &__logo
+    &__logo, &__contacts
       margin: 0
   .contacts
     &__phone
@@ -28,18 +32,68 @@
       display: none
   .title
     font-size: 1.64rem
+    line-height: 1.35
   .hero
+    height: 69vh
+
+    padding-top: 29px
     &__content
-      max-width: 22.86rem
+      max-width: 26.5rem
+    &__title
+      font-size: 1.9rem
     &__text
-      font-size: 1.29rem
+      font-size: 1.5rem
       margin-bottom: 2.28rem
     &__button
       display: block
-      min-width: 22.86rem
-      margin-bottom: 1.85rem
+      min-width: 28.3rem
+      padding: 1.428rem 1.785rem
+      margin-bottom: 1.8rem
     &__scroll-down
       display: none
+    &::after
+      display: none
+  .button
+    font-size: 1.1rem
+  .section
+    padding: 0
+    padding-top: 1.8rem
+    &-title
+      &__heading
+        text-align: center
+        margin-bottom: 2.15rem
+        &_primary
+          font-size: 1.65rem
+      &__word
+        justify-content: center
+        &::after
+          display: none
+      &__text
+        text-align: center
+        font-size: 1.157rem
+        max-width: 25rem
+        line-height: 1.798rem
+        margin: 0 auto
+  .row
+    display: flex
+    flex-direction: column
+  .col
+    &-50
+      max-width: 100%
+  .mobile
+    &-order-top
+      order: -1
+  .swiper
+    &-slide
+      margin-bottom: 0
+      padding-bottom: 1.95rem
+      &__heading
+        font-size: 1.17rem
+        line-height: 0.59rem
+      &__description
+        font-size: 1.15rem
+      &__image
+        margin-top: 0
 @media screen and ( max-height: 520px )
   .menu
     &__logo

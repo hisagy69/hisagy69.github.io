@@ -393,6 +393,9 @@ template {
 .col-50 {
   max-width: 50%; }
 
+.col-70 {
+  max-width: 68.62%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -610,7 +613,8 @@ sup {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 5rem; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 2.1rem; }
@@ -626,6 +630,8 @@ sup {
     line-height: 140%;
     font-size: 1.06rem;
     font-family: "Futura Book"; }
+  .swiper-slide__image {
+    margin-top: -14rem; }
 
 .swiper-pagination-bulets {
   width: auto; }
@@ -863,7 +869,7 @@ sup {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
-  .menu__logo {
+  .menu__logo, .menu__contacts {
     margin: 0; }
   .nav {
     display: none; }
@@ -873,7 +879,11 @@ sup {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
-  .menu__logo {
+  .container {
+    width: 90%; }
+  .header {
+    padding: 22px 0; }
+  .menu__logo, .menu__contacts {
     margin: 0; }
   .contacts__phone {
     margin-right: 0;
@@ -882,18 +892,64 @@ sup {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
-  .hero__scroll-down {
-    display: none; } }
+    font-size: 1.64rem;
+    line-height: 1.35; }
+  .hero {
+    height: 69vh;
+    padding-top: 29px; }
+    .hero__content {
+      max-width: 26.5rem; }
+    .hero__title {
+      font-size: 1.9rem; }
+    .hero__text {
+      font-size: 1.5rem;
+      margin-bottom: 2.28rem; }
+    .hero__button {
+      display: block;
+      min-width: 28.3rem;
+      padding: 1.428rem 1.785rem;
+      margin-bottom: 1.8rem; }
+    .hero__scroll-down {
+      display: none; }
+    .hero::after {
+      display: none; }
+  .button {
+    font-size: 1.1rem; }
+  .section {
+    padding: 0;
+    padding-top: 1.8rem; }
+    .section-title__heading {
+      text-align: center;
+      margin-bottom: 2.15rem; }
+      .section-title__heading_primary {
+        font-size: 1.65rem; }
+    .section-title__word {
+      justify-content: center; }
+      .section-title__word::after {
+        display: none; }
+    .section-title__text {
+      text-align: center;
+      font-size: 1.157rem;
+      max-width: 25rem;
+      line-height: 1.798rem;
+      margin: 0 auto; }
+  .row {
+    display: flex;
+    flex-direction: column; }
+  .col-50 {
+    max-width: 100%; }
+  .mobile-order-top {
+    order: -1; }
+  .swiper-slide {
+    margin-bottom: 0;
+    padding-bottom: 1.95rem; }
+    .swiper-slide__heading {
+      font-size: 1.17rem;
+      line-height: 0.59rem; }
+    .swiper-slide__description {
+      font-size: 1.15rem; }
+    .swiper-slide__image {
+      margin-top: 0; } }
 
 @media screen and (max-height: 520px) {
   .menu__logo {
