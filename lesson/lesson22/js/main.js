@@ -34,9 +34,15 @@ $(document).ready(function () {
   modalClose.on("click", function () {
     modal.toggleClass("modal_visible");
   })
-
+//закрытие модального окна по клику вне окна
+  $(document).mouseup(function (event) {
+    if (modal.is(event.target)) {
+      modal.toggleClass("modal_visible");
+    }
+  });
+//закрытие модального окна по кнопке esc
   $(document).on("keydown", function () {
-    if (event.keyCode == 27) {
+    if (event.keyCode == 27 && $(".modal_visible").length == 1) {
       modal.toggleClass("modal_visible");
     }
   })
