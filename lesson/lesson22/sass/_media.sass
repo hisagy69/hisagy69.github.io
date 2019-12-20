@@ -4,6 +4,7 @@
   .nav
     &__item
       margin-right: 1rem
+
 @media screen and ( max-width: 992px )
   .menu
     &__logo, &__contacts
@@ -15,6 +16,7 @@
       display: none
     &__content
       margin-left: 0
+@media screen and ( max-width: 920px)
   .swiper
     &-slide
       margin-bottom: 0
@@ -26,6 +28,21 @@
         font-size: 1.15rem
       &__image
         margin-top: 0
+  .mobile
+    &-order-top
+      order: -1
+
+  .section
+    &-title
+      &_left
+        text-align: center
+      &__text
+        display: block
+        margin: auto
+      &__word
+        display: block
+        &::after
+          display: none
 @media screen and ( max-width: 570px)
   .container
     width: 90%
