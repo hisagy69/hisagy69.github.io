@@ -17,6 +17,9 @@
     &__content
       margin-left: 0
 @media screen and ( max-width: 920px)
+  .col
+    &-50
+      max-width: 100%
   .swiper
     &-slide
       margin-bottom: 0
@@ -63,7 +66,6 @@
     line-height: 1.35
   .hero
     height: 69vh
-
     padding-top: 29px
     &__content
       max-width: 26.5rem
@@ -90,6 +92,7 @@
       &__heading
         text-align: center
         margin-bottom: 2.15rem
+        font-size: 1.85rem
         &_primary
           font-size: 1.65rem
       &__word
@@ -122,6 +125,53 @@
         font-size: 1.15rem
       &__image
         margin-top: 0
+  .control
+    background: $dark
+    color: $light
+    position: relative
+    &__section
+      &-title
+        margin-top: 0
+    &__form
+      flex-direction: column
+      margin-top: -2.2rem
+    &__label
+      color: rgba(255, 255, 255, 0.5)
+      margin-bottom: 0
+    &__input
+      color: $light
+      &::placeholder
+        color: $light
+    &__video
+      background-size: cover
+      min-height: 207px
+    &__text
+      font-size: 1.16rem
+      line-height: 2rem
+      &::before
+        margin-bottom: 1.1rem
+    &__label
+      font-size: 1.2rem
+    &__input
+      font-size: 1.53rem
+      border-bottom: 1px solid $light
+      &-group
+        margin-top: 4.7rem
+        order: 1
+    &__button
+      order: 2
+      padding: 1.23rem 5rem
+      font-size: 1.3rem
+      margin-bottom: -2rem
+    &__policy
+      order: 1
+      margin-bottom: 5rem
+  .video
+    &__play
+      max-width: 63px
+  .policy
+    &__label
+      justify-content: flex-start
 @media screen and ( max-height: 520px )
   .menu
     &__logo
