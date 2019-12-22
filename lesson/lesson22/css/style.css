@@ -343,7 +343,8 @@ template {
 .scroll-up {
   position: fixed;
   top: 50%;
-  left: 5px; }
+  left: 5px;
+  opacity: 1; }
   .scroll-up__button {
     color: #e3b873;
     background: transparent;

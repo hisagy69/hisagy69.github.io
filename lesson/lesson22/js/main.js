@@ -49,8 +49,9 @@ $(document).ready(function () {
 
 //функция кнопки scroll up
 var scrollUp = $(".scroll-up");
+scrollUp.hide();
   $(document).on("scroll", function () {
-      scrollUp.hide();
+    scrollUp.show();
     
     
     
