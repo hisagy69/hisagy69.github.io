@@ -48,14 +48,19 @@ $(document).ready(function () {
   })
 
 //функция кнопки scroll up
-var scrollUp = $(".scroll-up");
-scrollUp.hide();
-  $(document).on("scroll", function () {
-    scrollUp.show();
-    
-    
-    
-  })
+$(function() {
+  if($(".scroll-up").scroll()) {
+   $(".scroll").show(); 
+  }
+  else {
+    $(".scroll-up").hide;
+  }
+	$('.scroll-up').click(function() {
+		$('html, body').animate({scrollTop: 0},500);
+		return false;
+	})
+
+})
   var mySwiper = new Swiper (".swiper-container", {
     // Optional parameters
     loop: true,
@@ -158,4 +163,20 @@ scrollUp.hide();
   $('[type=tel').mask('+7(000)000-00-00', {
     placeholder: '+7(___)___-__-__'
   });
+      // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(init);
+  function init(){
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [55.76, 37.64],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 7
+    });
+  }
 });

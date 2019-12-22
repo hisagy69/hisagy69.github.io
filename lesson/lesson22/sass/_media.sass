@@ -22,7 +22,7 @@
   .container
     width: 74%
   .row
-    flex-direction: row
+    flex-direction: column
     align-items: center
   .card
     &__text
@@ -215,6 +215,9 @@
       margin-top: 0
       padding: 0
       width: 100%
+      &-map
+        display: flex
+        flex-direction: column-reverse
     &__title
       font-size: 1.65rem
       margin-bottom: 4.214rem
@@ -235,5 +238,6 @@
       padding: 1.4rem 10.95rem
       margin-top: 2rem
       overflow: hidden
-
+    &__map
+      min-height: 18.214rem
 

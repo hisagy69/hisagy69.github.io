@@ -206,14 +206,16 @@
           <div class="control__input-group">
             <label for="user-name" class="label form__label control__label">Имя</label>
             <!-- /.label form__label -->
-            <input type="text" name="userPhone" class="input form__input control__input" id="user-name" placeholder="Как вас зовут">
+            <input type="text" name="userPhone" class="input form__input control__input" id="user-name"
+              placeholder="Как вас зовут">
           </div>
           <!-- /.input-group -->
 
           <div class="control__input-group">
             <label for="user-phone" class="label form__label control__label">Телефон</label>
             <!-- /.label form__label -->
-            <input type="tel" name="userName" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона">
+            <input type="tel" name="userName" class="input form__input control__input" id="user-phone"
+              placeholder="Ваш номер телефона">
           </div>
           <!-- /.input-group -->
 
@@ -482,8 +484,8 @@
           <div class="input-group footer__input-group">
             <label for="user-name-footer" class="label footer__label label_light">Имя</label>
             <!-- /.label footer__label -->
-            <input type="text" name="userName" class="input footer__input footer__input input_light" id="user-name-footer"
-              placeholder="Как вас зовут">
+            <input type="text" name="userName" class="input footer__input footer__input input_light"
+              id="user-name-footer" placeholder="Как вас зовут">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
@@ -496,13 +498,15 @@
           <div class="input-group footer__input-group footer__input-group_full-width">
             <label for="user-question" class="label footer__label label_light ">Вопрос</label>
             <!-- /.label footer__label -->
-            <input type="text" name="userQuestion" class="input footer__input input_light" id="user-question" placeholder="Я хочу спросить">
+            <input type="text" name="userQuestion" class="input footer__input input_light" id="user-question"
+              placeholder="Я хочу спросить">
           </div>
           <!-- /.input-group footer__input-group -->
 
           <div class="policy footer__policy">
             <input type="checkbox" name="policy-checkbox" class="checkbox policy__checkbox" id="policy-checkbox-footer">
-            <label for="policy-checkbox-footer" class="policy__label policy__label_center">Я соглашаюсь с обработкой данных</label>
+            <label for="policy-checkbox-footer" class="policy__label policy__label_center">Я соглашаюсь с обработкой
+              данных</label>
           </div>
           <!-- /.policy -->
           <button class="footer__button button_primary">
@@ -511,6 +515,28 @@
         </form>
       </div>
       <!-- /.footer-wrap -->
+
+      <div class="wrap footer__wrap-map">
+        <div class="footer__title-map">
+          <h2 class="title-map__heading">
+            Ростов на дону, Торговый центр Plaza
+            Прямой телефон +7 (999) 768 32 99
+          </h2>
+          <div class="footer__social">
+            <img src="img/mail.svg" class="social__item" alt="mail">
+            <img src="img/social-photo.svg" class="social__item" alt="photo">
+          </div>
+          <!-- /.footer__heading -->
+        </div>
+        <!-- /.footer__title -->
+      <div class="map footer__map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff33592786caac6d4815c88a48b802b9d1fa327f2861f76882a17855760ce22e&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+      </div>
+      <!-- /.map footer__map -->
+    </div>
+    <!-- /.wrap footer__wrap-map -->
     </div>
     <!-- /.container -->
     <div class="footer__menu">
@@ -562,7 +588,8 @@
         <div class="input-group modal__tnput-group">
           <label for="user-email-modal" class="label modal__label label_light">Email</label>
           <!-- /.label modal__label -->
-          <input type="email" name="userEmail" class="input modal__input input_light" id="user-email-modal" placeholder="Ваш email">
+          <input type="email" name="userEmail" class="input modal__input input_light" id="user-email-modal"
+            placeholder="Ваш email">
         </div>
         <!-- /.input-group modal__tnput-group -->
         <div class="policy modal__policy">
@@ -584,6 +611,9 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=29e37520-a10a-46d8-a8a8-96155cfbd301&lang=ru_RU"
+    type="text/javascript">
+  </script>
   <script src="js/main.js"></script>
 </body>
 

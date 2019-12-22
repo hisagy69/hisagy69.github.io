@@ -343,7 +343,8 @@ template {
 .scroll-up {
   position: fixed;
   top: 50%;
-  left: 5px; }
+  left: 5px;
+  display: none; }
   .scroll-up__button {
     color: #e3b873;
     background: transparent;
@@ -352,8 +353,7 @@ template {
     background: url("../img/arrow-scroll.svg") no-repeat;
     width: 50px;
     height: 50px;
-    cursor: pointer;
-    display: none; }
+    cursor: pointer; }
 
 .modal__button {
   outline: none; }
@@ -874,7 +874,7 @@ sup {
     margin: auto;
     padding: 2.5rem;
     margin-top: -18.7rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.715rem; }
   .footer__title {
     text-align: center;
     text-transform: uppercase;
@@ -884,6 +884,10 @@ sup {
     font-size: 1.428rem;
     margin-bottom: 3.214rem;
     margin-top: 0; }
+    .footer__title-map {
+      max-width: 38.071rem;
+      margin: auto;
+      margin-bottom: 3.09rem; }
   .footer__form {
     display: flex;
     justify-content: space-between;
@@ -910,7 +914,26 @@ sup {
     text-transform: uppercase; }
   .footer__menu {
     background: #131313;
-    padding: 4.285rem 0; }
+    padding: 3.6rem 0; }
+  .footer__map {
+    margin: auto;
+    margin-bottom: 4.709rem;
+    min-height: 33.214rem;
+    max-width: 66.071rem;
+    width: 100%; }
+  .footer__social {
+    text-align: center; }
+
+.title-map__heading {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3b873;
+  margin-bottom: 1.5rem; }
 
 .modal {
   opacity: 0;
@@ -991,7 +1014,7 @@ sup {
   .container {
     width: 74%; }
   .row {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; }
   .card__text {
     margin-left: 0; }
@@ -1169,6 +1192,9 @@ sup {
       margin-top: 0;
       padding: 0;
       width: 100%; }
+      .footer__wrap-map {
+        display: flex;
+        flex-direction: column-reverse; }
     .footer__title {
       font-size: 1.65rem;
       margin-bottom: 4.214rem; }
@@ -1187,4 +1213,6 @@ sup {
       font-size: 1.27rem;
       padding: 1.4rem 10.95rem;
       margin-top: 2rem;
-      overflow: hidden; } }
+      overflow: hidden; }
+    .footer__map {
+      min-height: 18.214rem; } }
