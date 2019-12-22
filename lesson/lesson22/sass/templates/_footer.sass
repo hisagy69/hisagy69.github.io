@@ -1,50 +1,45 @@
 .footer
-  background: $dark
-  color: $gray
-  margin-top: 60px
-  padding: 59px 0
-  a
-    color: $gray
-    text-decoration: none
-  a:hover
-    color: $light
-  p
-    margin-bottom: 14px;
-  &-policy-link
-    font-size: 12px
-  small 
-    display: block
-    margin-top: 56px
-    line-height: 16px
-    font-size: 10px
-    max-width: 80%
-  ul
-    padding: 0
-    list-style: none
-    li
-      line-height: 32
-  &-contacts, &-social-links
-    text-align: right
-  &-contacts_phone
-    font-weight: 400
-    font-size: 20px
-    color: $blue
-  &-social-links
-    li
-      display: inline-block
-      a
-        display: inline-block
-        width: 42px
-        height: 42px
-        background: $lightgray
-        text-align: center
-        border-radius: 50%
-        line-height: 42
-        margin-left: 10px
-        -webkit-transition: all 0.2s
-        transition: all 0.2s
-        &:hover
-          background: $darkgray
-          color: $dark
-
-
+  background: $dark url("../img/footer-bg.svg") no-repeat center / cover
+  padding-top: 3rem
+  &__wrap
+    background: $black
+    max-width: 63.07rem
+    margin: auto
+    padding: 2.5rem
+    margin-top: -20rem
+    margin-bottom: 3.714rem
+  &__title
+    text-align: center
+    text-transform: uppercase
+    font-family: "Yeseva One", cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.428rem
+    margin-bottom: 3.214rem
+    margin-top: 0
+    padding-top: 3rem
+  &__form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 37.142rem
+    margin: auto
+  &__input
+    padding-top: 0.3rem
+    &-group
+      display: flex
+      flex-direction: column
+      flex-basis: 45%
+      margin-bottom: 3.2rem
+      &_full-width
+        flex-basis: 100%
+  &__policy
+    flex-basis: 100%
+    margin-bottom: 2rem
+  &__button
+    margin: auto
+    font-size: 1.071rem
+    padding: 1.428rem 3.857rem
+  &__menu
+    background: $dark
+    padding: 4.285rem 0

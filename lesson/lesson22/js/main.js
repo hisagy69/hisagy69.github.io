@@ -50,12 +50,7 @@ $(document).ready(function () {
 //функция кнопки scroll up
 var scrollUp = $(".scroll-up");
   $(document).on("scroll", function () {
-    if (scrollUp.scroll.length == 0) {
       scrollUp.hide();
-    }
-    else {
-      scrollUp.show();
-    }  
     
     
     
