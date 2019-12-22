@@ -24,7 +24,6 @@
   position: fixed
   top: 50%
   left: 5px
-  opacity: 1
   &__button
     color: $primary
     background: transparent
@@ -34,6 +33,7 @@
     width: 50px
     height: 50px
     cursor: pointer
+    display: none
 .modal
   &__button
     outline: none
@@ -52,7 +52,6 @@
     color: $light
     &::placeholder
       color: $light
-    
 .policy
   &__checkbox
     opacity: 0
@@ -75,3 +74,9 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
+label
+  &.invalid
+    color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato

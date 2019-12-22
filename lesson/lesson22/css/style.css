@@ -343,8 +343,7 @@ template {
 .scroll-up {
   position: fixed;
   top: 50%;
-  left: 5px;
-  opacity: 1; }
+  left: 5px; }
   .scroll-up__button {
     color: #e3b873;
     background: transparent;
@@ -353,7 +352,8 @@ template {
     background: url("../img/arrow-scroll.svg") no-repeat;
     width: 50px;
     height: 50px;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
 
 .modal__button {
   outline: none; }
@@ -396,6 +396,12 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -403,6 +409,7 @@ template {
 
 .row {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-between; }
 
@@ -604,8 +611,7 @@ sup {
 .instagram {
   background: #131313;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .instagram__link {
     font-size: 1.07rem;
     display: flex;
@@ -859,10 +865,6 @@ sup {
   padding: 1.214rem 2.5rem;
   max-width: 16,285rem; }
 
-.row {
-  display: flex;
-  flex-direction: column; }
-
 .footer {
   background: #131313 url("../img/footer-bg.svg") no-repeat center/cover;
   padding-top: 3rem; }
@@ -871,7 +873,7 @@ sup {
     max-width: 63.07rem;
     margin: auto;
     padding: 2.5rem;
-    margin-top: -20rem;
+    margin-top: -18.7rem;
     margin-bottom: 3.714rem; }
   .footer__title {
     text-align: center;
@@ -881,8 +883,7 @@ sup {
     font-weight: normal;
     font-size: 1.428rem;
     margin-bottom: 3.214rem;
-    margin-top: 0;
-    padding-top: 3rem; }
+    margin-top: 0; }
   .footer__form {
     display: flex;
     justify-content: space-between;
@@ -895,16 +896,18 @@ sup {
       display: flex;
       flex-direction: column;
       flex-basis: 45%;
-      margin-bottom: 3.2rem; }
+      margin-bottom: 2.8rem; }
       .footer__input-group_full-width {
         flex-basis: 100%; }
   .footer__policy {
     flex-basis: 100%;
-    margin-bottom: 2rem; }
+    margin-bottom: 3.5rem;
+    margin-top: -0.5rem; }
   .footer__button {
     margin: auto;
     font-size: 1.071rem;
-    padding: 1.428rem 3.857rem; }
+    padding: 1.2rem 4.4rem;
+    text-transform: uppercase; }
   .footer__menu {
     background: #131313;
     padding: 4.285rem 0; }
@@ -957,10 +960,12 @@ sup {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
-  .modal__input {
-    margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__tnput-group {
+    margin-bottom: 3.482rem;
+    display: flex;
+    flex-direction: column; }
+  .modal__tnput:last-of-type {
+    margin-bottom: 1rem; }
   .modal__button {
     padding: 1.357rem 1.571rem; }
 
@@ -968,7 +973,9 @@ sup {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .row {
+    flex-direction: row; } }
 
 @media screen and (max-width: 992px) {
   .menu__logo, .menu__contacts {
@@ -981,6 +988,13 @@ sup {
     margin-left: 0; } }
 
 @media screen and (max-width: 920px) {
+  .container {
+    width: 74%; }
+  .row {
+    flex-direction: row;
+    align-items: center; }
+  .card__text {
+    margin-left: 0; }
   .col-50 {
     max-width: 100%; }
   .swiper-slide {
@@ -1004,6 +1018,32 @@ sup {
     display: block; }
     .section-title__word::after {
       display: none; } }
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__title {
+    min-height: 2.571rem; }
+  .card__text {
+    margin-left: 0; } }
+
+@media screen and (min-width: 760px) {
+  .design {
+    background: #fff; }
+    .design__section-title {
+      color: #000;
+      margin-bottom: 3.2rem; }
+  .card {
+    flex-basis: 31.38%; }
+  .types__card {
+    margin-bottom: 5rem; } }
+
+@media screen and (max-width: 890px) {
+  .card__title {
+    min-height: 2.571rem; } }
 
 @media screen and (max-width: 570px) {
   .container {
@@ -1033,7 +1073,7 @@ sup {
       margin-bottom: 2.28rem; }
     .hero__button {
       display: block;
-      min-width: 28.3rem;
+      width: 100%;
       padding: 1.428rem 1.785rem;
       margin-bottom: 1.8rem; }
     .hero__scroll-down {
@@ -1121,48 +1161,30 @@ sup {
   .video__play {
     max-width: 63px; }
   .policy__label {
-    justify-content: flex-start; } }
-
-@media screen and (max-height: 520px) {
-  .menu__logo {
-    margin: 0; }
-  .hero__scroll-down {
-    display: none; } }
-
-@media screen and (min-width: 760px) {
-  .design {
-    background: #fff; }
-    .design__section-title {
-      color: #000;
-      margin-bottom: 3.2rem; }
-  .row {
-    flex-direction: row;
-    justify-content: space-between; }
-  .card {
-    flex-basis: 31.38%; }
-  .types__card {
-    margin-bottom: 5rem; } }
-
-@media screen and (max-width: 800px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
-  .card__title {
-    min-height: 2.571rem; }
-  .card__text {
-    margin-left: 0; } }
-
-@media screen and (max-width: 890px) {
-  .card__title {
-    min-height: 2.571rem; } }
-
-@media screen and (max-width: 920px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .card__text {
-    margin-left: 0; }
-  .container {
-    width: 74%; } }
+    justify-content: flex-start; }
+  .footer {
+    background: #131313; }
+    .footer__wrap {
+      background: #131313;
+      margin-top: 0;
+      padding: 0;
+      width: 100%; }
+    .footer__title {
+      font-size: 1.65rem;
+      margin-bottom: 4.214rem; }
+    .footer__input-group {
+      flex-basis: 100%;
+      margin-bottom: 4.9rem; }
+    .footer__policy {
+      margin-top: -4.2rem; }
+    .footer__label {
+      font-size: 1.3rem; }
+    .footer__input {
+      font-size: 1.5rem; }
+    .footer__menu {
+      display: none; }
+    .footer__button {
+      font-size: 1.27rem;
+      padding: 1.4rem 10.95rem;
+      margin-top: 2rem;
+      overflow: hidden; } }

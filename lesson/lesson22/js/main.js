@@ -74,6 +74,88 @@ scrollUp.hide();
 
   next.css("left", prev.width() + 20 + bullets.width() + 20)
   bullets.css("left", prev.width() + 20)
-
+  //анимация
   new WOW().init();
+
+  //валидация форм
+  $(".control__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило объекта (блок)
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Телефон обязателен",
+    }
+  });
+
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило объекта (блок)
+    userQuestion: {
+      required: true,
+      minlength: 10 
+    }
+    },
+//сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+      },
+      userPhone: "Телефон обязателен",
+      userQuestion: {
+        required: "Задайте вопрос",
+        minlength: "сообщение должно быть длиннее 10 символов"
+      }
+    }
+  });
+
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило объекта (блок)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      }
+    }
+  });
+  //маски для input
+  $('[type=tel').mask('+7(000)000-00-00', {
+    placeholder: '+7(___)___-__-__'
+  });
 });
