@@ -918,8 +918,7 @@ sup {
   .footer__map {
     margin: auto;
     margin-bottom: 4.709rem;
-    min-height: 33.214rem;
-    max-width: 66.071rem;
+    height: 33.214rem;
     width: 100%; }
   .footer__social {
     text-align: center; }
@@ -1215,4 +1214,8 @@ sup {
       margin-top: 2rem;
       overflow: hidden; }
     .footer__map {
-      min-height: 18.214rem; } }
+      height: 21.214rem;
+      margin-bottom: 2rem; }
+  .social__item {
+    width: 2.785rem;
+    margin-right: 1.485rem; } }
