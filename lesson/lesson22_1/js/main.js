@@ -41,7 +41,7 @@ $(function() {
     // Optional parameters
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: this.querySelector(".swiper-pagination"),//добавил определение элемента
       type: "bullets",
     },
     navigation: {
@@ -51,6 +51,7 @@ $(function() {
     history: {
       replaceState: true,
     }
+    
   })
   var next = $(".swiper-button-next");
   var prev = $(".swiper-button-prev");
