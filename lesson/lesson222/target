@@ -1,0 +1,257 @@
+    <section class="section target section_dark">
+      <div class="container">
+        <div class="section-title section-title_left">
+          <h3 class="section-title__subtitle">
+            как мы работаем
+          </h3>
+          <!-- /.section-title__subtitle -->
+          <h2 class="section-title__heading section-title__heading_primary">
+            6 шагов <br>до цели
+          </h2>
+          <!-- /.section-title__heading -->
+        </div>
+        <!-- /.section-title section-title_left -->
+        <!-- /.swiper-container -->
+        <div class="row">
+          <div class="col-30">
+            <!-- Slider main container -->
+            <div class="swiper-container slider2">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper target-wrapper swiper-no-swiping">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+              </div>
+              <!-- /.swiper-wrapper -->
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev swiper-button-prev1"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination swiper-pagination1"></div>
+              <div class="swiper-button-next swiper-button-next1"></div>
+
+            </div>
+          </div>
+          <!-- /.col30 -->
+          <div class="col-70">
+            <div class="swiper-container slider2">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiper-no-swiping">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col70 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    //функция кнопки scroll up
+$(function() {
+    if($(".scroll-up").scroll()) {
+    $(".scroll").show(); 
+    }
+    else {
+      $(".scroll-up").hide;
+    }
+    $('.scroll-up').click(function() {
+      $('html, body').animate({scrollTop: 0},500);
+      return false;
+    })
+
+  })
+  //слайдер
+  var slider1 = new Swiper (".slider1", {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+  var next = $(".swiper-button-next");
+  var prev = $(".swiper-button-prev");
+  var bullets = $(".swiper-pagination");
+
+  next.css("left", prev.width() + 20 + bullets.width() + 20)
+  bullets.css("left", prev.width() + 20)
+
+ //slider2
+ var slider2 = new Swiper (".slider2", {
+  // Optional parameters
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
+
+
+
+
+    var isAddedMap = false;
+    ymaps.ready(function () {
+    var el = $(".map");
+    if($(this).scrollTop() > el.offset().top -800) {
+      if(isAddedMap) return;
+      isAddedMap = true;
+    var myMap = new ymaps.Map('map', {
+      center: [55.019155, 82.911887],
+      zoom: 15,
+      controls: []
+  }, {
+      searchControlProvider: 'yandex#search'
+  }),
+  // Создаём макет содержимого.
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Наш офис',
+      balloonContent: 'Вход со двора'
+  }, {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: 'img/pin.png',
+      // Размеры метки.
+      iconImageSize: [32, 32],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [110, 5]
+      // Макет содержимого.
+  });
+  myMap.behaviors.disable('scrollZoom');
+  myMap.geoObjects.add(myPlacemark);
+  
+    }
+});
