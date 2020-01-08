@@ -1142,6 +1142,11 @@ sup {
     line-height: 1.285rem;
     margin: 1rem 0 2.571rem; }
 
+.number {
+  color: rgba(255, 255, 255, 0.3); }
+  .number-active {
+    color: #fff; }
+
 .customers {
   padding-top: 36.3rem;
   padding-bottom: 27.3rem;

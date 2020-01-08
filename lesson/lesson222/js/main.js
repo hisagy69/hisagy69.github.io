@@ -98,26 +98,34 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-  
+  var next = $('.swiper-button-next1');
+  var prev = $('.swiper-button-prev1');
+  var bullets = $('.pagination-bottom');
+  var bullet = $(".swiper-pagination-bullet");
+  next.css("left", prev.width() + 20 + bullets.width() + 20)
+  bullets.css("left", prev.width() + 20)
   var slider2 = new Swiper ('.slider2', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    pagination: {
-      el: '.pagination-botom.pagination-name',
-      clicable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      },
-    },
   });
-  var next = $('.swiper-button-next1');
-    var prev = $('.swiper-button-prev1');
-    var bullets = $('.pagination-bottom');
-  
-    next.css("left", prev.width() + 20 + bullets.width() + 20)
-    bullets.css("left", prev.width() + 20)
-  
+
+  var slideAll = document.querySelectorAll(".target-slide");
+  var number = document.querySelectorAll(".number");
+  console.log(numbers());
+  function numbers() {
+    for (let i = 0; i < slideAll.length; i++) {
+      if(slideAll[i].classList.contains("swiper-slide-active")) {
+        for (let j = 0; j < number.length; j++) {
+          number[j].classList.remove("number-active");
+        }
+        number[i].classList.add("number-active");
+      };
+    }
+  };
+  next.addEventListener("click", numbers());
+  prev.addEventListener("click", numbers());
+  bullet.addEventListener("click", numbers());
   //анимация
   new WOW().init();
 
