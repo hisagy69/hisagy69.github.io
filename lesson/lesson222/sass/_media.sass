@@ -48,16 +48,26 @@
     padding-bottom: 0
   .comand
     width: 100%
-    padding-bottom: 32rem
+    //padding-bottom: 32rem
+    background: $dark
+    color: $light
     &__card
       width: 50%
       margin: auto
       margin-bottom: 7.5rem
+      right: -5%
     &__row
-      align-items: flex-end
+      //align-items: flex-end
+      margin-bottom: 10rem
     &__image
       width: 100%
       height: auto
+    &__description
+      display: none
+      &::before
+        display: none
+    &__row
+      padding-bottom: 0
   .col
     &-50
       max-width: 100%
@@ -88,6 +98,10 @@
         display: block
         &::after
           display: none
+  .footer
+    &__map
+      height: 21.214rem
+      margin-bottom: 2rem
 @media screen and (max-width: 890px)
   .card
     &__title
@@ -96,16 +110,26 @@
   .types
     &__card
       margin-bottom: 5rem
+  .card
+    &__pricetag
+      &-type
+        padding: 1.0rem 2.5rem
+      &-design
+        padding: 1.0rem 3.9rem
 @media screen and ( min-width: 760px )
   .design
     background: $light
-    padding-bottom: 18.7rem
     &__section-title
       color: #000
       margin-bottom: 3.2rem
   .card
     flex-basis: 31.38%
 @media screen and (max-width: 640px)
+  .section
+    &-title
+      &__description
+        font-size: 1.25rem
+        max-width: 25rem
   .control
     background: $dark
     color: $light
@@ -162,7 +186,7 @@
       font-size: 1.08rem
       padding: 1.25rem 0
   .footer
-    padding-top: 12.2rem
+    //padding-top: 12.2rem
     background: $dark
     &__wrap
       background: $dark
@@ -197,19 +221,24 @@
       font-size: 1.342rem
   .projects
     padding-bottom: 0
-    background: $verygray
+    background: $dark
     &::before
       display: none
   .control
-    background: $verygray
+    background: $dark
     &__button
-      margin-bottom: -7rem
+      margin-bottom: -4.5rem
   .design
     padding: 0
   .comand
     width: 100%
     &__card
       width: 91%
+    &-title
+      &__description
+        max-width: 27rem
+    &__row
+      margin-top: 6.85rem
   .title
     &-map
       &__heading
@@ -255,10 +284,11 @@
     font-size: 1.1rem
   .section
     padding-top: 1.8rem
+    padding-bottom: 3rem
     &-title
       &__heading
         text-align: center
-        margin-bottom: 2.15rem
+        margin-bottom: 1.15rem
         font-size: 1.85rem
         &_primary
           font-size: 1.65rem
@@ -277,10 +307,22 @@
     &-title
       &__description
         font-size: 1.25rem
+    &__row
+      margin-bottom: 3.785rem
   .card
     &__icon
       width: 5.8rem
       height: 5.8rem
+    &__text
+      max-width: 22.5rem
+      margin-top: -11.7rem
+      padding: 1.60rem 2.14rem 1.0rem
+    &__title
+      min-height: 1.4rem
+      font-size: 1.25rem
+      margin-bottom: 1rem
+    &__list
+      line-height: 1.9rem
   .footer
     background: $dark
     &__input
@@ -289,16 +331,15 @@
         margin-bottom: 4.9rem
     &__policy
       margin-top: -4.2rem
-    &__map
-      height: 21.214rem
-      margin-bottom: 2rem
   .social
     &__item
       width: 2.785rem
       margin-right: 1.485rem
   .design
-    padding-bottom: 18.7rem
+    //padding-bottom: 18.7rem
+  .video
+    height: 17.285rem
 @media screen and (max-width: 400px)
   .comand
     &__image
-      min-height: 29.9rem
+      height: 30rem

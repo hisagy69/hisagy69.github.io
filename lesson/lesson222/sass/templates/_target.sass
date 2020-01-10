@@ -1,7 +1,11 @@
 .target
-  padding-top: 30.595rem
-  padding-bottom: 20rem
+  padding-top: 30.595rem//15rem
+  padding-bottom: 20rem//25.667rem
   margin-top: -27rem
+  background: $dark url("../img/background-target.svg") no-repeat center / cover
+  color: $light
+  &__slider
+    margin-bottom: 6.799rem
   &-slide
     display: flex
     flex-wrap: wrap
@@ -98,4 +102,13 @@
 	color: rgba($light, 0.3)
 	&-active
 		color: $light
+.swiper
+  &-button
+    &-next1, &-prev1
+      position: static
+      display: inline-block
+body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div > div.swiper-pagination.pagination-bottom.swiper-pagination-clickable.swiper-pagination-bullets
+  position: static
+  display: inline-block
+  vertical-align: top
       

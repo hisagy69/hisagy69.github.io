@@ -34,19 +34,19 @@
     cursor: pointer
     margin: 12px
   &__title
+    line-height: 2rem
+    font-weight: normal
     text-align: center
     font-family: "Yeseva One", cursive
     font-size: 1.357rem
     margin: 0
-    margin-bottom: 2.428rem
+    margin-bottom: 1.7rem
   &__form
     display: flex
     flex-direction: column
   &__policy
     position: relative
     margin-bottom: 2.7rem
-  &__button
-    align-self: flex-end
   &__tnput
     &-group
       margin-bottom: 3.482rem
@@ -55,7 +55,11 @@
     &:last-of-type
       margin-bottom: 1rem
   &__button
-    padding: 1.357rem 1.571rem
+    align-self: flex-end
+    padding: 1.27rem 4rem
+    text-transform: uppercase
+    padding: 1.245rem 3.25rem
+    margin-top: -1.3rem
   &-thanks
     opacity: 0
     visibility: hidden
@@ -92,3 +96,7 @@
       border: none
       outline: none
       cursor: pointer
+.policy
+  &__label
+    &-modal
+      margin-top: -3rem

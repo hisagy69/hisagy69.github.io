@@ -1,25 +1,77 @@
-    <section class="section target section_dark">
+    <section class="section target">
       <div class="container">
-        <div class="section-title section-title_left">
-          <h3 class="section-title__subtitle">
-            как мы работаем
-          </h3>
-          <!-- /.section-title__subtitle -->
-          <h2 class="section-title__heading section-title__heading_primary">
-            6 шагов <br>до цели
-          </h2>
-          <!-- /.section-title__heading -->
+        <div class="row">
+          <div class="section-title section-title_left">
+            <h3 class="section-title__subtitle">
+              как мы работаем
+            </h3>
+            <!-- /.section-title__subtitle -->
+            <h2 class="section-title__heading section-title__heading_primary">
+              6 шагов <br><span class="steps">до цели</span>
+            </h2>
+            <!-- /.section-title__heading -->
+          </div>
+          <!-- /.section-title section-title_left -->
+          <div class="step-number">
+            <div class="step-number__container">
+              <div class="col-33 number number1">
+                <span class="step-number__number">01</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Выезд на замер<br> помещения</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number2">
+                <span class="step-number__number">02</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Составление<br> сметы</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number3">
+                <span class="step-number__number">03</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Разработка<br>  дизайн проекта</span> 
+                <!-- /.step-number__title -->
+              </div>
+            </div>
+            <div class="step-number__container">
+              <!-- /.col-33 -->
+              <div class="col-33 number number4">
+                <span class="step-number__number">04</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Закупка расходных<br> материалов</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number5">
+                <span class="step-number__number">05</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Ремонтно-отделочные<br> работы</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number6">
+                <span class="step-number__number">06</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Приемка-сдача<br> работ</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-30 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.step-number -->
         </div>
-        <!-- /.section-title section-title_left -->
-        <!-- /.swiper-container -->
+        <!-- /.row -->
         <div class="row">
           <div class="col-30">
-            <!-- Slider main container -->
+            <!-- /.swiper-container slider2 -->
             <div class="swiper-container slider2">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper target-wrapper swiper-no-swiping">
                 <!-- Slides -->
-                <div class="swiper-slide">
+                <div class="swiper-slide target-slide">
                   <div class="swiper-slide__text slide-target">
                     <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
                     <div class="swiper-slide__description target__description">
@@ -38,7 +90,7 @@
                 </div>
                 <!-- /.swiper-slide -->
 
-                <div class="swiper-slide">
+                <div class="swiper-slide target-slide">
                   <div class="swiper-slide__text slide-target">
                     <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
                     <div class="swiper-slide__description target__description">
@@ -57,7 +109,7 @@
                 </div>
                 <!-- /.swiper-slide -->
 
-                <div class="swiper-slide">
+                <div class="swiper-slide target-slide">
                   <div class="swiper-slide__text slide-target">
                     <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
                     <div class="swiper-slide__description target__description">
@@ -76,7 +128,7 @@
                 </div>
                 <!-- /.swiper-slide -->
 
-                <div class="swiper-slide">
+                <div class="swiper-slide target-slide">
                   <div class="swiper-slide__text slide-target">
                     <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
                     <div class="swiper-slide__description target__description">
@@ -95,7 +147,7 @@
                 </div>
                 <!-- /.swiper-slide -->
 
-                <div class="swiper-slide">
+                <div class="swiper-slide target-slide">
                   <div class="swiper-slide__text slide-target">
                     <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
                     <div class="swiper-slide__description target__description">
@@ -114,7 +166,7 @@
                 </div>
                 <!-- /.swiper-slide -->
 
-                <div class="swiper-slide">
+                <div class="swiper-slide target-slide">
                   <div class="swiper-slide__text slide-target">
                     <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
                     <div class="swiper-slide__description target__description">
@@ -132,20 +184,19 @@
                   <!-- /.swiper-slide__text -->
                 </div>
                 <!-- /.swiper-slide -->
-
               </div>
-              <!-- /.swiper-wrapper -->
               <!-- If we need navigation buttons -->
+              <!-- /.swiper-pagination swiper-pagination-name progressbarFillClass -->
+              <div class="swiper-pagination pagination-top"></div>
               <div class="swiper-button-prev swiper-button-prev1"></div>
               <!-- If we need pagination -->
-              <div class="swiper-pagination swiper-pagination1"></div>
+              <div class="swiper-pagination pagination-bottom"></div>
               <div class="swiper-button-next swiper-button-next1"></div>
-
             </div>
           </div>
-          <!-- /.col30 -->
+          <!-- /.col-30 -->
           <div class="col-70">
-            <div class="swiper-container slider2">
+            <div class="swiper-container slider2 target__slider">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
                 <!-- Slides -->
@@ -155,65 +206,16 @@
                 <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
                 <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
                 <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+
               </div>
             </div>
           </div>
-          <!-- /.col70 -->
+          <!-- /.col-70 -->
         </div>
         <!-- /.row -->
       </div>
       <!-- /.container -->
     </section>
-
-    //функция кнопки scroll up
-$(function() {
-    if($(".scroll-up").scroll()) {
-    $(".scroll").show(); 
-    }
-    else {
-      $(".scroll-up").hide;
-    }
-    $('.scroll-up').click(function() {
-      $('html, body').animate({scrollTop: 0},500);
-      return false;
-    })
-
-  })
-  //слайдер
-  var slider1 = new Swiper (".slider1", {
-    // Optional parameters
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  })
-  var next = $(".swiper-button-next");
-  var prev = $(".swiper-button-prev");
-  var bullets = $(".swiper-pagination");
-
-  next.css("left", prev.width() + 20 + bullets.width() + 20)
-  bullets.css("left", prev.width() + 20)
-
- //slider2
- var slider2 = new Swiper (".slider2", {
-  // Optional parameters
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-})
-
-
 
 
     var isAddedMap = false;

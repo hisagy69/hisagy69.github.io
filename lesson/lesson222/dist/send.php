@@ -17,7 +17,7 @@ $userQuestion = $_POST['userQuestion'];
       //Server settings
       $mail->SMTPDebug = 0;                      // Enable verbose debug output
       $mail->isSMTP();                                            // Send using SMTP
-      $mail->Host       = 'smtp.beget.com';                    // Set the SMTP server to send through
+      $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
       $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
       $mail->Username   = 'mailtestglo111@gmail.com';                     // SMTP username
       $mail->Password   = 'Passwd111';                               // SMTP password
