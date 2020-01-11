@@ -37,6 +37,8 @@
 .modal
   &__button
     outline: none
+  &__close
+    outline: none
 .label
   font-size: 1.07rem
   &_light
@@ -74,15 +76,23 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
-label
-  &.invalid
+em.invalid
     color: tomato
-    
-#policyCheckbox-error
+    position: absolute
+    top: 4rem
+/* #policyCheckbox-error
   position: absolute
   left: 50%
   transform: translateX(-50%)
-  bottom: -14px
+  bottom: -14px */
 input
   &.invalid
     border-bottom: 1px solid tomato
+  &__group
+    position: relative
+.modal
+  &__tnput-group
+    position: relative
+#policyCheckboxModal-error
+  position: absolute
+  top: 1.5rem

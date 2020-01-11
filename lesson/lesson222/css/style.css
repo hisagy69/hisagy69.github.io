@@ -448,6 +448,9 @@ template {
 .modal__button {
   outline: none; }
 
+.modal__close {
+  outline: none; }
+
 .label {
   font-size: 1.07rem; }
   .label_light {
@@ -497,18 +500,28 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
-label.invalid {
-  color: tomato; }
-
-#policyCheckbox-error {
+em.invalid {
+  color: tomato;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: -14px; }
+  top: 4rem; }
 
+/* #policyCheckbox-error
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: -14px */
 input.invalid {
   border-bottom: 1px solid tomato; }
+
+input__group {
+  position: relative; }
+
+.modal__tnput-group {
+  position: relative; }
+
+#policyCheckboxModal-error {
+  position: absolute;
+  top: 1.5rem; }
 
 .container {
   width: 85%;
@@ -641,6 +654,8 @@ a {
   .title-map__heading {
     margin: auto;
     margin-bottom: 1.5rem; }
+  .footer__map {
+    width: 66.071rem; }
   /* .swiper
     &-slide
       width: 100%
@@ -940,7 +955,8 @@ a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    flex-basis: 30%; }
+    flex-basis: 30%;
+    position: relative; }
   .control__button {
     padding: 1.23rem 4.3rem;
     font-size: 1.1rem; }
@@ -984,6 +1000,7 @@ a {
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1); }
 
 .design {
+  padding-top: 50px;
   padding-bottom: 0;
   background: #131313; }
   .design__section-title {
@@ -1180,18 +1197,17 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
     line-height: 1.928rem; }
 
 .card__customers {
-  padding: 1.4rem;
-  padding-top: 1.7rem;
-  padding-bottom: 3.9rem;
+  background: #fff;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  background: #fff;
+  flex-basis: 31%;
   position: relative;
-  flex-basis: 30%;
-  position: relative; }
+  padding: 1.4rem;
+  padding-top: 1.7rem;
+  padding-bottom: 3.9rem; }
 
 .card__people {
   display: -webkit-box;
@@ -1242,8 +1258,8 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
   border-right: 1px solid #fff; }
 
 .time, .area {
-  padding: 0.8rem 1.4rem;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  padding: 0.8rem 1.1rem; }
   .time img, .area img {
     vertical-align: middle;
     margin-right: 1rem; }
@@ -1381,7 +1397,8 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
       -webkit-box-direction: normal;
       flex-direction: column;
       flex-basis: 45%;
-      margin-bottom: 2.8rem; }
+      margin-bottom: 2.8rem;
+      position: relative; }
       .footer__input-group_full-width {
         flex-basis: 100%; }
   .footer__policy {
@@ -1401,7 +1418,7 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
     margin: auto;
     margin-bottom: 4.709rem;
     height: 33.214rem;
-    width: 100%; }
+    max-width: 66.071rem; }
   .footer__social {
     text-align: center; }
 
@@ -1418,6 +1435,10 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
 
 .social__item {
   margin: 0 0.4rem; }
+
+.social__link {
+  outline: none;
+  cursor: pointer; }
 
 .modal {
   opacity: 0;
@@ -1530,7 +1551,15 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
       cursor: pointer; }
 
 .policy__label-modal {
-  margin-top: -3rem; }
+  margin-top: -3rem;
+  position: relative; }
+
+.modal__tnput-group {
+  position: relative; }
+
+#policyCheckboxModal-error {
+  position: absolute;
+  top: 1.5rem; }
 
 @media screen and (max-width: 1290px) {
   html {
@@ -1580,12 +1609,12 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
   .card__resume {
     max-width: 19.4rem;
     margin-top: -6.5rem; }
-  .design {
-    padding-bottom: 0; }
   .comand {
     width: 100%;
     background: #131313;
-    color: #fff; }
+    color: #fff;
+    padding-bottom: 15rem;
+    margin-bottom: -10rem; }
     .comand__card {
       width: 50%;
       margin: auto;
@@ -1765,8 +1794,6 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
     background: #131313; }
     .control__button {
       margin-bottom: -4.5rem; }
-  .design {
-    padding: 0; }
   .comand {
     width: 100%; }
     .comand__card {
@@ -1776,11 +1803,22 @@ body > main > section.section.target > div > div:nth-child(2) > div.col-30 > div
     .comand__row {
       margin-top: 6.85rem; }
   .title-map__heading {
-    width: 26rem; } }
+    width: 26rem; }
+  .modal__dialog {
+    width: 90%; } }
 
 @media screen and (max-height: 570px) {
   .hero {
-    height: 150vh; } }
+    height: 150vh; }
+  .modal__dialog {
+    padding-bottom: 0;
+    padding-top: 0; }
+  .modal__title {
+    margin: 0; }
+  .modal__tnput-group {
+    margin-bottom: 2.3rem; }
+  .modal__button {
+    margin-bottom: 1rem; } }
 
 @media screen and (max-width: 580px) {
   .container {

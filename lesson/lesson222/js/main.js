@@ -1,8 +1,8 @@
-var next1 = $('.swiper-button-next1');
+/* var next1 = $('.swiper-button-next1');
 var prev1 = $('.swiper-button-prev1');
 var bullets1 = $('.pagination-bottom');
 var bullet = $(".swiper-pagination-bullet");
-
+ */
 $(document).ready(function () {
 //функция модальное окно
 var modal = $(".modal");
@@ -49,7 +49,7 @@ $(function() {
   });
 });
   //слайдер
-/*   var mySwiper = new Swiper (".swiper-container", {
+  var mySwiper = new Swiper (".swiper-container", {
     // Optional parameters
     loop: true,
     pagination: {
@@ -66,8 +66,8 @@ $(function() {
   var bullets = $(".swiper-pagination");
 
   next.css("left", prev.width() + 20 + bullets.width() + 20)
-  bullets.css("left", prev.width() + 20) */
-  var slider1 = new Swiper ('.slider1', {
+  bullets.css("left", prev.width() + 20)
+/*   var slider1 = new Swiper ('.slider1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -119,7 +119,7 @@ var slider2 = new Swiper ('.slider2', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-});
+}); */
 
 /* next1.css("left", prev1.width() + 20 + bullets.width() + 20)
 bullets1.css("left", prev1.width() + 20) */
@@ -135,6 +135,7 @@ new WOW().init();
   //валидация форм
 $(function(){
   $(".control__form").validate({
+    errorElement: "em",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -180,6 +181,7 @@ $(function(){
 
 
   $(".footer__form").validate({
+    errorElement: "em",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -230,6 +232,7 @@ $(function(){
   }
 });
   $(".modal__form").validate({
+    errorElement: "em",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -244,7 +247,7 @@ $(function(){
         required: true,
         email: true
       },
-      policyCheckbox: "required",
+      policyCheckboxModal: "required",
     }, //сообщения
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -263,7 +266,7 @@ $(function(){
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
       },
-      policyCheckbox: "Согласитесь на обработку данных",
+      policyCheckboxModal: "Согласитесь на обработку данных",
     },
     submitHandler: function(form) {
       $.ajax({
@@ -308,7 +311,7 @@ $(window).scroll(function() {
         if(isAddedMap) return;
         isAddedMap = true;
         var script = document.createElement('script');
-        script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff33592786caac6d4815c88a48b802b9d1fa327f2861f76882a17855760ce22e&amp;width=100%25&amp;lang=ru_RU&amp;scroll=false";
+        script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff33592786caac6d4815c88a48b802b9d1fa327f2861f76882a17855760ce22e&amp;width=auto25&amp;lang=ru_RU&amp;scroll=false";
         el.append(script);
     };
 });
