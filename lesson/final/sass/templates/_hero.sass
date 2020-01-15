@@ -1,0 +1,110 @@
+.hero
+  padding-top: 3.666rem
+  padding-bottom: 4.6rem
+  background: url("../img/bg-bread.jpg") no-repeat left center, url("../img/bg-wheat.jpg") no-repeat right center
+  text-align: center
+  &__title
+    font-family: "Roboto", serif
+    color: $darkyellow
+    font-size: 3.066rem
+    font-weight: bold
+    text-transform: uppercase
+    text-align: center
+  &__description
+    font-family: "Roboto", serif
+    font-size: 1.466rem
+    font-weight: normal
+    color: $darkblack
+    margin-bottom: 3.533rem
+  &__wrap
+    max-width: 20.066rem
+    padding-top: 2rem
+    padding-bottom: 1.666rem
+    padding-left: 1.666rem
+    padding-right: 1.666rem
+    background: $red
+    border: 5px solid $yellow
+  &__form
+    display: flex
+    flex-direction: column
+  &__offer
+    color: $yellow
+    font-family: "Roboto Condensed"
+    font-size: 1.36rem
+    text-transform: uppercase
+  &__input
+    width: 100%
+    color: $black
+    font-family: "Roboto"
+    font-size: 0.933rem
+    font-weight: 300
+    border: none
+    padding: 1.133rem 1rem
+    border-radius: 5px
+    margin-bottom: 0.14rem
+  &__button
+    padding: 1.4rem 3.933rem
+    margin: 0.933rem 0 0.8rem
+  &__law
+    color: $light
+    font-family: "Roboto"
+    font-size: 0.633rem
+    font-weight: 300
+    width: 12.9rem
+    padding: 0 0.533rem
+.offer
+  &_size
+    color: $yellow
+    text-transform: uppercase
+    font-size: 1.1rem
+    margin-bottom: 1.533rem
+.button
+  border: none
+  cursor: pointer
+  border-radius: 5px
+  &_primary
+    background: linear-gradient(to bottom, $lightgreen, $primary)
+    color: $light
+    &:hover
+      box-shadow: 0 5px 15px rgba($primary, 0.5)
+.advantages
+  display: flex
+  align-self: flex-end
+  //margin-right: 3rem
+  &__item
+    background: url("../img/circle.png") no-repeat center
+    min-width: 13.2rem
+    min-height: 13.2rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    //margin: 0 1.066rem
+  &__text
+    font-family: "Roboto Condensed"
+    font-size: 1.066rem
+    font-weight: bold
+    line-height: 1.23rem
+    text-transform: uppercase
+.input
+  &_name
+    background: $light url("../img/people.png") no-repeat
+    background-position: 95% 50%
+  &_phone
+    background: $light url("../img/number.png") no-repeat
+    background-position: 95% 50%
+  &_mail
+    background: $light url("../img/mail.png") no-repeat
+    background-position: 95% 50%
+.circle
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  max-width: 45.933rem
+.wrap
+  &-shadow
+    display: flex
+    align-items: flex-start
+    max-width: 43.333rem
+    justify-content: space-between
+    flex-direction: column
+    margin-left: 1.066rem

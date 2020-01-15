@@ -1,0 +1,43 @@
+.swiper
+  &-button
+    &-prev, &-next
+      bottom: 37px
+      top: auto
+      outline: none
+      cursor: pointer
+      background-size: 7px
+      width: 7px
+      height: 13px
+      &::after
+        display: none
+    &-prev
+      background: url("../img/arrowleft.png")
+    &-next
+      background: url("../img/arrowright.png")
+  &-pagination
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 100%
+      height: 25px
+      background: rgba($veryblack, 0.3)
+    &-bullets
+      width: auto
+    &-bullet
+      border-radius: 0
+            
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: 36px
+  display: inline-block
+  left: 21px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  width: 9px
+  height: 9px
+  background: $light
+  &-active
+    background: $red
