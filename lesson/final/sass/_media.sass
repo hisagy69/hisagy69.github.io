@@ -11,12 +11,26 @@
   .col
     flex-direction: column
     align-items: center
+    &-50
+      max-width: 100%
+      width: 100%
   .container
     width: 90%
   .wrap-shadow
     margin: 0 
   .circle
     justify-content: center
+  .text
+    &-item
+      margin-left: auto
+      margin-right: auto
+  .video
+    &-wrap
+      justify-content: center
+@media screen and ( max-width: 900px )  
+  .hero
+    &__title
+      font-size: 2rem
 @media screen and ( max-width: 620px )
   .advantages
     flex-direction: column

@@ -118,47 +118,65 @@
       <div class="container">
         <h2 class="heading photo__heading">фотографии нашего завода</h2>
         <!-- /.heading photo__heading -->
-        <div class="row col a-center">
-          <div class="col-50">
-            <!-- Slider main container -->
-            <div class="swiper-container slider1">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
-                <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
-                <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
-                <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
-                <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
+        <div class="photo__wrapper">
+          <div class="row col a-center">
+            <div class="col-50">
+              <!-- Slider main container -->
+              <div class="swiper-container slider1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
+                  <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
+                  <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
+                  <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
+                  <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
               </div>
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
             </div>
-          </div>
-          <!-- /.col-50 -->
-          <div class="col-50">
-            <div class="photo__text">
-              <p class="text-item">Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий
-                пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной
-                продукции.</p>
-              <p class="text-item">Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно
-                высокий уровень качества.
-                Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция,
-                которая давно стала визитной карточкой края.
-                А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей</p>
+            <!-- /.col-50 -->
+            <div class="col-50">
+              <div class="photo__text">
+                <p class="text-item">Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий
+                  пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной
+                  продукции.</p>
+                <p class="text-item">Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно
+                  высокий уровень качества.
+                  Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция,
+                  которая давно стала визитной карточкой края.
+                  А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей</p>
+              </div>
+              <!-- /.photo__text -->
             </div>
-            <!-- /.photo__text -->
+            <!-- /.col-50 -->
           </div>
-          <!-- /.col-50 -->
         </div>
+        <!-- /.photo__wrapper -->
       </div>
       <!-- /.container -->
 
     </section>
     <!-- /.photo -->
+    <section class="advantage">
+      <div class="container">
+        <h2 class="heading advantage__heading">Главные преимущества за 1 минуту</h2>
+        <!-- /.heading advantage__heading -->
+        <div class="video-wrap">
+          <div class="video advantage__video" id="player">
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <div class="video__play"></div>
+          </div>
+        </div>
+        <!-- /.video advantage__video -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.advantage -->
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/swiper.min.js"></script>

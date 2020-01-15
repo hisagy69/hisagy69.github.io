@@ -417,11 +417,11 @@ p {
   .swiper-pagination::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 140%;
     height: 25px;
     background: rgba(0, 0, 0, 0.3); }
   .swiper-pagination-bullets {
@@ -448,7 +448,7 @@ p {
   .header__logo {
     background: #f64747;
     width: 7.266rem;
-    height: 5.6rem;
+    height: 7.6rem;
     border: 5px solid #fff;
     border-top: 0;
     position: relative;
@@ -460,7 +460,7 @@ p {
       height: 5.333rem;
       position: absolute;
       left: 50%;
-      top: 0;
+      top: 10px;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
     .header__logo::after {
@@ -667,6 +667,8 @@ p {
   background: url("../img/bg-photo.png") no-repeat left center #fff9e6; }
   .photo__heading {
     margin-bottom: 0.2rem; }
+  .photo__wrapper {
+    margin-top: 1rem; }
 
 .text-item {
   max-width: 26.2rem;
@@ -676,6 +678,44 @@ p {
   line-height: 1.513rem;
   margin-bottom: 1.579rem;
   margin-left: 3.066rem; }
+
+.slider1 {
+  max-width: 37.733rem; }
+
+.advantage {
+  background: url("../img/bg-advantage.png") no-repeat left bottom, url("../img/bg-advantage.jpg") no-repeat right bottom;
+  padding: 3.533rem 0 4.2rem; }
+  .advantage__video {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end; }
+
+.video {
+  width: 44rem;
+  height: 26.4rem;
+  outline: none;
+  background: url("../img/player-skin.png") no-repeat;
+  background-size: contain;
+  position: relative; }
+  .video-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: 1.666rem; }
+  .video__play {
+    width: 0;
+    height: 0;
+    border-top: 2.933rem solid transparent;
+    border-bottom: 2.933rem solid transparent;
+    border-left: 2.8rem solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer; }
 
 @media screen and (max-width: 1220px) {
   html {
@@ -693,13 +733,26 @@ p {
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center; }
+    .col-50 {
+      max-width: 100%;
+      width: 100%; }
   .container {
     width: 90%; }
   .wrap-shadow {
     margin: 0; }
   .circle {
     -webkit-box-pack: center;
+    justify-content: center; }
+  .text-item {
+    margin-left: auto;
+    margin-right: auto; }
+  .video-wrap {
+    -webkit-box-pack: center;
     justify-content: center; } }
+
+@media screen and (max-width: 900px) {
+  .hero__title {
+    font-size: 2rem; } }
 
 @media screen and (max-width: 620px) {
   .advantages {
