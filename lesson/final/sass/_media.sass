@@ -8,12 +8,19 @@
   .hero
     background-size: 50% 
 @media screen and ( max-width: 1058px )
+  .hero
+    &__law
+      padding: 0
+      width: auto
+  .circle-shadow
+    visibility: hidden
   .col
     flex-direction: column
     align-items: center
     &-50
       max-width: 100%
       width: 100%
+      justify-content: center
   .container
     width: 90%
   .wrap-shadow
@@ -27,19 +34,35 @@
   .video
     &-wrap
       justify-content: center
+  .photo
+    background: $yellow
+  .advantage
+    background: $light
+    &__wrap
+      margin: auto
 @media screen and ( max-width: 900px )  
   .hero
     &__title
       font-size: 2rem
+  .catalog
+    &__card
+      max-width: none
+  .col
+    &-30
+      width: 50%
 @media screen and ( max-width: 620px )
   .advantages
     flex-direction: column
   .circle-shadow
     display: none
   .hero
+    background: $light
     &__wrap
       width: 100%
       max-width: 25rem
+  .col
+    &-30
+      width: 100%
 @media screen and ( max-width: 475px )
   .header
     &__phone

@@ -12,11 +12,13 @@
         display: none
     &-prev
       background: url("../img/arrowleft.png")
+      z-index: 99
     &-next
       background: url("../img/arrowright.png")
+      z-index: 98
   &-pagination
     position: relative
-    &::before
+    &::after
       content: ""
       position: absolute
       left: 50%
@@ -25,6 +27,7 @@
       width: 140%
       height: 25px
       background: rgba($veryblack, 0.3)
+      z-index: -1
     &-bullets
       width: auto
     &-bullet
@@ -40,3 +43,9 @@
   background: $light
   &-active
     background: $red
+.slide2
+  padding-bottom: 1.5rem
+.prev2, .next2
+  bottom: 4px
+.swiper-container-horizontal > .pagination2
+  bottom: 2px

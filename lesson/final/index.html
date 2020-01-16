@@ -44,72 +44,73 @@
   <main class="main">
     <section class="hero">
       <div class="container">
-        <h1 class="title hero__title">Уникальные коммерческие условия</h1>
-        <!-- /.title hero__title -->
-        <p class="hero__description">по поставкам хлебобулочных и кандитерских изделей от крупнейшего хлебзавода в МО
-        </p>
-        <div class="row col">
-          <div class="circle">
-            <div class="advantages hero__advantages">
-              <div class="wrap-shadow">
-                <div class="advantages__item">
-                  <p class="advantages__text">60 тонн<br> хлебобулочных<br> изделий в день</p>
+        <div class="hero-bg">
+          <h1 class="title hero__title">Уникальные коммерческие условия</h1>
+          <!-- /.title hero__title -->
+          <p class="hero__description">по поставкам хлебобулочных и кандитерских изделей от крупнейшего хлебзавода в МО
+          </p>
+          <div class="row col">
+            <div class="circle">
+              <div class="advantages hero__advantages">
+                <div class="wrap-shadow">
+                  <div class="advantages__item">
+                    <p class="advantages__text">60 тонн<br> хлебобулочных<br> изделий в день</p>
+                  </div>
+                  <img src="img/circle-shadow.png" alt="shadow" class="circle-shadow">
                 </div>
-                <img src="img/circle-shadow.png" alt="shadow" class="circle-shadow">
-              </div>
-              <!-- /.advantages__item -->
-              <div class="wrap-shadow">
-                <div class="advantages__item">
-                  <p class="advantages__text">Старейший<br> хлебзавод<br> в Москве</p>
-                  <!-- /.advantages__text -->
+                <!-- /.advantages__item -->
+                <div class="wrap-shadow">
+                  <div class="advantages__item">
+                    <p class="advantages__text">Старейший<br> хлебзавод<br> в Москве</p>
+                    <!-- /.advantages__text -->
+                  </div>
+                  <img src="img/circle-shadow.png" alt="shadow" class="circle-shadow">
                 </div>
-                <img src="img/circle-shadow.png" alt="shadow" class="circle-shadow">
-              </div>
-              <!-- /.advantages__item -->
-              <div class="wrap-shadow">
-                <div class="advantages__item">
-                  <p class="advantages__text">Уникальная<br> система тройного<br> контроля</p>
-                  <!-- /.advantages__text -->
+                <!-- /.advantages__item -->
+                <div class="wrap-shadow">
+                  <div class="advantages__item">
+                    <p class="advantages__text">Уникальная<br> система тройного<br> контроля</p>
+                    <!-- /.advantages__text -->
+                  </div>
+                  <img src="img/circle-shadow.png" alt="shadow" class="circle-shadow">
                 </div>
-                <img src="img/circle-shadow.png" alt="shadow" class="circle-shadow">
+                <!-- /.advantages__item -->
               </div>
-              <!-- /.advantages__item -->
             </div>
+            <!-- /.advantages hero__advantages -->
+            <div class="hero__wrap">
+              <p class="hero__offer">Получите персональное<p class="offer_size">коммерческое предложение</p>
+              </p>
+              <!-- /.hero__offer -->
+              <form action="send.php" class="form hero__form">
+                <div class="inpup-group">
+                  <input type="text" class="input hero__input input_name" placeholder="Ваше имя">
+                </div>
+                <!-- /.inpup-group -->
+                <div class="inpup-group">
+                  <input type="email" class="input hero__input input_mail" placeholder="Ваш e-mail">
+                </div>
+                <!-- /.inpup-group -->
+                <div class="inpup-group">
+                  <input type="tel" class="input hero__input input_phone" placeholder="Ваш номер телефона">
+                </div>
+                <!-- /.inpup-group -->
+                <button class="button hero__button button_primary">Получить КП!</button>
+                <!-- /.button hero__button -->
+                <div class="row">
+                  <img src="img/heroform.png" alt="hero" class="law-img">
+                  <p class="law hero__law law_light">Ваши данные не будут переданны<br>
+                    третьим лицам, согласно законам РФ</p>
+                  <img src="img/heroform.png" alt="hero" class="law-img">
+                </div>
+                <!-- /.row -->
+              </form>
+            </div>
+            <!-- /.hero__wrap -->
           </div>
-          <!-- /.advantages hero__advantages -->
-          <div class="hero__wrap">
-            <p class="hero__offer">Получите персональное<p class="offer_size">коммерческое предложение</p>
-            </p>
-            <!-- /.hero__offer -->
-            <form action="send.php" class="form hero__form">
-              <div class="inpup-group">
-                <input type="text" class="input hero__input input_name" placeholder="Ваше имя">
-              </div>
-              <!-- /.inpup-group -->
-              <div class="inpup-group">
-                <input type="email" class="input hero__input input_mail" placeholder="Ваш e-mail">
-              </div>
-              <!-- /.inpup-group -->
-              <div class="inpup-group">
-                <input type="tel" class="input hero__input input_phone" placeholder="Ваш номер телефона">
-              </div>
-              <!-- /.inpup-group -->
-              <button class="button hero__button button_primary">Получить КП!</button>
-              <!-- /.button hero__button -->
-              <div class="row">
-                <img src="img/heroform.png" alt="hero" class="law-img">
-                <p class="hero__law">Ваши данные не будут переданны<br>
-                  третьим лицам, согласно законам РФ</p>
-                <img src="img/heroform.png" alt="hero" class="law-img">
-              </div>
-              <!-- /.row -->
-            </form>
-          </div>
-          <!-- /.hero__wrap -->
+          <!-- /.row -->
+          <!-- /.hero__description -->
         </div>
-        <!-- /.row -->
-
-        <!-- /.hero__description -->
       </div>
       <!-- /.container -->
     </section>
@@ -122,7 +123,7 @@
           <div class="row col a-center">
             <div class="col-50">
               <!-- Slider main container -->
-              <div class="swiper-container slider1">
+              <div class="swiper-container slider1" id="slider1">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
@@ -133,9 +134,9 @@
                   <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
                 </div>
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-prev" id="prev1"></div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination pagination1"></div>
                 <div class="swiper-button-next"></div>
               </div>
             </div>
@@ -149,7 +150,8 @@
                   высокий уровень качества.
                   Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция,
                   которая давно стала визитной карточкой края.
-                  А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей</p>
+                  А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей
+                </p>
               </div>
               <!-- /.photo__text -->
             </div>
@@ -177,7 +179,336 @@
       <!-- /.container -->
     </section>
     <!-- /.advantage -->
+    <section class="features">
+      <div class="container">
+        <h2 class="heading features__heading">Наши преимущества</h2>
+        <!-- /.heading feature__heading -->
+        <div class="features__wrap">
+          <div class="row col">
+            <div class="col-50 card">
+              <div class="features_dock">
+                <img src="img/ring.png" alt="ring" class="features__ring">
+              </div>
+              <div class="features__text">
+                <span class="features__subtitle">Честность<br></span>
+                <!-- /.features__subtitle -->
+                <p class="features__description"> - в мыслях, суждениях и делах – это наше кредо. Мы считаем своим
+                  долгом
+                  поддерживать надежность и прямоту во взаимоотношениях с клиентами и партнерами по бизнесу.</p>
+                <!-- /.features__description -->
+              </div>
+              <!-- /.features__text -->
+            </div>
+            <!-- /.col-50 -->
+            <div class="col-50 card">
+              <div class="features_tie">
+                <img src="img/ring.png" alt="ring" class="features__ring ring_tie">
+              </div>
+              <div class="features__text">
+                <span class="features__subtitle">Профессионализм</span>
+                <!-- /.features__subtitle -->
+                <p class="features__description">в нашем понимании - это не только доскональное знание всех тонкостей
+                  любимой работы, но и непрерывное движение вперед, к новым знаниям и достижениям.<br>
+                  Каждый из нас является профессионалом в своем деле и целенаправленно работает на достижение результата
+                  и
+                  завоевание лидерских позиций на рынке хлебобулочных изделий. </p>
+                <!-- /.features__description -->
+              </div>
+              <!-- /.features__text -->
+            </div>
+            <!-- /.col-50 -->
+            <div class="col-50 card">
+              <div class="features_light">
+                <img src="img/ring.png" alt="ring" class="features__ring ring_light">
+              </div>
+              <div class="features__text">
+                <span class="features__subtitle">Новаторство</span>
+                <!-- /.features__subtitle -->
+                <p class="features__description"> - основа деятельности компании. Внедряя в производство новейшие
+                  технологии и программы, отслеживая последние инновации, занимаясь поиском нестандартных путей.<br>
+                  и экономически эффективных решений, мы достигаем успеха.</p>
+                <!-- /.features__description -->
+              </div>
+              <!-- /.features__text -->
+            </div>
+            <!-- /.col-50 -->
+            <div class="col-50 card">
+              <div class="features_diamond">
+                <img src="img/ring.png" alt="ring" class="features__ring ring_diamond">
+              </div>
+              <div class="features__text">
+                <span class="features__subtitle">Уникальные технологии</span>
+                <!-- /.features__subtitle -->
+                <p class="features__description">Несмотря на свои уникальные качества, этот хлеб является «линейным», то
+                  есть его цена ненамного выше цены обыкновенных ржано-пшеничных сортов типа «Дарницкого».</p>
+                <!-- /.features__description -->
+              </div>
+              <!-- /.features__text -->
+            </div>
+            <!-- /.col-50 -->
+            <div class="col-50 card">
+              <div class="features_peoplebig">
+                <img src="img/ring.png" alt="ring" class="features__ring ring_peoplebig">
+              </div>
+              <div class="features__text">
+                <span class="features__subtitle">Друзья и партнеры</span>
+                <!-- /.features__subtitle -->
+                <p class="features__description">Недорогой, так называемый, «социальный», хлеб также отличается высоким
+                  качеством. Его с удовольствием едят защитники нашего Отечества самых разных родов войск.<br>
+                  , а также служб безопасности Государства.</p>
+                <!-- /.features__description -->
+              </div>
+              <!-- /.features__text -->
+            </div>
+            <!-- /.col-50 -->
+            <div class="col-50 card">
+              <div class="features_flag">
+                <img src="img/ring.png" alt="ring" class="features__ring ring_flag">
+              </div>
+              <div class="features__text">
+                <span class="features__subtitle">Социальные программы </span>
+                <!-- /.features__subtitle -->
+                <p class="features__description">Мы не можем пройти мимо тех, кому нужна помощь. Мимо тех, кто в силу
+                  ряда
+                  обстоятельств много лишен. Потому мы помогаем Ногинскому Благочинию, Богоявленскому собору.
+                  Православному детскому дому.</p>
+                <!-- /.features__description -->
+              </div>
+              <!-- /.features__text -->
+            </div>
+            <!-- /.col-50 -->
+          </div>
+          <!-- /.row col -->
+        </div>
+        <!-- /.features__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.features -->
+    <section class="catalog">
+      <div class="container">
+        <h2 class="heading catalog__heading">Каталог продукции</h2>
+        <!-- /.heading catalog__heading -->
+        <div class="row">
+          <div class="col-30">
+            <div class="catalog__card">
+              <img src="img/catalog/card-bread.png" alt="bread" class="card__image"><span class="card__name">Хлеб</span>
+              <!-- /.card__name -->
+              <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+              <!-- /.card__description -->
+              <button class="card__btn">посмотреть</button>
+              <!-- /.card__btn -->
+            </div>
+            <!-- /.card catalog__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="catalog__card">
+              <img src="img/catalog/bun.png" alt="bun" class="card__image"><span class="card__name">Хлебушки</span>
+              <!-- /.card__name -->
+              <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+              <!-- /.card__description -->
+              <button class="card__btn">посмотреть</button>
+              <!-- /.card__btn -->
+            </div>
+            <!-- /.card catalog__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="catalog__card">
+              <img src="img/catalog/sweet.png" alt="sweet" class="card__image"><span class="card__name">Булочки</span>
+              <!-- /.card__name -->
+              <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+              <!-- /.card__description -->
+              <button class="card__btn">посмотреть</button>
+              <!-- /.card__btn -->
+            </div>
+            <!-- /.card catalog__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="catalog__card">
+              <img src="img/catalog/eclair.png" alt="eclair" class="card__image"><span
+                class="card__name">Кондитерские</span> <!-- /.card__name -->
+              <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+              <!-- /.card__description -->
+              <button class="card__btn">посмотреть</button>
+              <!-- /.card__btn -->
+            </div>
+            <!-- /.card catalog__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="catalog__card">
+              <img src="img/catalog/bread.png" alt="bread" class="card__image"><span class="card__name">Хлебцы</span>
+              <!-- /.card__name -->
+              <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+              <!-- /.card__description -->
+              <button class="card__btn">посмотреть</button>
+              <!-- /.card__btn -->
+            </div>
+            <!-- /.card catalog__card -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-30">
+            <div class="catalog__card">
+              <img src="img/catalog/muesly.png" alt="muesly" class="card__image"><span class="card__name">Мюсли</span>
+              <!-- /.card__name -->
+              <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+              <!-- /.card__description -->
+              <button class="card__btn">посмотреть</button>
+              <!-- /.card__btn -->
+            </div>
+            <!-- /.card catalog__card -->
+          </div>
+          <!-- /.col-30 -->
+        </div>
+        <!-- /.row col -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.catalog -->
+    <section class="information">
+      <div class="container">
+        <h2 class="heading information__heading">о "балашиха хлеб"</h2>
+        <!-- /.heading information__heading -->
+        <p class="information__description">Мы изготавливаем хлеб на ОАО «Балашиха Хлею». Это одно из крупнейших
+          предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной
+          продукции.Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень
+          качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция,
+          которая давно стала визитной карточкой края.</p>
+        <!-- /.information__description -->
+        <p class="information__description"><b class="information__heading-description">А это – более 100 видов
+            хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей.</b>
+          На нашем комбинате трудится более 700 человек. Это не просто люди, которые приходят сюда из-за стабильной
+          зарплаты, это – хлебопеки, которые приходят сюда по зову сердца. А потому наш хлеб не только качественный и
+          вкусный, но ещё и изготавливается с любовью.
+        </p>
+        <!-- /.information__description -->
+        <div class="swiper-container slider2" id="slider2">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide2">
+              <div class="video-wrap">
+                <div class="video information__video">
+                  <script src="https://www.youtube.com/iframe_api" id="player1"></script>
+                  <div class="video__play play1"></div>
+                </div>
+              </div>
+              <!-- /.video information__video -->
+            </div>
+            <div class="swiper-slide slide2">
+              <div class="video-wrap">
+                <div class="video information__video">
+                  <script src="https://www.youtube.com/iframe_api"></script>
+                  <div class="video__play"></div>
+                </div>
+              </div>
+              <!-- /.video information__video -->
+            </div>
+            <div class="swiper-slide slide2">
+              <div class="video-wrap">
+                <div class="video information__video">
+                  <script src="https://www.youtube.com/iframe_api"></script>
+                  <div class="video__play"></div>
+                </div>
+              </div>
+              <!-- /.video information__video -->
+            </div>
+            <div class="swiper-slide slide2">
+              <div class="video-wrap">
+                <div class="video information__video">
+                  <script src="https://www.youtube.com/iframe_api"></script>
+                  <div class="video__play"></div>
+                </div>
+              </div>
+              <!-- /.video information__video -->
+            </div>
+            <div class="swiper-slide slide2">
+              <div class="video-wrap">
+                <div class="video information__video">
+                  <script src="https://www.youtube.com/iframe_api"></script>
+                  <div class="video__play"></div>
+                </div>
+              </div>
+              <!-- /.video information__video -->
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev prev2"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination pagination2"></div>
+          <div class="swiper-button-next next2"></div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.information -->
+    <section class="personal">
+      <div class="container">
+        <h2 class="heading personal__heading heading_light">Получите персональное предложение</h2>
+        <!-- /.heading personal__heading heading_light -->
+          <form action="send.php" class="form personal__form">
+            <div class="input-wrapper">
+              <div class="inpup-group">
+                <input type="text" class="input personal__input input_name" placeholder="Ваше имя">
+              </div>
+              <!-- /.inpup-group -->
+              <div class="inpup-group">
+                <input type="email" class="input personal__input input_mail" placeholder="Ваш e-mail">
+              </div>
+              <!-- /.inpup-group -->
+              <div class="inpup-group">
+                <input type="tel" class="input personal__input input_phone" placeholder="Ваш номер телефона">
+              </div>
+              </div>
+            <!-- /.input-wrapper -->
+            <!-- /.inpup-group -->
+            <button class="button personal__button button_primary">Получить КП!</button>
+            <!-- /.button hero__button -->
+            <div class="law-wrap">
+              <img src="img/heroform.png" alt="hero" class="law-img">
+              <p class="law personal__law law_light">Ваши данные не будут переданны<br>
+                третьим лицам, согласно законам РФ</p>
+              <img src="img/heroform.png" alt="hero" class="law-img">
+            </div>
+            <!-- /.row -->
+          </form>
+          <!-- /.personal__form -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.personal -->
   </main>
+  <footer class="footer">
+    <div class="footer-bg"></div>
+    <div class="map footer__map" id="map">
+    </div>
+    <!-- /.map footer__map -->
+    <div class="footer__information">
+      <p class="information__text">© 1994-2014 «Балашиха Хлеб» ,  ИНН: 7708757552, ОГРН: 1127746150080, 
+        Адрес: г. Москва, ул. Неверовского, д. 9</p>
+      <!-- /.ingormation__text -->
+      <div class="footer__social">
+        <div class="facebook"><img src="img/facebook.png" alt="facebook"></div>
+        <!-- /.facebook -->
+        <div class="vk"><img src="img/vk.png" alt="vk"></div>
+        <!-- /.vk -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.footer footer__information -->
+  </footer>
+  <!-- /.footer -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
