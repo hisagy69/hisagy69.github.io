@@ -1,51 +1,59 @@
 .swiper
   &-button
     &-prev, &-next
-      bottom: 37px
-      top: auto
+      //bottom: 37px
+      //top: auto
       outline: none
       cursor: pointer
       background-size: 7px
       width: 7px
       height: 13px
+      margin-top: 0
       &::after
         display: none
     &-prev
       background: url("../img/arrowleft.png")
       z-index: 99
+      display: inline-block
+      position: static
     &-next
       background: url("../img/arrowright.png")
       z-index: 98
+      display: inline-block
+      position: static
   &-pagination
-    position: relative
-    &::after
-      content: ""
-      position: absolute
-      left: 50%
-      top: 50%
-      transform: translate(-50%, -50%)
-      width: 140%
-      height: 25px
-      background: rgba($veryblack, 0.3)
-      z-index: -1
+    position: static
     &-bullets
       width: auto
     &-bullet
       border-radius: 0
-.swiper-container-horizontal>.swiper-pagination-bullets
-  width: auto
-  bottom: 36px
-  display: inline-block
-  left: 21px
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
-  width: 9px
-  height: 9px
-  background: $light
-  &-active
-    background: $red
+      width: 9px
+      height: 9px
+      background: $light
+      opacity: 1
+      margin: 0 4px
+      outline: none
+      &-active
+        background: $red
+.container
+  &-pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 7.4rem
+    border-radius: 3px
+    height: 25px
+    background: rgba($veryblack, 0.3)
+    display: inline-flex
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 1.533rem
+    z-index: 99
+  &-pagination1
+    bottom: 0
 .slide2
-  padding-bottom: 1.5rem
-.prev2, .next2
-  bottom: 4px
-.swiper-container-horizontal > .pagination2
-  bottom: 2px
+  margin-bottom: 2.7rem
+  
+  
+

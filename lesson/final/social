@@ -1,0 +1,27 @@
+   <script async src="https://vk.com/js/api/openapi.js?165"></script>
+  </script>
+        <div class="footer__social">
+        <div class="fb-like" data-href="http://sinegamy11.beget.tech/" data-width="130" data-height="22px"
+          data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
+        <!-- /.facebook -->
+        <script>
+          VK.init({
+            apiId: 7284722,
+            onlyWidgets: true
+          });
+        </script>
+        <!-- Put this div tag to the place, where the Like block will be -->
+        <div id="vk_like"></div>
+        <script>
+          VK.Widgets.Like("vk_like", {
+            type: "button",
+            height: 20,
+          });
+        </script>
+        <!-- /.vk -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.footer footer__information -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0">

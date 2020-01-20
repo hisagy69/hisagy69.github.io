@@ -1,7 +1,13 @@
 .footer
   &-bg
-    background: url("../img/bg-footer.jpg") no-repeat top / cover
     height: 26.666rem
+  &__img
+    width: 21.3rem
+    height: 13.333rem
+    margin: 0
+    filter: grayscale(100%)
+    &:hover
+      filter: grayscale(0)
   &__social
     display: flex
     max-width: 17.333rem
@@ -11,15 +17,73 @@
     background: $dark
 .information
   &__text
+    max-width: 38rem
     font-family: Roboto
     font-size: 1rem
     font-weight: 300
     line-height: 1.466rem
-    max-width: 34.066rem
     color: $lightgray
     text-align: center
     margin: auto
     margin-bottom: 2.133rem
+    max-width: 37rem
 .map
   width: 100%
   height: 37.533rem
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  background: url('../img/map.jpg') no-repeat
+  background-position: center center
+  background-size: cover
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex 
+  position: relative
+  z-index: 7
+  width: 100%
+  height: 100%
+  cursor: pointer
+  background-color: transparent
+/////////////++++++++++
+  /* Индикатор загрузки, который показывается до загрузки карты */
+.loader 
+  position: absolute
+  z-index: 15
+  top: -100%
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+.loader:after,
+.loader:before 
+  box-sizing: border-box
+.loader.is-active 
+  top: 0
+  opacity: 1
+.loader-default:after 
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+@keyframes rotation 
+  from 
+    transform: rotate(0)
+  to 
+    transform: rotate(359deg)
+@keyframes blink 
+  from 
+    opacity: .5
+  to 
+    opacity: 1
+  

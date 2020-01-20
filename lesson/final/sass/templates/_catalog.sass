@@ -1,5 +1,6 @@
 .catalog
   padding-top: 4.2rem
+  padding-bottom: 1rem
   &__card
     display: flex
     flex-direction: column
@@ -7,12 +8,11 @@
     max-width: 22.6rem
     justify-content: space-between
     padding: 1rem 0
+    border: 1px solid $light
     &:hover
       border: 1px solid rgba($dark, 0.3)
 .card
   &__image
-    width: 285px
-    height: 190px
     margin-bottom: 0.733rem
   &__heading
     font-size: 1.2rem
@@ -20,23 +20,28 @@
     text-transform: uppercase
     font-family: Roboto
   &__description
-    font-size: 1rem
+    font-size: 1.09rem
     font-weight: 300
-    max-width: 17.466rem
+    max-width: 19.466rem
     line-height: 1.4rem
     text-align: center
     margin-bottom: 1.666em
   &__btn
     font-family: Roboto
     font-size: 0.933rem
-    font-weight: bold
+    font-weight: normal
     line-height: 1.4rem
     text-transform: uppercase
     color: $red
     background: transparent
     border: 1px solid $red
     cursor: pointer
-    padding: 1rem 1.533rem
+    padding: 0.7rem 1.533rem
     &:hover
       background: $red
       color: $light
+  &__name
+    font-family: "Roboto"
+    font-size: 1.27rem
+    font-weight: mormal
+    text-transform: uppercase

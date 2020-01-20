@@ -6,11 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Балашиха хлеб</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://vk.com/js/api/openapi.js?165"></script>
 </head>
 
 <body>
+  <!-- Yandex.Metrika counter -->
+  <script>
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(57092770, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/57092770" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
   <header class="header">
     <div class="container">
       <div class="row">
@@ -27,7 +52,7 @@
         <!-- /.hedaer__logo -->
 
         <div class="header__phone">
-          <span class="phone__number">8(495)<span class="number_bold">777-11-00</span></span>
+          <a href="tel:84957771100"><span class="phone__number">8(495)<span class="number_bold">777-11-00</span></span></a>
           <!-- /.phone__number -->
           <div class="call">
             <img src="img/phone.png" alt="phone" class="phone__image">
@@ -61,7 +86,7 @@
                 <!-- /.advantages__item -->
                 <div class="wrap-shadow">
                   <div class="advantages__item">
-                    <p class="advantages__text">Старейший<br> хлебзавод<br> в Москве</p>
+                    <p class="advantages__text">Старейший<br> хлебзавод в<br> Москве</p>
                     <!-- /.advantages__text -->
                   </div>
                   <img src="img/circle-shadow.png" alt="shadow" class="circle-shadow">
@@ -79,23 +104,27 @@
             </div>
             <!-- /.advantages hero__advantages -->
             <div class="hero__wrap">
-              <p class="hero__offer">Получите персональное<p class="offer_size">коммерческое предложение</p>
+              <p class="hero__offer">Получите персональное<br><span class="offer_size">коммерческое предложение</span>
               </p>
               <!-- /.hero__offer -->
-              <form action="send.php" class="form hero__form">
-                <div class="inpup-group">
-                  <input type="text" class="input hero__input input_name" placeholder="Ваше имя">
+              <form action="send.php" method="POST" class="form hero__form">
+                <div class="input-group">
+                  <input type="text" class="input hero__input input_name" name="userName" id="userName1"
+                    placeholder="Ваше имя">
                 </div>
                 <!-- /.inpup-group -->
-                <div class="inpup-group">
-                  <input type="email" class="input hero__input input_mail" placeholder="Ваш e-mail">
+                <div class="input-group">
+                  <input type="email" class="input hero__input input_mail" name="userEmail" id="userEmail1"
+                    placeholder="Ваш e-mail">
                 </div>
                 <!-- /.inpup-group -->
-                <div class="inpup-group">
-                  <input type="tel" class="input hero__input input_phone" placeholder="Ваш номер телефона">
+                <div class="input-group">
+                  <input type="tel" class="input hero__input input_phone" name="userPhone" id="userPhone1"
+                    placeholder="Ваш номер телефона">
                 </div>
                 <!-- /.inpup-group -->
-                <button class="button hero__button button_primary">Получить КП!</button>
+                <button onclick="ym('57092770', 'reachGoal', 'button'); return true;"
+                  class="button hero__button button_primary">Получить КП!</button>
                 <!-- /.button hero__button -->
                 <div class="row">
                   <img src="img/heroform.png" alt="hero" class="law-img">
@@ -133,11 +162,13 @@
                   <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
                   <div class="swiper-slide"><img src="img/photo.jpg" alt="photo" class="slider__photo"></div>
                 </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev" id="prev1"></div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination pagination1"></div>
-                <div class="swiper-button-next"></div>
+                <div class="container-pagination">
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev" id="prev1"></div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination pagination1"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
               </div>
             </div>
             <!-- /.col-50 -->
@@ -168,13 +199,10 @@
       <div class="container">
         <h2 class="heading advantage__heading">Главные преимущества за 1 минуту</h2>
         <!-- /.heading advantage__heading -->
-        <div class="video-wrap">
-          <div class="video advantage__video" id="player">
-            <script src="https://www.youtube.com/iframe_api"></script>
-            <div class="video__play"></div>
-          </div>
+        <div class="youtube-wrap youtube-wrap1">
+          <div class="youtube" id="u3qRGwd2bhg" style="width: 41.5rem; height: 26.4rem;"></div>
         </div>
-        <!-- /.video advantage__video -->
+        <!-- /.youtube-wrap -->
       </div>
       <!-- /.container -->
     </section>
@@ -291,78 +319,78 @@
         <!-- /.heading catalog__heading -->
         <div class="row">
           <div class="col-30">
-            <div class="catalog__card">
+            <div class="catalog__card card1">
               <img src="img/catalog/card-bread.png" alt="bread" class="card__image"><span class="card__name">Хлеб</span>
               <!-- /.card__name -->
               <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
               <!-- /.card__description -->
-              <button class="card__btn">посмотреть</button>
+              <button class="card__btn btn1">просмотреть</button>
               <!-- /.card__btn -->
             </div>
             <!-- /.card catalog__card -->
           </div>
           <!-- /.col-30 -->
           <div class="col-30">
-            <div class="catalog__card">
+            <div class="catalog__card card2">
               <img src="img/catalog/bun.png" alt="bun" class="card__image"><span class="card__name">Хлебушки</span>
               <!-- /.card__name -->
               <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
               <!-- /.card__description -->
-              <button class="card__btn">посмотреть</button>
+              <button class="card__btn btn2">просмотреть</button>
               <!-- /.card__btn -->
             </div>
             <!-- /.card catalog__card -->
           </div>
           <!-- /.col-30 -->
           <div class="col-30">
-            <div class="catalog__card">
+            <div class="catalog__card card3">
               <img src="img/catalog/sweet.png" alt="sweet" class="card__image"><span class="card__name">Булочки</span>
               <!-- /.card__name -->
               <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
               <!-- /.card__description -->
-              <button class="card__btn">посмотреть</button>
+              <button class="card__btn btn3">просмотреть</button>
               <!-- /.card__btn -->
             </div>
             <!-- /.card catalog__card -->
           </div>
           <!-- /.col-30 -->
           <div class="col-30">
-            <div class="catalog__card">
+            <div class="catalog__card card4">
               <img src="img/catalog/eclair.png" alt="eclair" class="card__image"><span
                 class="card__name">Кондитерские</span> <!-- /.card__name -->
               <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
               <!-- /.card__description -->
-              <button class="card__btn">посмотреть</button>
+              <button class="card__btn btn4">просмотреть</button>
               <!-- /.card__btn -->
             </div>
             <!-- /.card catalog__card -->
           </div>
           <!-- /.col-30 -->
           <div class="col-30">
-            <div class="catalog__card">
+            <div class="catalog__card card5">
               <img src="img/catalog/bread.png" alt="bread" class="card__image"><span class="card__name">Хлебцы</span>
               <!-- /.card__name -->
               <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
               <!-- /.card__description -->
-              <button class="card__btn">посмотреть</button>
+              <button class="card__btn btn5">просмотреть</button>
               <!-- /.card__btn -->
             </div>
             <!-- /.card catalog__card -->
           </div>
           <!-- /.col-30 -->
           <div class="col-30">
-            <div class="catalog__card">
+            <div class="catalog__card card6">
               <img src="img/catalog/muesly.png" alt="muesly" class="card__image"><span class="card__name">Мюсли</span>
               <!-- /.card__name -->
               <p class="card__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
               <!-- /.card__description -->
-              <button class="card__btn">посмотреть</button>
+              <button class="card__btn btn6">просмотреть</button>
               <!-- /.card__btn -->
             </div>
             <!-- /.card catalog__card -->
@@ -396,56 +424,45 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide slide2">
-              <div class="video-wrap">
-                <div class="video information__video">
-                  <script src="https://www.youtube.com/iframe_api" id="player1"></script>
-                  <div class="video__play play1"></div>
-                </div>
+              <div class="youtube-wrap youtube-wrap2">
+                <div class="youtube youtube2" id="iopMMFc2hBw" style="width: 27.933rem; height: 17rem;"></div>
               </div>
-              <!-- /.video information__video -->
+              <!-- /.youtube-wrap -->
+              <!-- /.information__-->
             </div>
             <div class="swiper-slide slide2">
-              <div class="video-wrap">
-                <div class="video information__video">
-                  <script src="https://www.youtube.com/iframe_api"></script>
-                  <div class="video__play"></div>
-                </div>
+              <div class="youtube-wrap youtube-wrap2">
+                <div class="youtube youtube2" id="vUTNvbYcNLI" style="width: 27.933rem; height: 17rem;"></div>
               </div>
-              <!-- /.video information__video -->
+              <!-- /.information__-->
             </div>
             <div class="swiper-slide slide2">
-              <div class="video-wrap">
-                <div class="video information__video">
-                  <script src="https://www.youtube.com/iframe_api"></script>
-                  <div class="video__play"></div>
-                </div>
+              <div class="youtube-wrap youtube-wrap2">
+                <div class="youtube youtube2" id="18GOSL0RQtM" style="width: 27.933rem; height: 17rem;"></div>
               </div>
-              <!-- /.video information__video -->
+              <!-- /.information__-->
             </div>
             <div class="swiper-slide slide2">
-              <div class="video-wrap">
-                <div class="video information__video">
-                  <script src="https://www.youtube.com/iframe_api"></script>
-                  <div class="video__play"></div>
-                </div>
+              <div class="youtube-wrap youtube-wrap2">
+                <div class="youtube youtube2" id="jBpmZCCrOS0" style="width: 27.933rem; height: 17rem;"></div>
               </div>
-              <!-- /.video information__video -->
+              <!-- /.information__-->
             </div>
             <div class="swiper-slide slide2">
-              <div class="video-wrap">
-                <div class="video information__video">
-                  <script src="https://www.youtube.com/iframe_api"></script>
-                  <div class="video__play"></div>
-                </div>
+              <div class="youtube-wrap youtube-wrap2">
+                <div class="youtube youtube2" id="4yp8UhNnj-w" style="width: 27.933rem; height: 17rem;"></div>
               </div>
               <!-- /.video information__video -->
             </div>
           </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev prev2"></div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination pagination2"></div>
-          <div class="swiper-button-next next2"></div>
+          <div class="container-pagination container-pagination1">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev prev2" id="prev2"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination pagination2"></div>
+            <div class="swiper-button-next next2" id="next2"></div>
+          </div>
+          <!-- /.container-pagination -->
         </div>
       </div>
       <!-- /.container -->
@@ -455,53 +472,91 @@
       <div class="container">
         <h2 class="heading personal__heading heading_light">Получите персональное предложение</h2>
         <!-- /.heading personal__heading heading_light -->
-          <form action="send.php" class="form personal__form">
-            <div class="input-wrapper">
-              <div class="inpup-group">
-                <input type="text" class="input personal__input input_name" placeholder="Ваше имя">
-              </div>
-              <!-- /.inpup-group -->
-              <div class="inpup-group">
-                <input type="email" class="input personal__input input_mail" placeholder="Ваш e-mail">
-              </div>
-              <!-- /.inpup-group -->
-              <div class="inpup-group">
-                <input type="tel" class="input personal__input input_phone" placeholder="Ваш номер телефона">
-              </div>
-              </div>
-            <!-- /.input-wrapper -->
-            <!-- /.inpup-group -->
-            <button class="button personal__button button_primary">Получить КП!</button>
-            <!-- /.button hero__button -->
-            <div class="law-wrap">
-              <img src="img/heroform.png" alt="hero" class="law-img">
-              <p class="law personal__law law_light">Ваши данные не будут переданны<br>
-                третьим лицам, согласно законам РФ</p>
-              <img src="img/heroform.png" alt="hero" class="law-img">
+        <form action="send.php" method="POST" class="form personal__form">
+          <div class="input-wrapper col">
+            <div class="input-group">
+              <input type="text" class="input personal__input input_name" name="userName" id="userName2"
+                placeholder="Ваше имя">
             </div>
-            <!-- /.row -->
-          </form>
-          <!-- /.personal__form -->
-        </div>
-        <!-- /.row -->
+            <!-- /.inpup-group -->
+            <div class="input-group">
+              <input type="email" class="input personal__input input_mail" name="userEmail" id="userEmail2"
+                placeholder="Ваш e-mail">
+            </div>
+            <!-- /.inpup-group -->
+            <div class="input-group">
+              <input type="tel" class="input personal__input input_phone" name="userPhone" id="userPhone2"
+                placeholder="Ваш номер телефона">
+            </div>
+          </div>
+          <!-- /.input-wrapper -->
+          <!-- /.inpup-group -->
+          <button onclick="ym('57092770', 'reachGoal', 'button'); return true;"
+            class="button personal__button button_primary">Получить сейчас!</button>
+          <!-- /.button hero__button -->
+          <div class="law-wrap">
+            <img src="img/heroform.png" alt="hero" class="law-img">
+            <p class="law personal__law law_light">Ваши данные не будут переданны<br>
+              третьим лицам, согласно законам РФ</p>
+            <img src="img/heroform.png" alt="hero" class="law-img">
+          </div>
+          <!-- /.row -->
+        </form>
+        <!-- /.personal__form -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.personal -->
   </main>
   <footer class="footer">
-    <div class="footer-bg"></div>
-    <div class="map footer__map" id="map">
+    <div class="footer-bg">
+      <div class="row normal">
+        <img src="img/footer/footer1.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer2.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer3.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer4.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer5.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer6.jpg" alt="footer" class="footer__img">
+      </div>
+      <div class="row normal">
+        <img src="img/footer/footer7.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer8.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer9.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer10.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer11.jpg" alt="footer" class="footer__img">
+        <img src="img/footer/footer12.jpg" alt="footer" class="footer__img">
+      </div>
     </div>
+    <div class="map">
+      <div class="loader loader-default"></div>
+      <div id="map-yandex"></div>
+    </div><!-- .map -->
     <!-- /.map footer__map -->
+
     <div class="footer__information">
-      <p class="information__text">© 1994-2014 «Балашиха Хлеб» ,  ИНН: 7708757552, ОГРН: 1127746150080, 
-        Адрес: г. Москва, ул. Неверовского, д. 9</p>
-      <!-- /.ingormation__text -->
+      <div class="container">
+        <p class="information__text">© 1994-2014 «Балашиха Хлеб» , ИНН: 7708757552, ОГРН: 1127746150080,<br>
+          Адрес: г. Москва, ул. Неверовского, д. 9</p>
+        <!-- /.ingormation__text -->
+      </div>
       <div class="footer__social">
-        <div class="facebook"><img src="img/facebook.png" alt="facebook"></div>
+        <div class="fb-like" data-href="http://sinegamy11.beget.tech/" data-width="130" data-height="22px"
+          data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
         <!-- /.facebook -->
-        <div class="vk"><img src="img/vk.png" alt="vk"></div>
+        <script>
+          VK.init({
+            apiId: 7284722,
+            onlyWidgets: true
+          });
+        </script>
+        <!-- Put this div tag to the place, where the Like block will be -->
+        <div id="vk_like"></div>
+        <script>
+          VK.Widgets.Like("vk_like", {
+            type: "button",
+            height: 20,
+          });
+        </script>
         <!-- /.vk -->
       </div>
       <!-- /.row -->
@@ -509,9 +564,112 @@
     <!-- /.footer footer__information -->
   </footer>
   <!-- /.footer -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <div class="modal-thanks">
+    <div class="modal-thanks__dialog">
+      <h3 class="modal-thanks__heading">Заявка отправлена</h3>
+      <button class="modal-thanks__close">
+      </button> <!-- /.modal__close -->
+    </div>
+    <!-- /.modal-thanks-dialog -->
+  </div>
+  <!-- /.modal-thanks -->
+  <div class="modal1">
+    <div class="modal1__dialog">
+      <div class="catalog__card card1">
+        <img src="img/catalog/card-bread.png" alt="bread" class="card__image"><span class="card__name">Хлеб</span>
+        <!-- /.card__name -->
+        <p class="card__description">Хлеб
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum -
+          взятый с потолка псевдо-латинский набор слов, но это не совсем так..</p>
+        <!-- /.card__description -->
+      </div>
+      <!-- /.card catalog__card -->
+      <div class="modal1__close"></div>
+    </div>
+  </div>
+  <!-- /.modal1 -->
+  <div class="modal2">
+    <div class="modal2__dialog">
+      <div class="catalog__card card1">
+        <img src="img/catalog/bun.png" alt="bread" class="card__image"><span class="card__name">Хлебушки</span>
+        <!-- /.card__name -->
+        <p class="card__description">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum -
+          взятый с потолка псевдо-латинский набор слов, но это не совсем так..</p>
+        <!-- /.card__description -->
+      </div>
+      <!-- /.card catalog__card -->
+      <div class="modal2__close"></div>
+    </div>
+  </div>
+  <!-- /.modal2 -->
+  <div class="modal3">
+    <div class="modal3__dialog">
+      <div class="catalog__card card1">
+        <img src="img/catalog/sweet.png" alt="bread" class="card__image"><span class="card__name">Булочки</span>
+        <!-- /.card__name -->
+        <p class="card__description">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum -
+          взятый с потолка псевдо-латинский набор слов, но это не совсем так..</p>
+        <!-- /.card__description -->
+      </div>
+      <!-- /.card catalog__card -->
+      <div class="modal3__close"></div>
+    </div>
+  </div>
+  <!-- /.modal3 -->
+  <div class="modal4">
+    <div class="modal4__dialog">
+      <div class="catalog__card card1">
+        <img src="img/catalog/eclair.png" alt="bread" class="card__image"><span class="card__name">Кондитерские</span>
+        <!-- /.card__name -->
+        <p class="card__description">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum -
+          взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+        <!-- /.card__description -->
+      </div>
+      <!-- /.card catalog__card -->
+      <div class="modal4__close"></div>
+    </div>
+  </div>
+  <!-- /.modal4 -->
+  <div class="modal5">
+    <div class="modal5__dialog">
+      <div class="catalog__card card1">
+        <img src="img/catalog/bread.png" alt="bread" class="card__image"><span class="card__name">Хлебцы</span>
+        <!-- /.card__name -->
+        <p class="card__description">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum -
+          взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+        <!-- /.card__description -->
+      </div>
+      <!-- /.card catalog__card -->
+      <div class="modal5__close"></div>
+    </div>
+  </div>
+  <!-- /.modal5 -->
+  <div class="modal6">
+    <div class="modal6__dialog">
+      <div class="catalog__card card1">
+        <img src="img/catalog/muesly.png" alt="bread" class="card__image"><span class="card__name">Мюсли</span>
+        <!-- /.card__name -->
+        <p class="card__description">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum -
+          взятый с потолка псевдо-латинский набор слов, но это не совсем так..</p>
+        <!-- /.card__description -->
+      </div>
+      <!-- /.card catalog__card -->
+      <div class="modal6__close"></div>
+    </div>
+  </div>
+  <!-- /.modal6 -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0">
+  </script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
