@@ -17,6 +17,24 @@ $(document).ready(function () {
       }
     });
   });
+  //модал коллбэк
+  var modalCallback = $(".modal-callback");
+  $(".phone__link").on("click", function() {
+    modalCallback.toggleClass("modal-callback_visible");
+    $(".modal1__close").on("click", function() {
+      modalCallback.removeClass("modal-callback_visible");
+    });
+    $(document).mouseup(function(event) {
+      if (modalCallback.is(event.target)) {
+        modalCallback.removeClass("modal-callback_visible");
+      }
+    });
+    $(document).on("keydown", function() {
+      if (event.keyCode == 27 && $(".modal-callback_visible").length == 1) {
+        modalCallback.removeClass("modal-callback_visible");
+      }
+    });
+  });
   // модал 1
   var modal1 = $(".modal1");
   $(".btn1").on("click", function() {
@@ -125,6 +143,24 @@ $(document).ready(function () {
       }
     });
   });
+  //модал слайдер
+  var modalSlider = $(".modal-slider");
+  $(".footer__img").on("click", function() {
+    modalSlider.toggleClass("modal-slider_visible");
+    $(".modal-slider__close").on("click", function() {
+      modalSlider.removeClass("modal-slider_visible");
+    });
+    $(document).mouseup(function(event) {
+      if (modalSlider.is(event.target)) {
+        modalSlider.removeClass("modal-slider_visible");
+      }
+    });
+    $(document).on("keydown", function() {
+      if (event.keyCode == 27 && $(".modal-slider_visible").length == 1) {
+        modalSlider.removeClass("modal-slider_visible");
+      }
+    });
+  });
   //валидация..
 $(function(){
   $(".hero__form").validate({
@@ -215,7 +251,53 @@ $(function(){
       });
     }
   });
+  $(".callback__form").validate({
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+      },
+      userEmail: {
+        required: true,
+        email: true,
+      },
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+    },
+    errorElement: "em",
+    errorClass: "invalid2",
+    messages: {
+      userName: {
+        required: "имя обязательно",
+        minlength: "имя длиннее двух символов",
+      },
+      userEmail: {
+        required: "Email обязательно",
+        email: "введите email",
+      },
+      userPhone: {
+        required: "телефон обязателен",
+        minlength: "введите корректный номер",
+      }, 
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("Ajax сработал. Ответ сервера: " + response);
+          $(form)[0].reset();
+          modalThanks.toggleClass("modal-thanks_visible");
+        }
+      });
+    }
+  });
 });
+
+
   // маска для инпутов
   $("[type=tel]").mask("+7(000) 000 00-00");
   var slider1 = new Swiper ('.swiper-container#slider1', {
@@ -248,6 +330,23 @@ $(function(){
     navigation: {
       nextEl: '#slider2 .swiper-button-next',
       prevEl: '#slider2 .swiper-button-prev',
+    },
+  })
+  //конец слайдера2
+  var slider3 = new Swiper ('.swiper-container#slider3', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidePerView: 1,
+    // If we need pagination
+    pagination: {
+      el: '#slider3 .swiper-pagination',
+      clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider3 .swiper-button-next',
+      prevEl: '#slider3 .swiper-button-prev',
     },
   })
 });
@@ -412,6 +511,11 @@ r(function(){
         }
     }
 });
+// останавливаю видео при переходе на другой слайд
+  $(document).on('click', '#next2, #prev2', function(){
+    jQuery("iframe").each(function() {
+       jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
+  });
 /* $(window).on('load', function () {
   $.getScript("//vk.com/js/api/openapi.js?115")
     .then(function () {

@@ -378,17 +378,12 @@ template {
     -webkit-box-direction: normal;
     flex-direction: column;
     position: relative; }
-  .input.invalid {
-    border: 2px solid tomato; }
 
 em.invalid2, em.invalid {
   color: tomato;
   position: absolute;
   left: 1rem;
-  top: 0.5rem; }
-
-input.invalid, input.invalid2 {
-  box-shadow: 0 0 10px red; }
+  top: 0.1rem; }
 
 .law {
   font-family: "Roboto";
@@ -639,7 +634,8 @@ p {
   color: #f64747;
   border-bottom: 1px #f64747 dashed;
   vertical-align: middle;
-  font-size: 1.02rem; }
+  font-size: 1.02rem;
+  cursor: pointer; }
 
 .number_bold {
   font-size: 1.6rem; }
@@ -794,79 +790,14 @@ p {
     line-height: 1.4rem; }
   .features__ring {
     width: 6.533rem;
-    height: 6.533rem; }
-  .features_dock {
-    position: relative; }
-    .features_dock::before {
-      content: "";
-      width: 3.866rem;
-      height: 3.866rem;
-      background: url("../img/dock.png") no-repeat center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-  .features_tie {
-    position: relative; }
-    .features_tie::before {
-      content: "";
-      width: 3.866rem;
-      height: 3.866rem;
-      background: url("../img/tie.png") no-repeat center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-  .features_light {
-    position: relative; }
-    .features_light::before {
-      content: "";
-      width: 3.866rem;
-      height: 3.866rem;
-      background: url("../img/light.png") no-repeat center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-  .features_diamond {
-    position: relative; }
-    .features_diamond::before {
-      content: "";
-      width: 3.866rem;
-      height: 3.866rem;
-      background: url("../img/diamond.png") no-repeat center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-  .features_peoplebig {
-    position: relative; }
-    .features_peoplebig::before {
-      content: "";
-      width: 3.866rem;
-      height: 3.866rem;
-      background: url("../img/peoplebig.png") no-repeat center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-  .features_flag {
-    position: relative; }
-    .features_flag::before {
-      content: "";
-      width: 3.866rem;
-      height: 3.866rem;
-      background: url("../img/flag.png") no-repeat center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+    height: 6.533rem;
+    background: url("../img/ring.png") no-repeat center/contain;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center; }
 
 .catalog {
   padding-top: 4.2rem;
@@ -1027,6 +958,10 @@ p {
 .slide2 {
   margin-bottom: 2.7rem; }
 
+.modal__slide {
+  width: 37.733rem;
+  height: 22.266rem; }
+
 .personal {
   background: url("../img/bg-personal.jpg") no-repeat center/cover;
   padding: 3.533rem 0 2.733rem; }
@@ -1074,7 +1009,8 @@ p {
   height: 13.333rem;
   margin: 0;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  cursor: pointer; }
   .footer__img:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
@@ -1184,7 +1120,7 @@ p {
   to {
     opacity: 1; } }
 
-.modal-thanks {
+.modal-thanks, .modal-callback {
   visibility: hidden;
   opacity: 0;
   width: 100%;
@@ -1202,15 +1138,15 @@ p {
   right: 0;
   bottom: 0;
   z-index: 999; }
-  .modal-thanks_visible {
+  .modal-thanks_visible, .modal-callback_visible {
     visibility: visible;
     opacity: 1; }
-  .modal-thanks__dialog {
+  .modal-thanks__dialog, .modal-callback__dialog {
     max-width: 20rem;
     padding: 5rem 2rem;
     background: url("../img/bg-personal.jpg") no-repeat center/cover #fff9e6;
     position: relative; }
-  .modal-thanks__close {
+  .modal-thanks__close, .modal-callback__close {
     width: 28px;
     height: 28px;
     background: url("../img/close.svg") no-repeat center;
@@ -1220,11 +1156,49 @@ p {
     border: none;
     cursor: pointer;
     outline: none; }
-  .modal-thanks__heading {
+  .modal-thanks__heading, .modal-callback__heading {
     font-family: Roboto;
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff; }
+
+.modal-slider {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.5);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999; }
+  .modal-slider_visible {
+    visibility: visible;
+    opacity: 1; }
+  .modal-slider__dialog {
+    width: 37rem;
+    position: relative; }
+  .modal-slider__close {
+    width: 28px;
+    height: 28px;
+    background: url("../img/close.svg") no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+
+.modal-callback__heading {
+  margin-bottom: 2rem; }
 
 .modal1, .modal2, .modal3, .modal4, .modal5, .modal6 {
   visibility: hidden;
@@ -1317,7 +1291,7 @@ p {
       margin: auto; } }
 
 @media screen and (max-width: 992px) {
-  a, .youtube, .button, .card__btn, .play, .swiper-pagination-bullet, #next2, #prev2, #next, #prev, .map {
+  a, .youtube, .button, .card__btn, .play, .swiper-pagination-bullet, #next2, #prev2, #next, #prev, .map, .phone__link, .footer__img {
     cursor: unset; }
   .button_primary:hover {
     box-shadow: none; }
@@ -1376,7 +1350,10 @@ p {
   .button {
     width: 100%; }
   .map {
-    height: 17.533rem; } }
+    height: 17.533rem; }
+  .slide3 {
+    width: 100%;
+    height: 100%; } }
 
 @media screen and (max-width: 510px) {
   .advantage__video, .information__video {

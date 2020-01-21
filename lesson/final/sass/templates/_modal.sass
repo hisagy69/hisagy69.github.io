@@ -1,5 +1,5 @@
 .modal
-  &-thanks
+  &-thanks, &-callback
     visibility: hidden
     opacity: 0
     width: 100%
@@ -37,6 +37,40 @@
       font-size: 1.5rem
       font-weight: 700
       color: $light
+  &-slider
+    visibility: hidden
+    opacity: 0
+    width: 100%
+    height: 100%
+    background: rgba($dark, 0.5)
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 999
+    &_visible
+      visibility: visible
+      opacity: 1
+    &__dialog 
+      width: 37rem
+      position: relative
+    &__close
+      width: 28px
+      height: 28px
+      background: url("../img/close.svg") no-repeat center
+      position: absolute
+      right: 0
+      top: 0
+      border: none
+      cursor: pointer
+      outline: none
+  &-callback
+    &__heading
+      margin-bottom: 2rem
 .modal1, .modal2, .modal3, .modal4, .modal5, .modal6
   visibility: hidden
   opacity: 0

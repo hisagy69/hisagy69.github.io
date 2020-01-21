@@ -57,7 +57,7 @@
           <div class="call">
             <img src="img/phone.png" alt="phone" class="phone__image">
             <img src="img/arrow-right.png" alt="arr" class="phone__arrow">
-            <a href="tel:84957771100" class="phone__link">Перезвоните мне!</a>
+            <span class="phone__link">Перезвоните мне!</span>
           </div>
           <!-- /.phone__link -->
         </div>
@@ -109,12 +109,12 @@
               <!-- /.hero__offer -->
               <form action="send.php" method="POST" class="form hero__form">
                 <div class="input-group">
-                  <input type="text" class="input hero__input input_name" name="userName" id="userName1"
+                  <input type="text" class="input hero__input input_name" maxlength="20" name="userName" id="userName1"
                     placeholder="Ваше имя">
                 </div>
                 <!-- /.inpup-group -->
                 <div class="input-group">
-                  <input type="email" class="input hero__input input_mail" name="userEmail" id="userEmail1"
+                  <input type="email" class="input hero__input input_mail" maxlength="20" name="userEmail" id="userEmail1"
                     placeholder="Ваш e-mail">
                 </div>
                 <!-- /.inpup-group -->
@@ -167,7 +167,7 @@
                   <div class="swiper-button-prev" id="prev1"></div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination pagination1"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-next" id="next1"></div>
                 </div>
               </div>
             </div>
@@ -214,8 +214,8 @@
         <div class="features__wrap">
           <div class="row col">
             <div class="col-50 card">
-              <div class="features_dock">
-                <img src="img/ring.png" alt="ring" class="features__ring">
+              <div class="features__ring">
+                <img src="img/dock.png" alt="ring" class="ring__item ring_dock">
               </div>
               <div class="features__text">
                 <span class="features__subtitle">Честность<br></span>
@@ -229,8 +229,8 @@
             </div>
             <!-- /.col-50 -->
             <div class="col-50 card">
-              <div class="features_tie">
-                <img src="img/ring.png" alt="ring" class="features__ring ring_tie">
+              <div class="features__ring">
+                <img src="img/tie.png" alt="tie" class="ring__item ring_tie">
               </div>
               <div class="features__text">
                 <span class="features__subtitle">Профессионализм</span>
@@ -246,8 +246,8 @@
             </div>
             <!-- /.col-50 -->
             <div class="col-50 card">
-              <div class="features_light">
-                <img src="img/ring.png" alt="ring" class="features__ring ring_light">
+              <div class="features__ring">
+                <img src="img/light.png" alt="light" class="ring__item ring_light">
               </div>
               <div class="features__text">
                 <span class="features__subtitle">Новаторство</span>
@@ -261,8 +261,8 @@
             </div>
             <!-- /.col-50 -->
             <div class="col-50 card">
-              <div class="features_diamond">
-                <img src="img/ring.png" alt="ring" class="features__ring ring_diamond">
+              <div class="features__ring">
+                <img src="img/diamond.png" alt="ring" class="ring__item ring_diamond">
               </div>
               <div class="features__text">
                 <span class="features__subtitle">Уникальные технологии</span>
@@ -275,8 +275,8 @@
             </div>
             <!-- /.col-50 -->
             <div class="col-50 card">
-              <div class="features_peoplebig">
-                <img src="img/ring.png" alt="ring" class="features__ring ring_peoplebig">
+              <div class="features__ring">
+                <img src="img/peoplebig.png" alt="ring" class="ring__item ring_peoplebig">
               </div>
               <div class="features__text">
                 <span class="features__subtitle">Друзья и партнеры</span>
@@ -290,8 +290,8 @@
             </div>
             <!-- /.col-50 -->
             <div class="col-50 card">
-              <div class="features_flag">
-                <img src="img/ring.png" alt="ring" class="features__ring ring_flag">
+              <div class="features__ring">
+                <img src="img/flag.png" alt="ring" class="ring__item ring_flag">
               </div>
               <div class="features__text">
                 <span class="features__subtitle">Социальные программы </span>
@@ -475,12 +475,12 @@
         <form action="send.php" method="POST" class="form personal__form">
           <div class="input-wrapper col">
             <div class="input-group">
-              <input type="text" class="input personal__input input_name" name="userName" id="userName2"
+              <input type="text" class="input personal__input input_name" maxlength="20" name="userName" id="userName2"
                 placeholder="Ваше имя">
             </div>
             <!-- /.inpup-group -->
             <div class="input-group">
-              <input type="email" class="input personal__input input_mail" name="userEmail" id="userEmail2"
+              <input type="email" class="input personal__input input_mail" maxlength="20" name="userEmail" id="userEmail2"
                 placeholder="Ваш e-mail">
             </div>
             <!-- /.inpup-group -->
@@ -564,6 +564,34 @@
     <!-- /.footer footer__information -->
   </footer>
   <!-- /.footer -->
+  <div class="modal-callback">
+    <div class="modal-callback__dialog">
+      <h2 class="modal-callback__heading">Перезвоните мне</h2>
+      <!-- /.heading modal__heading -->
+      <form action="send.php" method="POST" class="callback__form">
+        <div class="input-group">
+          <input type="text" class="input modal__input input_name" maxlength="20" name="userName" id="userName3"
+            placeholder="Ваше имя">
+        </div>
+        <!-- /.inpup-group -->
+        <div class="input-group">
+          <input type="email" class="input modal__input input_mail" maxlength="20" name="userEmail" id="userEmail3"
+            placeholder="Ваш e-mail">
+        </div>
+        <!-- /.inpup-group -->
+        <div class="input-group">
+          <input type="tel" class="input modal__input input_phone" name="userPhone" id="userPhone3"
+            placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.inpup-group -->
+        <button onclick="ym('57092770', 'reachGoal', 'button'); return true;"
+          class="button modal__button button_primary">Заказать звонок</button>
+        <!-- /.button modal__button -->
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-callback -->
   <div class="modal-thanks">
     <div class="modal-thanks__dialog">
       <h3 class="modal-thanks__heading">Заявка отправлена</h3>
@@ -663,6 +691,37 @@
     </div>
   </div>
   <!-- /.modal6 -->
+  <div class="modal-slider">
+    <div class="modal-slider__dialog">
+      <div class="swiper-container slider3" id="slider3">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide3"><img src="img/footer/footer1.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer2.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer3.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer4.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer5.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer6.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer7.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer8.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer9.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer10.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer11.jpg" alt="photo" class="modal__slide"></div>
+          <div class="swiper-slide slide3"><img src="img/footer/footer12.jpg" alt="photo" class="modal__slide"></div>
+        </div>
+        <div class="container-pagination">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev" id="prev3"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination pagination3"></div>
+          <div class="swiper-button-next" id="next3"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-slider -->
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0">
   </script>
