@@ -39,4 +39,4 @@ endButton.addEventListener('click', function() {
   showElem(total);
 });
 
-formCalculate.addEventListener('change', handlerCallBackForm());
+formCalculate.addEventListener('change', handlerCallBackForm);
