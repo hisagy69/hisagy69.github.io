@@ -1,3 +1,5 @@
+'use strict';
+
 const startButton  = document.querySelector('.start-button'),
 firstScreen = document.querySelector('.first-screen'),
 mainForm = document.querySelector('.main-form'),
