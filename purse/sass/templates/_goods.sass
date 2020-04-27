@@ -1,0 +1,107 @@
+.goods
+  padding-bottom: 4.133rem 0rem 4.533rem
+  &__item
+    width: 140px
+    height: 140px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background: $light
+    margin: 1.6rem
+    position: relative
+  &-list
+    width: 1171px
+.base, .medium, .comfort
+  display: flex
+  flex-direction: column
+.base
+  align-items: flex-start
+.medium
+  align-items: center
+.comfort
+  align-items: flex-end 
+.card
+  &__item
+    max-width: 18.4rem
+    text-align: center
+    margin-bottom: 3rem
+  &__set
+    font-family: "PlayfairDisplay-Regular"
+    font-size: 1.7rem
+    line-height: 2rem
+    font-weight: 700
+    color: $dark
+    display: block
+    margin-bottom: 2rem
+  &__number, &__price
+    font-family: "UniNeueBook"
+    font-size: 1.6rem
+    font-weight: 400
+    color: $veryyellow
+  &__price
+    font-weight: normal
+    margin-bottom: 2rem
+.item
+  &-wrap
+    background-color: $light
+    border-radius: 25.0px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 2rem 0
+    margin-bottom: 2.333rem
+    width: 18.5rem
+  &__icon 
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 75%
+      height: 75%
+.image
+  &-box
+    width: 25rem
+    height: 13.066rem
+    margin-bottom: 1rem
+.base, .twins, .medium, .comfort
+  &-goods
+    display: none
+    &_visible
+      display: flex
+.item
+  display: flex
+  flex-direction: column
+  align-items: center
+.offer
+  padding-top: 8.066rem
+  padding-bottom: 8.066rem
+  background: url("../img/hero2.jpg") no-repeat center /cover
+  &__text
+    width: 47%
+    font-size: 2.4rem
+    font-family: "MyriadPro"
+    color: $verydark
+    line-height: 1.2
+    margin-right: 10.266rem
+  &__list
+    list-style-type: none
+.list
+  &-wrap
+    width: 53%
+  &__item1
+    font-size: 1.6rem
+    font-family: "MyriadPro"
+    color: $verydark
+    line-height: 1.5
+    margin-top: 1.666rem
+    display: flex
+    align-items: flex-start
+    &::before
+      content: ""
+      min-width: 14px
+      min-height: 14px
+      border-radius: 50%
+      background: linear-gradient(0deg, $orange 0%, $yellow 100%)
+      margin-top: 0.3rem
+      margin-right: 1.066rem

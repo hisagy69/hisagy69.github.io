@@ -1,0 +1,104 @@
+.callback
+  background: url("../img/bg-main.png") no-repeat bottom center
+  background-color: $bggray
+  &__question
+    font-family: "PlayfairDisplay-Regular"
+    font-size: 2.4rem
+    font-weight: 400
+    color: $dark
+    margin-bottom: 1.466rem
+  &__subtitle
+    font-family: "UniNeueBook"
+    font-size: 1.57rem
+    line-height: 2rem
+    font-weight: 300
+    color: rgba($dark, 0.6)
+    margin-bottom: 3.2rem
+  &__form
+    display: flex
+    flex-direction: column
+.present
+  &__description
+    font-family: "PlayfairDisplay-Regular"
+    font-size: 2.4rem
+    font-weight: 400
+    color: $dark
+    margin-bottom: 2.8rem
+  &-wrap
+    margin-bottom: 9rem
+.form
+  &-wrap
+    max-width: 30.4rem
+    max-height: 33.8rem
+    box-shadow: 11px 19px 38px 0px rgba($dark, 0.09)
+    background-color: $light
+    border-radius: 1rem
+    position: relative
+    padding: 3.8rem 3.333rem
+    &::after
+      content: ""
+      width: 97%
+      height: 97%
+      border: 2.0px solid $lighter
+      border-radius: 15.0px
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+    &::before
+      content: ""
+      width: 80%
+      height: 75%
+      opacity: 0.8
+      background-color: #ffffff
+      border-radius: 15.0px
+      position: absolute
+      left: 50%
+      bottom: -1rem
+      transform: translateX(-50%)
+  &-content
+    z-index: 1
+    position: relative
+.buy
+  &-wrap
+    max-width: 19.8rem
+    max-height: 29.133rem
+    border-radius: 1rem
+    box-shadow: 11px 19px 38px 0px rgba($black, 0.09)
+    background-color: $light
+    position: relative
+    padding: 3.333rem
+    margin-bottom: 3rem
+    &::after
+      content: ""
+      width: 97%
+      height: 97%
+      border: 2.0px solid $lighter
+      border-radius: 15.0px
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+    &::before
+      content: ""
+      width: 80%
+      height: 75%
+      opacity: 0.8
+      background-color: #ffffff
+      border-radius: 15.0px
+      position: absolute
+      left: 50%
+      bottom: -1rem
+      transform: translateX(-50%)
+  &-content
+    z-index: 1
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+.image
+  &-box
+    &-big
+      width: 26.4rem
+      height: 20.4rem
+      

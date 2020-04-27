@@ -1,0 +1,81 @@
+.hero
+  background: url("../img/bg.png") no-repeat center top / cover
+  padding-top: 1.666rem
+  padding-bottom: 7.65rem
+  &__description
+    margin-top: 5.3rem
+  &__title
+    font-family: "PlayfairDisplay-Regular"
+    font-size: 4rem
+    font-weight: 400
+    color: $dark
+    margin-bottom: 2rem
+.advantages
+  &__item
+    font-family: "UniNeueBook"
+    font-size: 1.466rem
+    font-weight: 300
+    color: $dark
+    list-style-type: none
+    display: flex
+    margin-bottom: 1.85rem
+    &::before
+      content: ""
+      width: 11px
+      height: 11px
+      background: linear-gradient(0.0deg, $orange 0%, $yellow 100%)
+      border-radius: 50%
+      margin-right: 1rem
+      margin-top: 0.5rem
+  &__text
+    font-family: "UniNeueBook"
+    font-size: 1.466rem
+    font-weight: 300
+    color: $dark
+    list-style-type: none
+    margin-top: 2rem
+    margin-bottom: 1.85rem
+.phone
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  &-wrap
+    display: flex
+    align-items: center
+  &__number
+    font-family: "UniNeueBook"
+    font-size: 1.333rem
+    font-weight: 400
+    color: $black
+  &__callback
+    font-family: "UniNeueBold"
+    font-size: 0.81rem
+    font-weight: 900
+    text-transform: uppercase
+    color: $blue
+    border-bottom: 2px dotted $blue
+    margin-top: -0.3rem
+    padding-bottom: 0.3rem
+.link
+  &-wrap
+    margin-top: 23rem
+    position: relative
+  &-down
+    position: absolute
+    top: 0
+    right: -5.8rem
+    &__text
+      transform: rotate(-90deg)
+      font-family: "UniNeueBold"
+      font-weight: 900
+      text-transform: uppercase
+      color: rgba($dark, 0.5)
+      display: flex
+      align-items: center
+      &::before
+        content: ""
+        width: 2rem
+        height: 3.6rem
+        transform: rotate(90deg)
+        background: url("../img/mouse.png") no-repeat center / contain
+        margin-right: 2rem

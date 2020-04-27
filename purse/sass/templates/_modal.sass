@@ -1,0 +1,118 @@
+.modal
+  &-thanks, &-callback
+    visibility: hidden
+    opacity: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 999
+    &_visible
+      visibility: visible
+      opacity: 1
+    &__dialog
+      position: relative
+    &__close
+      width: 28px
+      height: 28px
+      background: url("../img/close.svg") no-repeat center
+      position: absolute
+      right: 0
+      top: 0
+      border: none
+      cursor: pointer
+      outline: none
+    &_visible
+      visibility: visible
+      opacity: 1
+    &__dialog 
+      max-width: 37rem
+      position: relative
+    &__close
+      width: 28px
+      height: 28px
+      background: url("../img/close.svg") no-repeat center
+      position: absolute
+      right: 0
+      top: 0
+      border: none
+      cursor: pointer
+      outline: none
+.modal-goods,
+.modal
+  visibility: hidden
+  opacity: 0
+  width: 100%
+  height: 100%
+  background: rgba($dark, 0.5)
+  display: flex
+  align-items: center
+  justify-content: center
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  &_visible
+    visibility: visible
+    opacity: 1
+    z-index: 9999
+  &__dialog
+    position: relative
+  &__close
+    width: 28px
+    height: 28px
+    background: url("../img/close.svg") no-repeat center
+    position: absolute
+    right: 0
+    top: 0
+    border: none
+    cursor: pointer
+    outline: none
+    z-index: 9
+  &__text
+    font-family: "UniNeueBook"
+    font-size: 1.164rem
+    line-height: 1.6rem
+    font-weight: 300
+.modal-goods-wrap
+  overflow: auto
+  max-height: 44rem
+.modal
+  &-goods
+    &__dialog
+      border-radius: 1rem
+      background: $light
+      max-width: 42.666rem
+      max-height: 50rem
+      padding: 3rem
+.focus1, .focus2, .focus3, .focus4, .focus5, .focus6, .focus7, .focus8, .focus9, .focus10, .focus11, .focus12, .focus13, .focus14, .focus15, .focus16, .focus17, .focus18, .focus19, .focus20, .focus21, .focus22, .focus23, .focus24, .focus25, .focus26, .focus27, .focus28, .focus29, .focus30, .focus31, .focus32, .focus33, .focus34, .focus35, .focus36, .focus37, .focus38, .focus39, .focus40, .focus41, .focus42, .focus43, .focus44, .focus45, .focus46, .focus47, .focus48, .focus49, .focus50, .focus51, .focus52
+  position: absolute
+  left: 50%
+  top: 0
+  transform: translateX(-50%)
+  visibility: hidden
+  opacity: 0
+  &_active
+    visibility: visible
+    opacity: 1
+    z-index: 9
+.item
+  &-wrap_mod
+    padding: 2rem
+  &__text
+    &-wrap1
+      margin-top: 2rem
+      width: 14rem
+      min-height: 5rem
+  &__description1
+    overflow: auto
+.list
+  &__item
+    margin-bottom: 7px
