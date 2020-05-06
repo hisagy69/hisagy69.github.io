@@ -155,30 +155,35 @@ function createCardGood() {
 }
 
 function openGoods(event) {
-  const target = event.target,
-  restaurant = target.closest('.card-restaurant');
-
-  if(restaurant) {
-    containerPromo.classList.add('hide');
-    restaurants.classList.add('hide');
-    menu.classList.remove('hide');
-    cardsMenu.textContent = '';
-    createCardGood();
-    createCardGood();
-    createCardGood();
+  if(login) {
+    const target = event.target,
+    restaurant = target.closest('.card-restaurant');
+  
+    if(restaurant) {
+      containerPromo.classList.add('hide');
+      restaurants.classList.add('hide');
+      menu.classList.remove('hide');
+      cardsMenu.textContent = '';
+      createCardGood();
+      createCardGood();
+      createCardGood();
+    }
+    function closeGoods() {
+      containerPromo.classList.remove('hide');
+      restaurants.classList.remove('hide');
+      menu.classList.add('hide');
+    }
+    logo.addEventListener('click', closeGoods);
+  } else {
+    toggleModalAuth();
   }
-  function closeGoods() {
-    containerPromo.classList.remove('hide');
-    restaurants.classList.remove('hide');
-    menu.classList.add('hide');
-  }
-  logo.addEventListener('click', closeGoods);
 
 }
 
 
 cardsRestaurants.addEventListener('click', openGoods);
-createCardRestaurant();
 cartButton.addEventListener('click', toggleModal);
 modal.addEventListener('click', modalClose);
+
 checkAuth();
+createCardRestaurant();
