@@ -18,15 +18,25 @@ containerPromo = document.querySelector('.container-promo'),
 restaurants = document.querySelector('.restaurants'), 
 menu = document.querySelector('.menu'),
 logo = document.querySelector('.logo'),
-cardsMenu = document.querySelector('.cards-menu');
+cardsMenu = document.querySelector('.cards-menu'),
+restaurantTitle = document.querySelector('.restaurant-title'),
+rating = document.querySelector('.rating'),
+minPrice = document.querySelector('.price'),
+category = document.querySelector('.category'), 
+inputSearch = document.querySelector('.input-search');
 
 
 let login = localStorage.getItem('delivery');
 let message;
 
+const valid = function(str) {
+  const nameReg = /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/; 
+  return nameReg.test(str);  
+}
+
 const getData = async function(url) { // асинхронная функция, работает вне основного кода
 
-  const response = await fetch(url); // функция обращения к сервиру, в данной функции я получаю json файл 
+  const response = await fetch(url); // функция обращения к серверу, в данной функции я получаю json файл 
 
   if(!response.ok) {
     throw new Error(`Ошибка по адресу ${url}, 
@@ -68,9 +78,8 @@ function authorized() {
     buttonOut.style.display = '';
     buttonAuth.style.display = '';
     logInForm.reset();
+    returnMain();
   }
-
-  console.log('Авторизован');
 
   userName.textContent = login;
 
@@ -82,14 +91,13 @@ function authorized() {
 }
 
 function notAuthorized() {
-  console.log('Не авторизован');
 
   function logIn(event) {
     
     event.preventDefault();
     
     
-    if(loginInput.value.trim()) {
+    if(valid(loginInput.value)) {
       
       login = loginInput.value.trim();
       localStorage.setItem('delivery', login);
@@ -104,6 +112,7 @@ function notAuthorized() {
       message.textContent = 'Имя пользователя обязательно!';
       message.style.color = 'red';
       labelAuth.append(message);
+      loginInput.value = '';
     }
   }
 
@@ -126,7 +135,9 @@ function createCardRestaurant(restaurant) {
            products, stars, 
            time_of_delivery: timeOfDelivery } = restaurant;
   const card = `
-    <a class="card card-restaurant" data-products="${products}">
+    <a class="card card-restaurant" 
+      data-products="${products}"
+      data-info="${[name, price, stars, kitchen]}">
       <img src="${image}" alt="image" class="card-image"/>
       <div class="card-text">
         <div class="card-heading">
@@ -180,8 +191,19 @@ function openGoods(event) {
   if(login) {
     const target = event.target,
     restaurant = target.closest('.card-restaurant');
+
+
+
   
     if(restaurant) {
+      const info = restaurant.dataset.info.split(',');
+      const [name, price, stars, kitchen] = info;
+
+      restaurantTitle.textContent = name;
+      rating.textContent = stars;
+      minPrice.textContent = `От ${price} P`;
+      category.textContent = kitchen;
+
       cardsMenu.textContent = '';
       containerPromo.classList.add('hide');
       restaurants.classList.add('hide');
@@ -210,9 +232,29 @@ function init() {
   cardsRestaurants.addEventListener('click', openGoods);
   cartButton.addEventListener('click', toggleModal);
   modal.addEventListener('click', modalClose);
+  inputSearch.addEventListener('keydown', function(event) {
+    if(event.keycode === 13) {
+      const target = event.target;
+      const goods = [];
+      getData('./db/partners.json')
+        .then(function(data) {
+        console.log(data);
+        
+        const products = data.map(function(item) {
+          return item;
+        });
+        console.log(products);
+        
+      });
+    }
+  });
   
   checkAuth();
   
+  new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: true,
+  })
 }
 
 window.onload = init;
