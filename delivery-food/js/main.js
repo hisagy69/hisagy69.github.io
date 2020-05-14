@@ -30,7 +30,7 @@ buttonClearCart = document.querySelector('.clear-cart'),
 cart = [];
 
 let login = localStorage.getItem('delivery');
-let message;
+let message = '';
 
 const valid = function(str) {
   const nameReg = /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/; 
@@ -58,7 +58,7 @@ const toggleModal = function() {
 }
 
 const modalClose = function(event) {
-  let target = event.target;
+  const target = event.target;
   if(target === close || target !== modalDialog && !modalDialog.contains(target)) {
     modal.classList.remove('is-open');
   }
@@ -111,12 +111,15 @@ function notAuthorized() {
       loginForm.removeEventListener('submit', logIn);
       checkAuth();
     } else {
-      loginInput.style.border = '2px solid red';
-      message = document.createElement('span');
-      message.textContent = 'Имя пользователя обязательно!';
-      message.style.color = 'red';
-      labelAuth.append(message);
-      loginInput.value = '';
+      if(!message) {
+        loginInput.style.border = '2px solid red';
+        message = document.createElement('span');
+        message.classList.add('error-message');
+        message.textContent = 'Имя пользователя обязательно!';
+        message.style.color = 'red';
+        labelAuth.append(message);
+        loginInput.value = '';
+      }
     }
   }
   buttonAuth.addEventListener('click', toggleModalAuth);
@@ -366,6 +369,7 @@ function init() {
         
       });
     }
+    logo.addEventListener('click', closeGoods);
   });
   
   checkAuth();
