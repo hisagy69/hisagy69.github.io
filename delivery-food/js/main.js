@@ -26,11 +26,25 @@ category = document.querySelector('.category'),
 inputSearch = document.querySelector('.input-search'), 
 modalBody = document.querySelector('.modal-body'),
 modalPrice = document.querySelector('.modal-pricetag'),
-buttonClearCart = document.querySelector('.clear-cart'),
-cart = [];
+buttonClearCart = document.querySelector('.clear-cart');
 
 let login = localStorage.getItem('delivery');
+
 let message = '';
+
+const cart = [];
+
+const loadCart = function() {
+  if(localStorage.getItem(login)) {
+    JSON.parse(localStorage.getItem(login)).forEach(function(item) {
+      cart.push(item);
+    });
+  }
+}
+
+const saveCart = function() {
+  localStorage.setItem(login, JSON.stringify(cart));
+}
 
 const valid = function(str) {
   const nameReg = /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/; 
@@ -74,6 +88,7 @@ function authorized() {
 
   const logOut = function() {
     login = null;
+    cart.length = 0;
     localStorage.removeItem('gloDelivery');
     buttonOut.removeEventListener('click', logOut);
     checkAuth();
@@ -92,6 +107,7 @@ function authorized() {
   buttonOut.style.display = 'flex';
   cartButton.style.display = 'flex';
   buttonOut.addEventListener('click', logOut);
+  loadCart();
 }
 
 function notAuthorized() {
@@ -253,10 +269,8 @@ function addToCart(event) {
         count: 1
       });
      }
-    
-
-    console.log(cart);
   }
+  saveCart();
 }
 
 function renderCart() {
@@ -273,6 +287,7 @@ function renderCart() {
         </div>
       </div>
     `;
+
     modalBody.insertAdjacentHTML('afterbegin', itemCart);
   });
   const totalPrice = cart.reduce(function(result, item) {
@@ -295,7 +310,7 @@ function changeCount(event) {
     if(target.classList.contains('container-plus')) food.count++;
     renderCart();
   }
-
+  saveCart();
 }
 
 function init() {
