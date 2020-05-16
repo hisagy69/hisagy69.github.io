@@ -332,6 +332,7 @@ function init() {
   modalBody.addEventListener('click', changeCount)
   cardsMenu.addEventListener('click', addToCart)
   modal.addEventListener('click', modalClose);
+  
   inputSearch.addEventListener('keydown', function(event) {
     
     if(event.keyCode === 13) {
