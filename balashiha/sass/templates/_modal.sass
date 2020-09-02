@@ -1,0 +1,106 @@
+.modal
+  &-thanks, &-callback
+    visibility: hidden
+    opacity: 0
+    width: 100%
+    height: 100%
+    background: rgba($dark, 0.5)
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 999
+    &_visible
+      visibility: visible
+      opacity: 1
+    &__dialog
+      max-width: 20rem
+      padding: 5rem 2rem
+      background: url("../img/bg-personal.jpg") no-repeat center / cover $yellow 
+      position: relative
+    &__close
+      width: 28px
+      height: 28px
+      background: url("../img/close.svg") no-repeat center
+      position: absolute
+      right: 0
+      top: 0
+      border: none
+      cursor: pointer
+      outline: none
+    &__heading
+      font-family: Roboto
+      font-size: 1.5rem
+      font-weight: 700
+      color: $light
+  &-slider
+    visibility: hidden
+    opacity: 0
+    width: 100%
+    height: 100%
+    background: rgba($dark, 0.5)
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 999
+    &_visible
+      visibility: visible
+      opacity: 1
+    &__dialog 
+      max-width: 37rem
+      position: relative
+    &__close
+      width: 28px
+      height: 28px
+      background: url("../img/close.svg") no-repeat center
+      position: absolute
+      right: 0
+      top: 0
+      border: none
+      cursor: pointer
+      outline: none
+  &-callback
+    &__heading
+      margin-bottom: 2rem
+.modal1, .modal2, .modal3, .modal4, .modal5, .modal6
+  visibility: hidden
+  opacity: 0
+  width: 100%
+  height: 100%
+  background: rgba($dark, 0.5)
+  display: flex
+  align-items: center
+  justify-content: center
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  &_visible
+    visibility: visible
+    opacity: 1
+    z-index: 9999
+  &__dialog
+    max-width: 20rem
+    background: $light
+    position: relative
+    color: $dark
+  &__close
+    width: 28px
+    height: 28px
+    background: url("../img/close-black.svg") no-repeat center
+    position: absolute
+    right: 0
+    top: 0
+    border: none
+    cursor: pointer
+    outline: none

@@ -1,0 +1,42 @@
+.information
+  background: url("../img/bg-info.png") no-repeat 50% 80% $yellow
+  padding: 3rem 0
+  &__video
+    width: 27.933rem
+    height: 17rem
+    outline: none
+    background: url("../img/prev2.jpg") no-repeat center
+    background-size: 107%
+    position: relative
+    border: 5px solid #fff
+    border-radius: 12px
+    bottom: 1.2rem
+  &__description
+    font-family: Roboto
+    font-size: 1rem
+    font-weight: 300
+    line-height: 1.4rem
+    max-width: 68rem
+    margin: auto
+  &__heading-description
+    font-size: 1.035rem
+    line-height: 2.5rem
+    display: block
+    font-weight: bold
+.play1, .play2, .play3, .play4, .play5, .play6
+  width: 0
+  height: 0
+  border-top: 2rem solid transparent
+  border-bottom: 2rem solid transparent
+  border-left: 2rem solid rgba($light, 0.2)
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  cursor: pointer
+  &:hover
+    transform: scale(1.3) 
+    transform-origin: 200% 200%
+    transition: 0.2s
+.slider2
+  max-width: 27.933rem

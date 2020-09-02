@@ -1,0 +1,44 @@
+*, *:before, *:after
+  box-sizing: border-box
+html
+  font-size: 15px
+body
+  font-family: "Nokia", sans-serif
+  font-size: 1rem
+img
+  max-width: 100%
+button, .input, a
+  outline: none
+h1, h2, h3
+  font-weight: normal
+  text-align: center
+  margin: 0
+a
+  text-decoration: none
+  color: $dark
+p
+  margin: 0
+.yellow
+  background: $bgyellow
+.heading
+  color: $verydark
+  font-family: "Roboto Condensed"
+  font-size: 2.1rem
+  font-weight: 400
+  text-transform: uppercase
+  &::after
+    content: ""
+    width: 2.6rem
+    height: 1.333rem
+    background: url(../img/spike.png) no-repeat center
+    display: block
+    margin: auto
+.a-center
+  align-items: center
+.heading
+  &_light
+    color: $light
+.normal
+  justify-content: normal
+  flex-wrap: nowrap
+  overflow: hidden

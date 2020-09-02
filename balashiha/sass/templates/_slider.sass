@@ -1,0 +1,64 @@
+.swiper
+  &-button
+    &-prev, &-next
+      //bottom: 37px
+      //top: auto
+      outline: none
+      cursor: pointer
+      background-size: 7px
+      width: 7px
+      height: 13px
+      margin-top: 0
+      &::after
+        display: none
+    &-prev
+      background: url("../img/arrowleft.png")
+      z-index: 99
+      display: inline-block
+      position: static
+    &-next
+      background: url("../img/arrowright.png")
+      z-index: 98
+      display: inline-block
+      position: static
+  &-pagination
+    position: static
+    &-bullets
+      width: auto
+    &-bullet
+      border-radius: 0
+      width: 9px
+      height: 9px
+      background: $light
+      opacity: 1
+      margin: 0 4px
+      outline: none
+      &-active
+        background: $red
+.container
+  &-pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 7.4rem
+    border-radius: 3px
+    height: 25px
+    background: rgba($veryblack, 0.3)
+    display: inline-flex
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 1.533rem
+    z-index: 99
+  &-pagination1
+    bottom: 0
+.slide2
+  margin-bottom: 2.7rem
+  margin-top: 1.95rem
+.modal
+  &__slide
+    width: 37.733rem
+    height: 22.266rem
+  
+  
+

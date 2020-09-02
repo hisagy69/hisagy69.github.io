@@ -1,0 +1,88 @@
+.hero
+  padding-top: 3.1rem
+  padding-bottom: 4.6rem
+  background: url(../img/bg-bread.jpg) no-repeat 31% 67%, url(../img/bg-wheat.jpg) no-repeat 90% 68%
+  text-align: center
+  &__title
+    font-family: "Roboto", serif
+    color: $darkyellow
+    font-size: 2.75rem
+    font-weight: bold
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 0.5rem
+  &__description
+    font-family: "Roboto", serif
+    font-size: 1.566rem
+    font-weight: bold
+    color: $darkblack
+    margin-bottom: 3.533rem
+  &__wrap
+    max-width: 22.066rem
+    padding-top: 1.3rem
+    padding-bottom: 0.666rem
+    padding-left: 1.3rem
+    padding-right: 1.3rem
+    background: $red
+    border: 5px solid $yellow
+    position: relative
+    &::before
+      content: ""
+      width: 23.333rem
+      height: 5.066rem
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 0
+      z-index: -1
+      background: url("../img/shadow.png")
+  &__offer
+    color: $yellow
+    font-family: "Roboto Condensed"
+    font-size: 1.4rem
+    text-transform: uppercase
+    margin-bottom: 1.5rem
+  &__input
+    margin-bottom: 0.45rem
+  &__button
+    margin: 0.45rem 0 0.8rem
+.offer
+  &_size
+    color: $yellow
+    text-transform: uppercase
+    font-size: 1.1rem
+    margin-bottom: 1.533rem
+    font-size: 1.2rem
+.advantages
+  display: flex
+  align-self: flex-end
+  //margin-right: 3rem
+  &__item
+    background: url("../img/circle.png") no-repeat center
+    width: 13.2rem
+    height: 13.2rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    //margin: 0 1.066rem
+  &__text
+    font-family: "Roboto Condensed"
+    font-size: 1.09rem
+    font-weight: bold
+    line-height: 1.23rem
+    text-transform: uppercase
+.circle
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  max-width: 45.933rem
+.wrap
+  &-shadow
+    display: flex
+    align-items: flex-start
+    max-width: 43.333rem
+    justify-content: space-between
+    flex-direction: column
+    margin-left: 1.0rem
+    margin-right: 1rem
+    margin-bottom: -3.6rem

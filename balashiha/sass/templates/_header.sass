@@ -1,0 +1,77 @@
+.header
+  background: url("../img/header.jpg") no-repeat center $lightyellow
+  height: 5.4rem
+  &__logo
+    background: $red
+    width: 8rem
+    height: 7.25rem
+    border: 5px solid $light
+    border-top: 0
+    position: relative
+    top: 0
+    &::before
+      content: ""
+      background: url("../img/logo.png") no-repeat center / contain
+      width: 5.333rem
+      height: 5.333rem
+      position: absolute
+      left: 50%
+      top: 10px
+      transform: translateX(-50%)
+    &::after
+      content: ""
+      width: 0
+      height: 0
+      border-top: 6.733rem solid transparent
+      border-left: 3.533rem solid transparent
+      border-right: 3.533rem solid transparent
+      border-bottom: 0.8rem solid $light
+      position: absolute
+      left: 0
+      bottom: 0
+      z-index: 2
+  &__title
+    height: 5.7rem
+    margin-left: 1.27rem
+  &__phone
+    height: 4.4rem
+.title
+  display: flex
+  flex-direction: column
+  justify-content: center
+  &__name
+    line-height: 1.35rem
+  &__description
+    color: $red
+    font-family: Roboto, sans-serif
+    font-size: 0.71rem
+    font-weight: 300
+.name
+  color: $dark
+  font-size: 1.8rem
+  font-weight: 700
+  text-transform: uppercase
+.header
+  &__phone
+    display: flex
+    flex-direction: column
+    justify-content: center
+.phone
+  &__number
+    font-family: Roboto, sans-serif
+    font-size: 1.066rem
+    font-weight: 400
+    line-height: 2.5rem
+  &__image
+    vertical-align: middle
+  &__arrow
+    vertical-align: middle
+  &__link
+    color: $red
+    border-bottom: 1px $red dashed
+    vertical-align: middle
+    font-size: 1.02rem
+    cursor: pointer
+.number
+  &_bold
+    font-size: 1.6rem

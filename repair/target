@@ -1,0 +1,259 @@
+    <section class="section target">
+      <div class="container">
+        <div class="row">
+          <div class="section-title section-title_left">
+            <h3 class="section-title__subtitle">
+              как мы работаем
+            </h3>
+            <!-- /.section-title__subtitle -->
+            <h2 class="section-title__heading section-title__heading_primary">
+              6 шагов <br><span class="steps">до цели</span>
+            </h2>
+            <!-- /.section-title__heading -->
+          </div>
+          <!-- /.section-title section-title_left -->
+          <div class="step-number">
+            <div class="step-number__container">
+              <div class="col-33 number number1">
+                <span class="step-number__number">01</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Выезд на замер<br> помещения</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number2">
+                <span class="step-number__number">02</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Составление<br> сметы</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number3">
+                <span class="step-number__number">03</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Разработка<br>  дизайн проекта</span> 
+                <!-- /.step-number__title -->
+              </div>
+            </div>
+            <div class="step-number__container">
+              <!-- /.col-33 -->
+              <div class="col-33 number number4">
+                <span class="step-number__number">04</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Закупка расходных<br> материалов</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number5">
+                <span class="step-number__number">05</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Ремонтно-отделочные<br> работы</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-33 -->
+              <div class="col-33 number number6">
+                <span class="step-number__number">06</span> 
+                <!-- /.step-number__number -->
+                <span class="step-number__title">Приемка-сдача<br> работ</span> 
+                <!-- /.step-number__title -->
+              </div>
+              <!-- /.col-30 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.step-number -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-30">
+            <!-- /.swiper-container slider2 -->
+            <div class="swiper-container slider2">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper target-wrapper swiper-no-swiping">
+                <!-- Slides -->
+                <div class="swiper-slide target-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide target-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide target-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide target-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide target-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide target-slide">
+                  <div class="swiper-slide__text slide-target">
+                    <h3 class="target-slide__heading">Выезд на замеры<br> помещения:</h3>
+                    <div class="swiper-slide__description target__description">
+                      <p>
+                        После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей
+                        квартиры.
+                        Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
+                      </p>
+                      <p>
+                        Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта,
+                        дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <!-- /.swiper-slide -->
+              </div>
+              <!-- If we need navigation buttons -->
+              <!-- /.swiper-pagination swiper-pagination-name progressbarFillClass -->
+              <div class="swiper-pagination pagination-top"></div>
+              <div class="swiper-button-prev swiper-button-prev1"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination pagination-bottom"></div>
+              <div class="swiper-button-next swiper-button-next1"></div>
+            </div>
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-70">
+            <div class="swiper-container slider2 target__slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiper-no-swiping">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+                <div class="swiper-slide"><img src="img/target.jpg" alt="target"></div>
+
+              </div>
+            </div>
+          </div>
+          <!-- /.col-70 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+
+    var isAddedMap = false;
+    ymaps.ready(function () {
+    var el = $(".map");
+    if($(this).scrollTop() > el.offset().top -800) {
+      if(isAddedMap) return;
+      isAddedMap = true;
+    var myMap = new ymaps.Map('map', {
+      center: [55.019155, 82.911887],
+      zoom: 15,
+      controls: []
+  }, {
+      searchControlProvider: 'yandex#search'
+  }),
+  // Создаём макет содержимого.
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Наш офис',
+      balloonContent: 'Вход со двора'
+  }, {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: 'img/pin.png',
+      // Размеры метки.
+      iconImageSize: [32, 32],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [110, 5]
+      // Макет содержимого.
+  });
+  myMap.behaviors.disable('scrollZoom');
+  myMap.geoObjects.add(myPlacemark);
+  
+    }
+});
