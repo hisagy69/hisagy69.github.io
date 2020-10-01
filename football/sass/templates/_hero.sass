@@ -1,0 +1,72 @@
+.hero
+  position: relative
+  padding-bottom: 6rem
+  &__form
+    text-align: center
+    position: relative
+    &::before
+      content: ""
+      width: 44.4rem
+      height: 5.133rem
+      background: url("../img/line.png") no-repeat center / cover
+      position: absolute
+      left: 50%
+      top: 62%
+      transform: translate(-50%, -50%)
+  &__input
+    padding: 1.333rem 1.8rem
+    margin: 2.8rem 0.2rem 1.4rem
+  &__button
+    display: block
+    font-size: 1.1rem
+    padding: 1.45rem 2.3rem
+    text-transform: none
+    margin: auto
+    margin: 0 2rem
+  &__text
+    color: $light
+    font-size: 1.2rem
+    font-weight: 300
+    text-align: center
+    margin-top: 4rem
+    margin-bottom: 1rem
+  &__social
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 9.4rem
+    margin: auto
+.button
+  &-container
+    display: flex
+    align-items: center
+    justify-content: center
+.title
+  color: $blue
+  font-family: "Roboto-Bold"
+  font-size: 4.8rem
+  font-weight: 400
+  text-transform: uppercase
+  text-align: center
+.img-box
+  width: 2.866rem
+  height: 2.866rem
+  border-radius: 50%
+  border: 1px solid $light
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  transition: 0.3s
+  &:hover
+    border: $primary
+    background: $primary
+.vk 
+  width: 60%
+  height: 50%
+.insta
+  width: 50%
+  height: 50%
+.yb
+  width: 60%
+  height: 70%

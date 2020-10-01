@@ -1,0 +1,62 @@
+.branches
+  padding: 3.2rem 0 4.466rem
+.map
+  width: 52.466rem
+  height: 26.666rem
+  &-select
+    width: 30%
+    &__item
+      background: $light
+      border: 1px solid $blue
+      width: 17.533rem
+      height: 6rem
+      box-shadow: 0 0 0.6rem transparent
+      display: flex
+      cursor: pointer
+      outline: none
+      margin-bottom: 0.8rem
+      transition: 0.3s
+      &:hover
+        box-shadow: 0 0 9px rgba($black, 0.17)
+        width: 18.6rem
+      &:hover .map-text
+        background: $primary
+      &:hover .select__triangle
+        border-left: 1.067rem solid $primary
+        border-top: 3rem solid transparent
+        border-bottom: 3rem solid transparent
+  &-text
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 1.266rem
+    color: $gray
+  &-name
+    font-size: 1.333rem
+    font-weight: 700
+    font-family: "Roboto-Bold"
+  &-adress
+    font-size: 1.066rem
+    font-weight: 300
+    font-family: "Roboto-Light"
+  &-wrap
+    position: relative
+    padding: 0rem 2rem
+    &::after
+      content: ""
+      border: 4px solid $blue
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 75.466rem
+      height: 20.533rem
+      z-index: -1
+.select
+  &__triangle
+    width: 0
+    height: 0
+    
+    

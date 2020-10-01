@@ -1,0 +1,65 @@
+@media screen and ( max-width: 1200px )
+  html 
+    font-size: 11px
+  .container
+    width: 85%
+@media screen and ( max-width: 992px )
+  .container
+    width: 75%
+  .col
+    flex-wrap: wrap
+    align-items: center
+  .menu
+    display: none
+  .col20, .col25, .col30, .col50
+    width: 100%
+    text-align: center
+  .col50
+    margin: 2rem 0
+@media screen and ( max-width: 720px )
+  .phone
+    display: none
+  .logo
+    width: 5.533rem
+  .card
+    margin-bottom: 2rem
+  .menu
+    &-burger
+      width: 75%
+@media screen and ( max-width: 640px )
+  .hero
+    &__form
+      &::before
+        display: none
+    &__input
+      margin: 0 0 1rem
+  .title
+    font-size: 3.8rem
+  .subtitle
+    margin-bottom: 1rem
+  .input
+    width: 100%
+  .search
+    &__form
+      flex-direction: column
+    &__name
+      width: 100%
+      margin-bottom: 2rem
+    &__button
+      width: 100%
+  .news
+    padding: 2rem 0rem 5rem
+    &-card
+      width: 100%
+      flex-direction: column
+      &__photo
+        flex-basis: 100%
+        width: 100%
+      &__text
+        width: 100%
+    &__view
+      display: none
+@media screen and ( max-width: 400px )
+  .logo
+    display: none
+  

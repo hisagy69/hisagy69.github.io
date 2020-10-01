@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Академия футбола</title>
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-wrap">
+
+          <div class="menu-burger">
+            <nav class="burger">
+              <a href="#" class="menu-btn">
+                <span class="btn-burger"></span> <!-- /.btn-burger -->
+              </a> <!-- /.menu-btn -->
+            </nav>
+            <!-- /.menu-btn -->
+
+            <nav class="menu-list">
+              <a href="#">О нас</a>
+              <a href="#">Статистика</a>
+              <a href="#">Новости</a>
+              <a href="#">Контакты</a>
+            </nav>
+          </div>
+          <!-- /.menu -->
+
+          <div class="logo header__logo"><img src="img/logo.png" alt="logo"></div>
+          <!-- /.logo header__logo -->
+          <nav class="region header__region">
+            <select class="region__list">
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+            </select>
+            <!-- /.region__list -->
+          </nav>
+          <!-- /.region header__region -->
+          <nav class="menu header__menu">
+            <a href="index.html" class="menu__item">О нас</a>
+            <!-- /.menu__item -->
+            <a href="kpi.html" class="menu__item">Статистика</a>
+            <!-- /.menu__item -->
+            <a href="news.html" class="menu__item">Новости</a>
+            <!-- /.menu__item -->
+            <a href="contacts.html" class="menu__item">Коонтакты</a>
+            <!-- /.menu__item -->
+          </nav>
+          <!-- /.menu header__menu -->
+          <a href="tel:87024407007" class="phone header__phone"><span class="phone_primary">+7 702</span>
+            <!-- /.phone_primary --><span class="phone_light">440 70 07</span> <!-- /.light --></a>
+          <!-- /.phone header__phone -->
+          <button class="button header__button button_primary">перезвоните мне</button>
+          <!-- /.button header__button button_primary -->
+        </div>
+        <!-- /.header-wrap -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="title hero__title">академия футбола</h1>
+        <!-- /.title hero__title -->
+        <h2 class="subtitle hero__subtitle">для детей от 3 до 16 лет</h2>
+        <!-- /.subtitle hero__subtitle -->
+        <form action="send.php" method="POST" class="form hero__form">
+          <input type="text" class="input hero__input input-left" placeholder="Ваше имя" name="userName" id="userName">
+          <input type="tel" class="input hero__input input-right" placeholder="Номер телефона" name="userPhone"
+            id="userPhone">
+          <div class="button-container"><button class="button hero__button button_primary">Записаться на
+              тренировку</button></div>
+          <!-- /.button-container -->
+        </form>
+        <!-- /.form hero__form -->
+        <div class="hero__text">
+          <p>Поделись с друзьями, им будет интересно!</p>
+        </div>
+        <!-- /.hero__text -->
+        <div class="social hero__social">
+          <a href="https://vk.com/" class="img-box">
+            <img src="img/vk.svg" alt="vk" class="vk">
+          </a>
+          <a href="https://www.instagram.com/" class="img-box"><img src="img/instagram.svg" alt="insta"
+              class="insta"></a>
+          <a href="https://www.youtube.com/" class="img-box"><img src="img/youtube.svg" alt="yb" class="yb"></a>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+  </div>
+  <!-- /.wrapper -->
+  <main>
+    <section class="section information">
+      <div class="container">
+        <h3 class="heading information__heading">Более <span class="heading_blue">800 детей</span> прошли обучение в
+          нашей академии!</h3>
+        <div class="section__image"><img src="img/ball.png" alt="ball" class="image_ball"></div>
+        <!-- /.heading information__heading -->
+        <div class="row col">
+          <div class="col25">
+            <div class="information__card">
+              <img src="img/soccer.png" alt="soccer" class="card__image">
+              <div class="card__text">
+                <p>Новый профессиональный инвентарь<br>и экипировка</p>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.information__card -->
+          </div>
+          <div class="col25">
+            <div class="information__card">
+              <img src="img/field.png" alt="field" class="card__image">
+              <div class="card__text">
+                <p>Современые спортивные залы и<br>
+                  мини-футбольные поля</p>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.information__card -->
+          </div>
+          <div class="col25">
+            <div class="information__card">
+              <img src="img/cup.png" alt="cup" class="card__image">
+              <div class="card__text">
+                <p>Товарищеские матчи с детскими<br>
+                  футбольными школами</p>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.information__card -->
+          </div>
+          <div class="col25">
+            <div class="information__card">
+              <img src="img/poster.png" alt="poster" class="card__image">
+              <div class="card__text">
+                <p>Социальная программа и скидки для<br>семей с особым статусом</p>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.information__card -->
+          </div>
+        </div>
+        <!-- /.row -->
+        <div class="chance">
+          <div class="row col">
+            <div class="col30 aic">
+              <strong class="chance__strong">Академия</strong>
+              <!-- /.chance__strong -->
+              <p class="chance__text">предоставляет возможность каждому ребенку реализовать себя</p>
+              <span class="chance_name">футболистом</span>
+              <!-- /.chance__name -->
+            </div>
+            <!-- /.col30 -->
+            <div class="col50">
+              <p class="desctiption chance__description"><b class="description_bold">Академия «Pro Football»</b>
+                предоставляет возможность каждому
+                ребенку почув&shy;ствовать себя футболистом любительского и профессионального уровней.
+                Юный&nbsp;воспитанник
+                получит как правильное физиологическое развитие, так и морально – психологическое, овладевая всеми
+                навыками футболиста, игры в команде и индивидуального мастерства.</p>
+              <p class="desctiption chance__description">
+                Методика тренировок разрабатывается опытными тренерами на основе мето&shy;дик&nbsp;ведущих европейских
+                футбольных
+                центров.
+              </p>
+              <p class="description_bold">Все тренеры и помощники тренеров обладают лицензиями категорий «В», «С»
+                UEFA.</p>
+              <!-- /.desctiption chance__description -->
+            </div>
+            <!-- /.col50 -->
+            <div class="col20">
+              <div class="chance__video">
+                <div class="video__text">
+                  <p class="video__name">Посмотрите наше видео</p>
+                </div>
+                <!-- /.video__text -->
+                <a href="https://www.youtube.com/watch?time_continue=1&v=7-6AI6fbPow&feature=emb_logo" data-fancybox>
+                  <div class="video video-wrap" id="player1">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <div class="play play1 video__play"></div>
+                  </div>
+                </a>
+              </div>
+              <!-- /.chance__video -->
+            </div>
+            <!-- /.col20 -->
+          </div>
+          <!-- /.chance -->
+        </div>
+        <!-- /.row col -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.information -->
+    <section class="section group">
+      <div class="container">
+        <h3 class="heading group__heading">
+          Наши группы
+        </h3>
+        <!-- /.heading group__heading -->
+        <div class="section__image"><img src="img/ball.png" alt="ball" class="image_ball"></div>
+        <div class="row col wrap">
+          <div class="group__card card_1">
+            <div class="card__wrap">
+              <strong class="card__title">"BabyStart"</strong>
+              <!-- /.card__title -->
+              <p class="card__description">В этой группе тренируются дети
+                от 3- 4,5 лет!</p>
+              <!-- /.card__description -->
+              <span class="card__price">от 12 690 тенге</span>
+              <!-- /.card__price --><button class="button card__button">Подробнее</button>
+              <!-- /.button card__button -->
+            </div>
+            <!-- /.card__wrap -->
+          </div>
+          <!-- /.group__card -->
+          <div class="group__card card_2">
+            <div class="card__wrap">
+              <strong class="card__title">"Beginners"</strong>
+              <!-- /.card__title -->
+              <p class="card__description">В этой группе тренируются дети
+                от 5- 6 лет!</p>
+              <!-- /.card__description -->
+              <span class="card__price">от 14 290 тенге</span>
+              <!-- /.card__price --><button class="button card__button">Подробнее</button>
+              <!-- /.button card__button -->
+            </div>
+            <!-- /.card__wrap -->
+          </div>
+          <!-- /.group__card -->
+          <div class="group__card card_3">
+            <div class="card__wrap">
+              <strong class="card__title">"Ювеналы"</strong>
+              <!-- /.card__title -->
+              <p class="card__description">В этой группе тренируются дети
+                от 7- 8 лет!</p>
+              <!-- /.card__description -->
+              <span class="card__price">от 15 300 тенге</span>
+              <!-- /.card__price -->
+              <button class="button card__button">Подробнее</button>
+              <!-- /.button card__button -->
+            </div>
+            <!-- /.card__wrap -->
+          </div>
+          <!-- /.group__card -->
+          <div class="group__card card_4">
+            <div class="card__wrap">
+              <strong class="card__title">"Ювеналы 2"</strong>
+              <!-- /.card__title -->
+              <p class="card__description">В этой группе тренеруются дети
+                от 9- 12 лет!</p>
+              <!-- /.card__description -->
+              <span class="card__price">от 17 500 тенге</span>
+              <!-- /.card__price -->
+              <button class="button card__button">Подробнее</button>
+              <!-- /.button card__button -->
+            </div>
+            <!-- /.card__wrap -->
+          </div>
+          <!-- /.group__card -->
+          <div class="group__card card_5">
+            <div class="card__wrap">
+              <strong class="card__title">"Юниоры"</strong>
+              <!-- /.card__title -->
+              <p class="card__description">В этой группе тренируются дети
+                от 13- 16 лет!</p>
+              <!-- /.card__description -->
+              <span class="card__price">от 18 900 тенге</span>
+              <!-- /.card__price -->
+              <button class="button card__button">Подробнее</button>
+              <!-- /.button card__button -->
+            </div>
+            <!-- /.card__wrap -->
+          </div>
+          <!-- /.group__card -->
+        </div>
+        <!-- /.row col -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section group -->
+    <section class="section subscriber">
+      <div class="container">
+        <h3 class="heading subscriber__heading">Наши абонементы</h3>
+        <!-- /.heading subscriber__heading -->
+        <div class="section__image"><img src="img/ball.png" alt="ball" class="image_ball"></div>
+        <!-- /.section__image -->
+        <div class="row col wrap">
+          <div class="card subscriber__card">
+            <div class="card__name subscriber__name">
+              <span>Абонемент "LIGHT"</span>
+            </div>
+            <ul class="differencess">
+              <li class="differencess__item">2 раза в неделю</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">По выходным дням</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">1,5 часа занятий</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">8 занятий в месяц</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">Бесплатная форма</li>
+              <!-- /.differencess__item -->
+            </ul>
+            <!-- /.differencess -->
+            <p class="free subscriber__free">бесплатная пробная тренировка</p>
+            <!-- /.free subscriber__free -->
+            <button class="button subscriber__button">Записаться на тренировку</button>
+            <!-- /.button subscriber__button -->
+          </div>
+          <!-- /.card subscriber__card -->
+          <div class="card subscriber__card">
+            <div class="card__name subscriber__name">
+              <span>Абонемент "INTENSIVE"</span>
+            </div>
+            <ul class="differencess">
+              <li class="differencess__item">3 раза в неделю</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">Расписание уточнять</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">1 час занятий</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">12 занятий в месяц</li>
+              <!-- /.differencess__item -->
+              <li class="differencess__item">Бесплатная форма</li>
+              <!-- /.differencess__item -->
+            </ul>
+            <!-- /.differencess -->
+            <p class="free subscriber__free">бесплатная пробная тренировка</p>
+            <!-- /.free subscriber__free -->
+            <button class="button subscriber__button">Записаться на тренировку</button>
+            <!-- /.button subscriber__button -->
+          </div>
+          <!-- /.card subscriber__card card__name -->
+        </div>
+        <!-- /.row col -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section subscriber -->
+    <section class="sections branches">
+      <div class="container">
+        <h3 class="heading branches__heading">Наши филиалы</h3>
+        <!-- /.heading branches__heading -->
+        <div class="section__image">
+          <img src="img/ball.png" alt="ball" class="image_ball">
+        </div>
+        <!-- /.section__image -->
+        <div class="map-wrap branches__map-wrap">
+          <div class="row col">
+            <div class="map-select">
+              <div class="map-select__item item1">
+                <div class="map-text">
+                  <span class="map-name">QSI</span> <!-- /.map-name -->
+                  <span class="map-adress">ул. Баян Сулу, 15</span><!-- /.map-adress -->
+                </div>
+                <!-- /.map-text -->
+                <div class="select__triangle"></div>
+              </div>
+              <!-- /.map-select__item -->
+              <div class="map-select__item item2">
+                <div class="map-text">
+                  <span class="map-name">Дворец "Жастыр"</span> <!-- /.map-name -->
+                  <span class="map-adress">проспект Республике, 34</span> <!-- /.map-adress -->
+                </div>
+                <!-- /.map-text -->
+                <div class="select__triangle"></div>
+              </div>
+              <!-- /.map-select__item -->
+              <div class="map-select__item item3">
+                <div class="map-text">
+                  <span class="map-name">Тарлан АРЕНА</span> <!-- /.map-name -->
+                  <span class="map-adress">ул. Г. Алиева с пересечением Тауелсыздык</span> <!-- /.map-adress -->
+                </div>
+                <!-- /.map-text -->
+                <div class="select__triangle"></div>
+              </div>
+              <!-- /.map-select__item -->
+              <div class="map-select__item item4">
+                <div class="map-text">
+                  <span class="map-name">Ташенова 16А</span> <!-- /.map-name -->
+                  <span class="map-adress">улица Ташенова 16А</span> <!-- /.map-adress -->
+                </div>
+                <!-- /.map-text -->
+                <div class="select__triangle"></div>
+              </div>
+              <!-- /.map-select__item -->
+            </div>
+            <!-- /.map-select -->
+            <div class="map" id="map"></div>
+            <!-- /.map -->
+          </div>
+          <!-- /.row col -->
+        </div>
+        <!-- /.map-wrap branches__map-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.sections branches -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="logo footer__logo"><img src="img/logo.png" alt="logo"></div>
+          <!-- /.logo footer__logo -->
+          <nav class="region footer__region">
+            <select class="region__list">
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+              <option class="region__item">Астана</option>
+              <!-- /.region__item -->
+            </select>
+            <!-- /.region__list -->
+          </nav>
+          <!-- /.region footer__region -->
+          <nav class="menu footer__menu">
+            <a href="#" class="menu__item">О нас</a>
+            <!-- /.menu__item -->
+            <a href="#" class="menu__item">Статистика</a>
+            <!-- /.menu__item -->
+            <a href="#" class="menu__item">Новости</a>
+            <!-- /.menu__item -->
+            <a href="#" class="menu__item">Коонтакты</a>
+            <!-- /.menu__item -->
+          </nav>
+          <!-- /.menu footer__menu -->
+          <a href="tel:87024407007" class="phone footer__phone"><span class="phone_primary">+7 702</span>
+            <!-- /.phone_primary --><span class="phone_light">440 70 07</span> <!-- /.light --></a>
+          <!-- /.phone footer__phone -->
+          <button class="button footer__button button_primary">перезвоните мне</button>
+          <!-- /.button footer__button button_primary -->
+        </div>
+        <!-- /.footer-wrap -->
+        <div class="footer__information">
+          <div class="wrap-copy">
+            <p class="footer__copy">© www.pro-football.kz 2008-2015. Все права защищены.</p>
+            <!-- /.footer__copy -->
+            <div class="made">
+              <span>Сделано в:</span>
+              <img src="img/made.png" alt="webteam" class="logo">
+            </div>
+            <!-- /.made -->
+          </div>
+        </div>
+        <!-- /.footer__information -->
+      </div>
+    </footer>
+    <!-- /.footer -->
+    <div class="modal modal__header">
+      <div class="modal__dialog">
+        <div class="modal__close"></div>
+
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+  </main>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c726b56a-af8f-4ff2-ade5-c1beb6bd436a&lang=ru_RU"
+    type="text/javascript">
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+*, *:before, *:after
+  box-sizing: border-box
+html
+  font-size: 15px
+body
+  font-family: "Roboto-Regular", sans-serif
+  font-size: 1rem
+  position: relative
+  overflow-x: hidden
+img
+  max-width: 100%
+sup
+  font-size: 0.6rem
+button
+  outline: none
+  cursor: pointer
+p, ul
+  margin: 0
+  padding: 0
+a
+  text-decoration: none
+h1, h2, h3
+  font-weight: normal
+  margin: 0
+.input, select
+  outline: none
+select
+  cursor: pointer
+.heading
+  color: $gray
+  font-size: 2rem
+  font-weight: 400
+  text-align: center
+  margin-bottom: 0.533rem
+  &_blue
+    color: $blue
+    font-family: "Roboto-Bold"
+    font-weight: 900
+    text-transform: uppercase
+.subtitle
+  color: $light
+  font-family: "Roboto-Bold"
+  font-size: 2.4rem
+  font-weight: 400
+  text-transform: uppercase
+  text-align: center
+.section
+  &__image
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 2rem
+    &::after, &::before
+      content: ""
+      background: $blue
+      width: 58px
+      height: 1px
+      margin-left: 5px
+      margin-right: 5px
+.image
+  &_ball
+    text-align: center
+.menu
+  &-burger
+    position: fixed
+    left: 0
+    top: 0
+    width: 30%
+    height: 100vh
+    z-index: 999
+    background-color: $blue
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.5s
+    transform: translateX(-100%)
+    &_active
+      transform: translateX(0)
+  &-btn
+    display: inline-block
+    width: 3.333rem
+    height: 3.333rem
+    background-color: $light
+    border-radius: 50%
+    position: relative
+    &_active .btn-burger
+      height: 0
+      &::before
+        transform: rotate(45deg)
+      &::after
+        transform: rotate(-45deg)
+  &-list
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+    align-items: flex-start
+    height: 50%
+    a
+      color: $light
+      text-transform: uppercase
+      font-weight: 900
+      text-align: left
+.btn
+  &-burger, &-burger::before, &-burger::after
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 1.333rem
+    height: 0.1333rem
+    background: $dark
+    margin-top: -1px
+    margin-left: -0.666rem
+  &-burger
+    &::before, &::after
+      content: ""
+      display: block
+      transition: 0.5s
+    &::before
+      transform: translateY(-5px)
+    &::after
+      transform: translateY(5px)
+.burger
+  position: absolute
+  right: -4rem
+  top: 1rem

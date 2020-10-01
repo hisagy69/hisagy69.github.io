@@ -1,0 +1,69 @@
+.group
+  padding: 3.533rem 0 3.066rem
+  &__card
+    width: 23.489rem
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0.933rem 1.933rem
+    &::after
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      background: rgba($gray, 0.5)
+.card
+  &_1
+    background: url("../img/card/start.jpg") no-repeat center / cover
+  &_2
+    background: url("../img/card/begin.jpg") no-repeat center / cover
+  &_3
+    background: url("../img/card/uvenal.jpg") no-repeat center / cover
+  &_4
+    background: url("../img/card/uvenal2.jpg") no-repeat center / cover
+  &_5
+    background: url("../img/card/unior.jpg") no-repeat center / cover
+  &__wrap
+    position: relative
+    z-index: 8
+    display: flex
+    flex-direction: column
+    justify-content: center
+    font-size: 1.092rem
+    padding: 7.5rem 0 4.7rem
+    text-align: center
+  &__title
+    font-family: "Roboto-Bold"
+    font-size: 2rem
+    font-weight: 400
+    text-transform: uppercase
+    color: $primary
+    margin-bottom: 1.333rem
+  &__description
+    color: $light
+    font-size: 1.066rem
+    font-weight: 500
+    line-height: 1.466rem
+    max-width: 16.333rem
+    margin-bottom: 1.133rem
+  &__price
+    color: $verylight
+    font-family: "Roboto-Bold"
+    font-size: 1.6rem
+    font-weight: 400
+    margin-bottom: 2rem
+  &__button
+    background: transparent
+    border: 1px solid $primary
+    color: $primary
+    font-size: 0.866rem
+    font-weight: 400
+    padding: 1rem 2.4rem
+    width: 9.266rem
+    margin: auto
+    &:hover
+      background: $primary
+      color: $gray
