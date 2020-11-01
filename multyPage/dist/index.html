@@ -1,14 +1,1 @@
-<head><link href="main.css" rel="stylesheet"></head>var pug = require("!../node_modules/pug-runtime/index.js");
-
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;
-    var locals_for_with = (locals || {});
-    
-    (function (pageTitle) {
-      var pug_indent = [];
-var pageTitle = 'главная'
-pug_html = pug_html + "\u003C!DOCTYPE html\u003E\n\u003Chtml lang=\"ru\"\u003E\n  \u003Chead\u003E\n    \u003Cmeta charset=\"UTF-8\"\u003E\n    \u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003E\n    \u003Ctitle\u003E" + (pug.escape(null == (pug_interp = pageTitle) ? "" : pug_interp)) + "\u003C\u002Ftitle\u003E\n    \u003Clink rel=\"stylesheet\" href=\"main.css\"\u003E\n    \u003Cscript src=\"scripts\u002Fmain.js\"\u003E\u003C\u002Fscript\u003E\n  \u003C\u002Fhead\u003E\n  \u003Cbody\u003E" + (null == (pug_interp = require("./modules/header.pug").call(this, locals)) ? "" : pug_interp) + "\n  \u003C\u002Fbody\u003E\n\u003C\u002Fhtml\u003E";
-    }.call(this, "pageTitle" in locals_for_with ?
-        locals_for_with.pageTitle :
-        typeof pageTitle !== 'undefined' ? pageTitle : undefined));
-    ;;return pug_html;};
-module.exports = template;<script src="main.js"></script>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>главная</title><link rel="icon" href="favicon.ico"></head><body><header class="header"><div class="container align-center"><div class="header__logo"><img src="img/logo.png" alt="logo"></div><div class="header__city-list city-list"><div class="city-enter">Выберите город<img src="img/arrow-top.png" alt="arrow"></div><ul class="d-none"><li class="city-list__item"> <a>Астана</a></li><li class="city-list__item"> <a>Новокузнецк</a></li><li class="city-list__item"> <a>Калининград</a></li></ul></div><nav class="header__nav nav"><ul class="flex"><li class="nav__item">О нас</li><li class="nav__item">Статистика</li><li class="nav__item">Новости</li><li class="nav__item">Контакты</li></ul></nav><div class="header__phone phone"> <a href="tel:+77024407007">+7 702 <span>440 70 07</span> </a></div><buttom class="header__button button">перезвоните мне</buttom></div></header><script src="main.js"></script></body></html>

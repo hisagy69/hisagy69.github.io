@@ -1,26 +1,31 @@
 header.header
 	.container.align-center
 		.header__logo
-			img(src="img/logo.png", alt="logo")
+			a(href="index.html")
+				img(src="img/logo.png", alt="logo")
 		.header__city-list.city-list
 			.city-enter Выберите город
 				img(src="img/arrow-top.png", alt="arrow")
 			ul.d-none
 				li.city-list__item 
-					a Астана
+					a(href="#") Астана
 				li.city-list__item 
-					a Новокузнецк
+					a(href="#") Новокузнецк
 				li.city-list__item 
-					a Калининград
+					a(href="#") Калининград
 		nav.header__nav.nav
 			ul.flex
-				li.nav__item О нас
-				li.nav__item Статистика
-				li.nav__item Новости
-				li.nav__item Контакты
+				li.nav__item 
+					a(href="#") О нас
+				li.nav__item 
+					a(href="#") Статистика
+				li.nav__item 
+					a(href="#") Новости
+				li.nav__item 
+					a(href="#") Контакты
 		.header__phone.phone 
 			a(href="tel:+77024407007") +7 702 #[span 440 70 07] 
 		buttom.header__button.button перезвоните мне
-			
+	block hero
 		
 

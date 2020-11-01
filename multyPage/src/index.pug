@@ -1,5 +1,23 @@
 extends layout/main
 
 block variables
-	- var pageTitle = 'главная'
+	- var pageTitle = 'Главная'
+block hero
+	.hero
+		.container
+			h1.hero__title академия футбола
+			p.hero__description для детей от 3 до 16 лет
+			form.hero__form
+				.hero__inputs
+					input(class="hero__input", id="user-name", type="text", placeholder="Ваше имя")
+					input(class="hero__input", id="user-phone", type="tel", placeholder="Номер телефона")
+				button.button.hero__button Записаться на тренеровку
+			p.hero__message Поделитесь с друзьями им будет интересно
+			.hero__social.justify-center
+				.hero__link
+					img(src="img/vk.svg", alt="vk")
+				.hero__link
+					img(src="img/ig.svg", alt="ig")
+				.hero__link
+					img(src="img/yb.svg", alt="yb")
 block content

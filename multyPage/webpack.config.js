@@ -3,44 +3,17 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');//плагин для �
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');//плагин очищает старые билды, заменяет
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';//если сборка запущена для разработки
 
-const optimization = () => {//минимизирует код
-	const config = {
-		splitChunks: {
-			chunks: 'all'//chunks это скрипты вхождения
-		}
-	}
-	if (!isDev) {
-		config.minimizer = [
-			new OptimizeCssAssetPlugin(),
-			new TerserWebpackPlugin()
-		]
-	}
-	return config;
-};
 const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;//если для продакшн, то добавляет хэш, чтобы браузер кешировал новые файлы
 const cssLoaders = extra => {
 	const loaders = [
 		{
-			loader: MiniCssExtractPlugin.loader,//плагин добавляет возможность копировать css и подключать
-			options: {
-				hrm: isDev,
-				reloadAll: true
-			},
+			loader: 'style-loader',//плагин добавляет возможность копировать css и подключать
 		}, 
 		{
 			loader: 'css-loader',
-			options: {
-				url: true,
-				import: true
-			},
-		},
-		{
-			loader: 'resolve-url-loader'
 		}
 	]//css loader позволяет импортировать в js стили styleLoader добавляет в секцию head стили
 	if (extra) {
@@ -50,33 +23,23 @@ const cssLoaders = extra => {
 };
 
 module.exports = {
-	context: path.resolve(__dirname, 'src'),//указывает абсолютный путь для корневой директории, после ее указания можно указывать папки и файлы хранящиеся в ней
+	context: path.resolve(__dirname, './src'),//указывает абсолютный путь для корневой директории, после ее указания можно указывать папки и файлы хранящиеся в ней
 	mode: 'development',// код не минимизируется
 	entry: {//точка входа если несколько файлов, то пишется в объекте, название: директория до файла или если один, то просто директория
 		main: './index.js'
 	},
 	output: {//точка выхода
 		filename: filename('js'),//имя файла
-		path: path.resolve(__dirname, 'dist')//путь абсолютный, все складывается в папку дист
-	},
-	resolve: {
-		extensions: ['.js', '.json'],//чтоьы в импортах не указывать расширение .js .json
-		alias: {
-			'@': path.resolve(__dirname, 'src')
-		}
+		path: path.resolve(__dirname, './dist')//путь абсолютный, все складывается в папку дист
 	},
 	devServer: {
 		port: 4200,//локальный сервер с автоматической перезагрузкой
 		hot: isDev
 	},
-	optimization: optimization(),
 	plugins: [
 		new HTMLWebpackPlugin({//скрипты подключаются автоматически
 			template: './index.pug',// переносит файл из указанной дирректории
 			filename: 'index.html',
-			minify: {
-				collapseWhitespace: !isDev
-			}
 		}),
 		new CleanWebpackPlugin(),
 		new CopyWebpackPlugin({//плагин копирует необходимые файлы и папки
@@ -129,9 +92,9 @@ module.exports = {
 					},
 					{
 						loader: 'pug-loader',
-						options: {
-							pretty: isDev
-						}
+						// options: {
+						// 	pretty: isDev
+						// }
 					}
 				]
 			}
