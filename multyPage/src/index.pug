@@ -14,10 +14,53 @@ block hero
 				button.button.hero__button Записаться на тренеровку
 			p.hero__message Поделитесь с друзьями им будет интересно
 			.hero__social.justify-center
-				.hero__link
-					img(src="img/vk.svg", alt="vk")
-				.hero__link
-					img(src="img/ig.svg", alt="ig")
-				.hero__link
-					img(src="img/yb.svg", alt="yb")
+				a(href="https://vk.com/").hero__link
+					include img/vk.svg
+				a(href="https://instagram.com/").hero__link
+					include img/ig.svg
+				a(href="https://youtube.com/").hero__link
+					include img/yb.svg
 block content
+	section.section.advantages
+		.container
+			h2.section__title.advantages__title.
+				Более #[span 800 детей] пришли обучение в нашей академии!
+			.section__ball
+				img(src="img/ball.png", alt="ball")
+			.cards.advantages__cards.wrap
+				.cards__card
+					.cards__image
+						img(src="img/ball-mono.png", alt="ball")
+					p.cards__text.
+						Новый профессиональный инвентарь и экипировка
+				.cards__card
+					.cards__image
+						img(src="img/socer.png", alt="socer")
+					p.cards__text.
+						Современные спортивные залы и мини-футбольные поля
+				.cards__card
+					.cards__image
+						img(src="img/reward.png", alt="reward")
+					p.cards__text.
+						Товарищеские матчи с детсикими футбольными школами
+				.cards__card
+					.cards__image
+						img(src="img/go.png", alt="go")
+					p.cards__text.
+						Социальная программа и скидки для семей с особым статусом
+			.descriptions.advantages__descriptions.align-center
+				.descriptions__title
+					strong академия
+					p.
+						предоставляет возможность каждому ребенку почувствовать себя
+					strong футболистом
+				.descriptions__text
+					p.
+						#[span.strong Академия «Pro Football»]  предоставляет возможность каждому ребенку почувствовать себя футболистом любительского и профессионального уровней. Юный воспитанник получит как правильное физиологическое развитие, так и морально – психологическое, овладевая всеми навыками футболиста, игры в команде и индивидуального мастерства.
+					p.
+						Методика тренировок разрабатывается опытными тренерами на основе методик ведущих европейских футбольных центров. 
+					p.strong.
+						Все тренеры и помощники тренеров обладают лицензиями категорий «В», «С» UEFA. 
+				.descriptions__video
+					span посмотрите наше видео
+					button

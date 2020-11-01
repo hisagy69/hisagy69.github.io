@@ -12,5 +12,58 @@
 .justify-center
 	display: flex
 	justify-content: center
+.wrap
+	display: flex
+	flex-wrap: wrap
 .d-none
 	display: none
+.section
+	&__title
+		text-align: center
+		font-size: 2rem
+		font-weight: 400
+	&__ball
+		width: fit-content
+		margin: 0 auto
+		display: flex
+		align-items: center
+		margin-bottom: 2rem
+		&::before, &::after
+			content: ""
+			width: 3.333rem
+			height: 1px
+			background: #5da4c4
+		&::before
+			margin-right: 3px
+		&::after
+			margin-left: 3px
+.cards
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 3rem
+	&__card
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 23%
+		line-height: 1.429
+	&__image
+		width: 4rem
+		height: 4rem
+		position: relative
+		margin-bottom: 2.4rem
+		&::after
+			content: ""
+			width: 8.266rem;
+			height: 1px;
+			background: #5da4c4
+			position: absolute
+			left: 50%
+			bottom: -0.866rem
+			transform: translateX(-50%)
+	&__text
+		text-align: center
+		font-size: 0.933rem
+		font-weight: 400
+		color: #414141

@@ -32,6 +32,13 @@
 	&__form
 		margin: 0 auto
 		width: fit-content
+		position: relative
+		&::before
+			content: url('../../img/line.png')
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
 	&__inputs
 		margin-bottom: 1.4rem
 	&__input
@@ -45,14 +52,13 @@
 		&:first-child
 			margin-right: 0.8rem
 	&__button
+		display: block
 		font-size: 1.066rem
 		font-weight: 500
 		color: rgb(47, 47, 47)
 		text-transform: none
 		padding: 1.555rem 2.333rem
-		left: 50%
-		transform: translateX(-50%)
-		margin-bottom: 4rem
+		margin: 0 auto 4rem
 	&__message
 		font-size: 1.2rem
 		font-weight: 300
@@ -63,4 +69,19 @@
 		margin: 0 auto
 	&__link
 		padding: 10px
-
+		&>svg
+			fill: #fff
+			width: 20px
+			height: 20px
+		&:first-child
+			&>svg
+				&:hover
+					fill: #4a76a8
+		&:nth-child(2)
+			&>svg
+				&:hover
+					fill: #d66910
+		&:last-child
+			&>svg
+				&:hover
+					fill: #fd0606
