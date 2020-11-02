@@ -11,6 +11,9 @@ import './sass/interface.sass';
 import './sass/templates/header.sass';
 import './sass/templates/hero.sass';
 import './sass/templates/advantages.sass';
+import './sass/templates/groups.sass';
+import './sass/templates/abonements.sass';
+import './sass/templates/filials.sass';
 import './sass/templates/footer.sass';
 // import logo from './img/logo.png';
 // if (module.hot) {
@@ -20,4 +23,5 @@ import './sass/templates/footer.sass';
 // 		document.body.appendChild(element);
 // 	})
 // }
-import './components/js';
+import './components/map';
+// import './components/js';

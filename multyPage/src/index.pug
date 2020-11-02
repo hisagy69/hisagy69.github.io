@@ -1,5 +1,7 @@
 extends layout/main
 
+block links
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=8bbb09ba-b39a-460b-b485-44da6dff4991&lang=ru_RU")
 block variables
 	- var pageTitle = 'Главная'
 block hero
@@ -64,3 +66,99 @@ block content
 				.descriptions__video
 					span посмотрите наше видео
 					button
+					.descriptions__modal.d-none
+						iframe(width="560" height="315" src="https://www.youtube.com/embed/s8xLazT2qsc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+	section.section.groups
+		.container
+			h2.section__title.groups__title.
+				Наши группы
+			.section__ball
+				img(src="img/ball.png", alt="ball")
+			.cards.groups__cards.wrap
+				.groups__card
+					.groups-wrap
+						strong.groups__name "babystart"
+						p.groups__description В этой группе тренируются дети от 3- 4,5 лет!
+						span.groups__price от 12 690 тенге
+						.groups__button
+						button#start Подробнее
+				.groups__card
+					.groups-wrap
+						strong.groups__name "Beginners"
+						p.groups__description В этой группе тренируются дети от 5- 6 лет!
+						span.groups__price от 14 290 тенге
+						.groups__button
+						button#begin Подробнее
+				.groups__card
+					.groups-wrap
+						strong.groups__name "Ювеналы"
+						p.groups__description В этой группе тренируются дети от 7 - 8 лет!
+						span.groups__price от 15 300 тенге
+						.groups__button
+						button#uven Подробнее
+				.groups__card
+					.groups-wrap
+						strong.groups__name "Ювеналы 2"
+						p.groups__description В этой группе тренеруются дети от 9- 12 лет!
+						span.groups__price от 17 500 тенге
+						.groups__button
+						button#uven2 Подробнее
+				.groups__card
+					.groups-wrap
+						strong.groups__name "Юниоры"
+						p.groups__description В этой группе тренируются дети от 13- 16 лет!
+						span.groups__price от 18 900 тенге
+						.groups__button
+						button#junior Подробнее
+	section.section.abonements
+		.container
+			h2.section__title.abonements__title.
+				Наши абонементы
+			.section__ball
+				img(src="img/ball.png", alt="ball")
+			.cards.abonements__cards.wrap
+				.abonements__card
+					.abonements__name Абонемент “Light”
+					ul.abonements__list
+						li.abonements__item 2 раза в неделю
+						li.abonements__item По выходным дням
+						li.abonements__item 1,5 часа занятий
+						li.abonements__item 8 занятий в месяц
+						li.abonements__item Бесплатная форма
+					.abonements__free бесплатная пробная тренировка
+					button.button.abonements__button#light Записаться на тренировку
+				.abonements__card
+					.abonements__name Абонемент “INTENSIVE”
+					ul.abonements__list
+						li.abonements__item 3 раза в неделю
+						li.abonements__item Расписание уточнять
+						li.abonements__item 1 час занятий
+						li.abonements__item 12 занятий в месяц
+						li.abonements__item Бесплатная форма
+					.abonements__free бесплатная пробная тренировка
+					button.button.abonements__button#light Записаться на тренировку
+	section.section.filials
+		.container
+			h2.section__title.filials__title.
+				Наши филиалы
+			.section__ball
+				img(src="img/ball.png", alt="ball")
+			.flex.filials-wrap
+				.filials__adres
+					a(href="#")
+						div.filials__link
+							div #[strong QSI]
+							div #[span ул. Баян Сулу, 15] 
+					a(href="#")
+						div.filials__link
+							div #[strong Дворец «Жастар»]
+							div #[span проспект Республики, 34]
+					a(href="#")
+						div.filials__link
+							div #[strong Тарлан АРЕНА]
+							div #[span ул. Г. Алиева с пересечением Тауелсыздык]
+					a(href="#")
+						div.filials__link
+							div #[strong Ташенова 16А]
+							div #[span улицаТашенова 16А] 
+				.map#map
