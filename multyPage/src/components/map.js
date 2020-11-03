@@ -1,18 +1,42 @@
 const init = () => {
+	const adres = document.querySelector('.filials__adres'),
+		links = adres.querySelectorAll('a'),
+		linkCords = [+links[0].dataset.nord, +links[0].dataset.west],
+		linkName = links[0].querySelector('strong').textContent;
 	const map = new ymaps.Map('map', {
-		center: [51.146348, 71.389538],
+		center: linkCords,
 		zoom: 17,
 		controls: {}
 	});
-	const addMarker = (coords) => {
-		coords.forEach(coord => {
-			map.geoObjects.add(
-				new ymaps.Placemark(coord, {}, {
-					preset: 'islands#redDotIcon'
-				})
-			);
-		}); 
+	map.behaviors.disable('scrollZoom');
+
+	const addMarker = (coord, place) => {
+		map.geoObjects.add(
+			new ymaps.Placemark(coord, {
+				iconCaption: place
+			}, {
+				preset: 'islands#redDotIcon'
+			})
+		);
 	}
-	addMarker([[51.146348, 71.389538], [50.065585, 72.975765], [55.732605, 52.642327], [51.149851, 71.438361]]);
+	addMarker(linkCords, linkName);
+	links[0].classList.add('active');
+
+	adres.addEventListener('click', event => {
+		event.preventDefault();
+		const link = event.target.closest('.filials__adres > a'),
+			name = link.querySelector('strong').textContent;
+		if (!link) return;
+		const cord = [+link.dataset.nord, +link.dataset.west];
+		[...links].find(item => {
+			if (item.matches('.active')) {
+				item.classList.remove('active');
+				return item;
+			}
+		});
+		link.classList.add('active');
+		addMarker(cord, name);
+		map.setCenter(cord);
+	});
 }
 ymaps.ready(init);

@@ -30,7 +30,15 @@
 			top: -1px
 			right: 0
 			transition: all 0.3s
-		&:hover
+		&:active
+			border-color: rgb(244, 215, 51)
+			background-color: rgb(244, 215, 51)
+			box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.17)
+			&::after
+				border-left: 1.133rem solid rgb(244, 215, 51)
+				transform: translateX(1.133rem)
+	&__adres
+		&>a.active>.filials__link
 			border-color: rgb(244, 215, 51)
 			background-color: rgb(244, 215, 51)
 			box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.17)
