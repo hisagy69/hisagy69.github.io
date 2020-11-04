@@ -1,1 +1,151 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Главная</title><link rel="icon" href="favicon.ico"></head><body><header class="header"><div class="container align-center"><div class="header__logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div><div class="header__city-list city-list"><div class="city-enter">Выберите город<img src="img/arrow-top.png" alt="arrow"></div><ul class="d-none"><li class="city-list__item"> <a href="#">Астана</a></li><li class="city-list__item"> <a href="#">Новокузнецк</a></li><li class="city-list__item"> <a href="#">Калининград</a></li></ul></div><nav class="header__nav nav"><ul class="flex"><li class="nav__item"> <a href="#">О нас</a></li><li class="nav__item"> <a href="#">Статистика</a></li><li class="nav__item"> <a href="#">Новости</a></li><li class="nav__item"> <a href="#">Контакты</a></li></ul></nav><div class="header__phone phone"> <a href="tel:+77024407007">+7 702 <span>440 70 07</span> </a></div><buttom class="header__button button">перезвоните мне</buttom></div><div class="hero"><div class="container"><h1 class="hero__title">академия футбола</h1><p class="hero__description">для детей от 3 до 16 лет</p><form class="hero__form"><div class="hero__inputs"><input class="hero__input" id="user-name" type="text" placeholder="Ваше имя"><input class="hero__input" id="user-phone" type="tel" placeholder="Номер телефона"></div><button class="button hero__button">Записаться на тренеровку</button></form><p class="hero__message">Поделитесь с друзьями им будет интересно</p><div class="hero__social justify-center"><div class="hero__link"></div><div class="hero__link"><img src="img/ig.svg" alt="ig"></div><div class="hero__link"><img src="img/yb.svg" alt="yb"></div></div></div></div></header><footer class="footer"><div class="container align-center"><div class="footer__logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div><div class="footer__city-list city-list"><div class="city-enter">Выберите город<img src="img/arrow-top.png" alt="arrow"></div><ul class="d-none"><li class="city-list__item"> <a href="#">Астана</a></li><li class="city-list__item"> <a href="#">Новокузнецк</a></li><li class="city-list__item"> <a href="#">Калининград</a></li></ul></div><nav class="footer__nav nav"><ul class="flex"><li class="nav__item"> <a href="#">О нас</a></li><li class="nav__item"> <a href="#">Статистика</a></li><li class="nav__item"> <a href="#">Новости</a></li><li class="nav__item"> <a href="#">Контакты</a></li></ul></nav><div class="footer__phone phone"> <a href="tel:+77024407007">+7 702 <span>440 70 07</span> </a></div><buttom class="footer__button button">перезвоните мне</buttom></div><div class="footer__copyright"><div class="container align-center justify-space-between"><p>© www.pro-football.kz 2008-2015. Все права защищены.</p><p class="align-center">Сделано в:<img src="img/web.png" alt="web"></p></div></div></footer><script src="main.js"></script></body></html>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Главная</title><script src="https://api-maps.yandex.ru/2.1/?apikey=8bbb09ba-b39a-460b-b485-44da6dff4991&amp;lang=ru_RU"></script><link rel="icon" href="favicon.ico"></head><body><header class="header"><div class="container align-center"><div class="header__logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div><div class="header__city-list city-list"><div class="city-enter">Выберите город<img src="img/arrow-top.png" alt="arrow"></div><ul class="d-none"><a href="#"><li class="city-list__item">Астана </li></a><a href="#"><li class="city-list__item">Новокузнецк </li></a><a href="#"><li class="city-list__item">Калининград </li></a></ul></div><nav class="header__nav nav"><ul class="flex"><li class="nav__item"> <a href="#">О нас</a></li><li class="nav__item"> <a href="#">Статистика</a></li><li class="nav__item"> <a href="#">Новости</a></li><li class="nav__item"> <a href="#">Контакты</a></li></ul></nav><div class="header__phone phone"> <a href="tel:+77024407007">+7 702 <span>440 70 07</span> </a></div><buttom class="header__button button">перезвоните мне</buttom></div><div class="hero"><div class="container"><h1 class="hero__title">академия футбола</h1><p class="hero__description">для детей от 3 до 16 лет</p><form class="hero__form" id="hero-form" method="POST"><div class="hero__inputs"><div class="input-wrap"><input class="hero__input" id="user-name" data-type="name" type="text" placeholder="Ваше имя"></div><div class="input-wrap"><input class="hero__input" id="user-phone" data-type="phone" type="tel" placeholder="Номер телефона"></div></div><button class="button hero__button">Записаться на тренеровку</button></form><p class="hero__message">Поделитесь с друзьями им будет интересно</p><div class="hero__social justify-center"><a class="hero__link" href="https://vk.com/"><svg id="Bold" enable-background="new 0 0 24 24" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/></svg>
+</a><a class="hero__link" href="https://instagram.com/"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 368 368" style="enable-background:new 0 0 368 368;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M312,0H56C25.128,0,0,25.12,0,56v96v160c0,30.88,25.128,56,56,56h256c30.872,0,56-25.12,56-56V152V56
+			C368,25.12,342.872,0,312,0z M352,312c0,22.056-17.944,40-40,40H56c-22.056,0-40-17.944-40-40V160h66.8
+			c-0.152,0.648-0.208,1.312-0.344,1.96c-0.576,2.656-1.056,5.328-1.416,8.032c-0.144,1.04-0.296,2.08-0.4,3.136
+			C80.256,176.72,80,180.336,80,184c0,57.344,46.656,104,104,104s104-46.656,104-104c0-3.664-0.256-7.288-0.632-10.888
+			c-0.104-1.04-0.256-2.064-0.4-3.096c-0.368-2.744-0.848-5.456-1.44-8.144c-0.136-0.624-0.184-1.264-0.336-1.88H352V312z M96,184
+			c0-10.128,1.696-19.984,5.072-29.344C113.416,119.568,146.744,96,184,96c4.656,0,9.256,0.368,13.752,1.08
+			c29.256,4.64,54.512,23.84,66.632,51.168c0.928,2.088,1.776,4.224,2.544,6.408c0,0.008,0.008,0.008,0.008,0.016
+			c0.008,0.016,0.008,0.024,0.016,0.04C270.304,164.016,272,173.872,272,184c0,48.52-39.48,88-88,88C135.48,272,96,232.52,96,184z
+			 M352,144h-72.024c-0.168-0.4-0.368-0.776-0.536-1.176c-0.48-1.128-1.008-2.224-1.528-3.32c-0.608-1.296-1.224-2.584-1.888-3.84
+			c-0.568-1.088-1.176-2.152-1.776-3.208c-0.696-1.216-1.4-2.424-2.136-3.608c-0.656-1.048-1.336-2.072-2.024-3.088
+			c-0.768-1.136-1.552-2.264-2.368-3.368c-0.736-1-1.488-1.976-2.256-2.944c-0.848-1.064-1.712-2.12-2.592-3.144
+			c-0.8-0.936-1.624-1.856-2.456-2.76c-0.92-0.992-1.856-1.968-2.808-2.928c-0.872-0.872-1.752-1.736-2.656-2.576
+			c-0.984-0.92-2-1.816-3.016-2.696c-0.928-0.8-1.856-1.592-2.816-2.36c-1.056-0.848-2.136-1.664-3.224-2.472
+			c-0.984-0.728-1.96-1.456-2.968-2.144c-1.12-0.768-2.264-1.504-3.416-2.224c-1.024-0.648-2.048-1.304-3.096-1.912
+			c-1.184-0.688-2.392-1.336-3.6-1.976c-1.064-0.568-2.128-1.144-3.216-1.68c-1.248-0.608-2.512-1.16-3.784-1.72
+			c-1.096-0.48-2.184-0.984-3.296-1.424c-1.312-0.528-2.656-0.984-4-1.464c-1.104-0.392-2.2-0.8-3.32-1.16
+			c-1.408-0.44-2.832-0.808-4.264-1.192c-1.096-0.296-2.176-0.616-3.28-0.88c-1.52-0.352-3.064-0.624-4.6-0.912
+			c-1.04-0.192-2.072-0.432-3.12-0.592c-1.728-0.272-3.488-0.44-5.24-0.624c-0.888-0.088-1.76-0.232-2.656-0.304
+			C189.368,80.112,186.696,80,184,80c-2.696,0-5.368,0.112-8.024,0.32c-0.896,0.072-1.768,0.208-2.656,0.304
+			c-1.752,0.184-3.504,0.352-5.232,0.624c-1.064,0.168-2.096,0.4-3.152,0.6c-1.528,0.288-3.064,0.552-4.568,0.904
+			c-1.128,0.264-2.224,0.592-3.336,0.896c-1.408,0.376-2.816,0.744-4.2,1.176c-1.144,0.36-2.256,0.784-3.384,1.176
+			c-1.312,0.464-2.632,0.92-3.928,1.432c-1.144,0.456-2.264,0.968-3.392,1.464c-1.232,0.544-2.472,1.08-3.68,1.672
+			c-1.136,0.552-2.24,1.152-3.352,1.744c-1.16,0.616-2.312,1.232-3.448,1.896c-1.104,0.648-2.184,1.336-3.264,2.016
+			c-1.088,0.688-2.168,1.376-3.232,2.104c-1.072,0.736-2.112,1.504-3.16,2.28c-1.016,0.752-2.024,1.512-3.016,2.304
+			c-1.032,0.824-2.032,1.68-3.032,2.544c-0.944,0.816-1.872,1.64-2.784,2.488c-0.976,0.912-1.928,1.84-2.872,2.784
+			c-0.872,0.88-1.736,1.768-2.576,2.68c-0.912,0.984-1.8,1.984-2.68,3.008c-0.808,0.944-1.6,1.904-2.376,2.88
+			c-0.832,1.048-1.648,2.104-2.448,3.184c-0.752,1.016-1.472,2.056-2.184,3.104c-0.744,1.096-1.48,2.2-2.184,3.336
+			c-0.688,1.104-1.344,2.232-1.992,3.36s-1.288,2.256-1.896,3.416c-0.64,1.216-1.232,2.464-1.824,3.712
+			c-0.528,1.12-1.064,2.24-1.56,3.384c-0.176,0.408-0.384,0.792-0.552,1.2H16V56c0-22.056,17.944-40,40-40h256
+			c22.056,0,40,17.944,40,40V144z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M184,128c-30.872,0-56,25.12-56,56s25.128,56,56,56s56-25.12,56-56S214.872,128,184,128z M184,224
+			c-22.056,0-40-17.944-40-40c0-22.056,17.944-40,40-40c22.056,0,40,17.944,40,40C224,206.056,206.056,224,184,224z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M312,48h-24c-4.424,0-8,3.584-8,8v24c0,4.416,3.576,8,8,8h24c4.424,0,8-3.584,8-8V56C320,51.584,316.424,48,312,48z
+			 M304,72h-8v-8h8V72z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</a><a class="hero__link" href="https://youtube.com/"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="20px" viewBox="0 0 90.677 90.677" style="enable-background:new 0 0 90.677 90.677;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path d="M82.287,45.907c-0.937-4.071-4.267-7.074-8.275-7.521c-9.489-1.06-19.098-1.065-28.66-1.06
+			c-9.566-0.005-19.173,0-28.665,1.06c-4.006,0.448-7.334,3.451-8.27,7.521c-1.334,5.797-1.35,12.125-1.35,18.094
+			c0,5.969,0,12.296,1.334,18.093c0.936,4.07,4.264,7.073,8.272,7.521c9.49,1.061,19.097,1.065,28.662,1.061
+			c9.566,0.005,19.171,0,28.664-1.061c4.006-0.448,7.336-3.451,8.272-7.521c1.333-5.797,1.34-12.124,1.34-18.093
+			C83.61,58.031,83.62,51.704,82.287,45.907z M28.9,50.4h-5.54v29.438h-5.146V50.4h-5.439v-4.822H28.9V50.4z M42.877,79.839h-4.629
+			v-2.785c-1.839,2.108-3.585,3.136-5.286,3.136c-1.491,0-2.517-0.604-2.98-1.897c-0.252-0.772-0.408-1.994-0.408-3.796V54.311
+			h4.625v18.795c0,1.084,0,1.647,0.042,1.799c0.111,0.718,0.462,1.082,1.082,1.082c0.928,0,1.898-0.715,2.924-2.166v-19.51h4.629
+			L42.877,79.839L42.877,79.839z M60.45,72.177c0,2.361-0.159,4.062-0.468,5.144c-0.618,1.899-1.855,2.869-3.695,2.869
+			c-1.646,0-3.234-0.914-4.781-2.824v2.474h-4.625V45.578h4.625v11.189c1.494-1.839,3.08-2.769,4.781-2.769
+			c1.84,0,3.078,0.969,3.695,2.88c0.311,1.027,0.468,2.715,0.468,5.132V72.177z M77.907,67.918h-9.251v4.525
+			c0,2.363,0.773,3.543,2.363,3.543c1.139,0,1.802-0.619,2.066-1.855c0.043-0.251,0.104-1.279,0.104-3.134h4.719v0.675
+			c0,1.491-0.057,2.518-0.099,2.98c-0.155,1.024-0.519,1.953-1.08,2.771c-1.281,1.854-3.179,2.768-5.595,2.768
+			c-2.42,0-4.262-0.871-5.599-2.614c-0.981-1.278-1.485-3.29-1.485-6.003v-8.941c0-2.729,0.447-4.725,1.43-6.015
+			c1.336-1.747,3.177-2.617,5.54-2.617c2.321,0,4.161,0.87,5.457,2.617c0.969,1.29,1.432,3.286,1.432,6.015v5.285H77.907z"/>
+		<path d="M70.978,58.163c-1.546,0-2.321,1.181-2.321,3.541v2.362h4.625v-2.362C73.281,59.344,72.508,58.163,70.978,58.163z"/>
+		<path d="M53.812,58.163c-0.762,0-1.534,0.36-2.307,1.125v15.559c0.772,0.774,1.545,1.14,2.307,1.14
+			c1.334,0,2.012-1.14,2.012-3.445V61.646C55.824,59.344,55.146,58.163,53.812,58.163z"/>
+		<path d="M56.396,34.973c1.705,0,3.479-1.036,5.34-3.168v2.814h4.675V8.82h-4.675v19.718c-1.036,1.464-2.018,2.188-2.953,2.188
+			c-0.626,0-0.994-0.37-1.096-1.095c-0.057-0.153-0.057-0.722-0.057-1.817V8.82h-4.66v20.4c0,1.822,0.156,3.055,0.414,3.836
+			C53.854,34.363,54.891,34.973,56.396,34.973z"/>
+		<path d="M23.851,20.598v14.021h5.184V20.598L35.271,0h-5.242l-3.537,13.595L22.812,0h-5.455c1.093,3.209,2.23,6.434,3.323,9.646
+			C22.343,14.474,23.381,18.114,23.851,20.598z"/>
+		<path d="M42.219,34.973c2.342,0,4.162-0.881,5.453-2.641c0.981-1.291,1.451-3.325,1.451-6.067v-9.034
+			c0-2.758-0.469-4.774-1.451-6.077c-1.291-1.765-3.11-2.646-5.453-2.646c-2.33,0-4.149,0.881-5.443,2.646
+			c-0.993,1.303-1.463,3.319-1.463,6.077v9.034c0,2.742,0.47,4.776,1.463,6.067C38.069,34.092,39.889,34.973,42.219,34.973z
+			 M39.988,16.294c0-2.387,0.724-3.577,2.231-3.577c1.507,0,2.229,1.189,2.229,3.577v10.852c0,2.387-0.722,3.581-2.229,3.581
+			c-1.507,0-2.231-1.194-2.231-3.581V16.294z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</a></div></div></div></header><section class="section advantages"><div class="container"><h2 class="section__title advantages__title">Более <span>800 детей</span> пришли обучение в нашей академии!</h2><div class="section__ball"><img src="img/ball.png" alt="ball"></div><div class="cards advantages__cards wrap"><div class="cards__card"><div class="cards__image"><img src="img/ball-mono.png" alt="ball"></div><p class="cards__text">Новый профессиональный инвентарь и экипировка</p></div><div class="cards__card"><div class="cards__image"><img src="img/socer.png" alt="socer"></div><p class="cards__text">Современные спортивные залы и мини-футбольные поля</p></div><div class="cards__card"><div class="cards__image"><img src="img/reward.png" alt="reward"></div><p class="cards__text">Товарищеские матчи с детсикими футбольными школами</p></div><div class="cards__card"><div class="cards__image"><img src="img/go.png" alt="go"></div><p class="cards__text">Социальная программа и скидки для семей с особым статусом</p></div></div><div class="descriptions advantages__descriptions align-center"><div class="descriptions__title"><strong>академия</strong><p>предоставляет возможность каждому ребенку почувствовать себя</p><strong>футболистом</strong></div><div class="descriptions__text"><p><span class="strong">Академия «Pro Football»</span>  предоставляет возможность каждому ребенку почувствовать себя футболистом любительского и профессионального уровней. Юный воспитанник получит как правильное физиологическое развитие, так и морально – психологическое, овладевая всеми навыками футболиста, игры в команде и индивидуального мастерства.</p><p>Методика тренировок разрабатывается опытными тренерами на основе методик ведущих европейских футбольных центров. </p><p class="strong">Все тренеры и помощники тренеров обладают лицензиями категорий «В», «С» UEFA. </p></div><div class="descriptions__video"><span>посмотрите наше видео</span><button></button><div class="descriptions__modal d-none"><iframe width="560" height="315" src="https://www.youtube.com/embed/s8xLazT2qsc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div></div></div></section><section class="section groups"><div class="container"><h2 class="section__title groups__title">Наши группы</h2><div class="section__ball"><img src="img/ball.png" alt="ball"></div><div class="cards groups__cards wrap"><div class="groups__card"><div class="groups-wrap"><strong class="groups__name">"babystart"</strong><p class="groups__description">В этой группе тренируются дети от 3- 4,5 лет!</p><span class="groups__price">от 12 690 тенге</span><div class="groups__button"></div><button id="start">Подробнее</button></div></div><div class="groups__card"><div class="groups-wrap"><strong class="groups__name">"Beginners"</strong><p class="groups__description">В этой группе тренируются дети от 5- 6 лет!</p><span class="groups__price">от 14 290 тенге</span><div class="groups__button"></div><button id="begin">Подробнее</button></div></div><div class="groups__card"><div class="groups-wrap"><strong class="groups__name">"Ювеналы"</strong><p class="groups__description">В этой группе тренируются дети от 7 - 8 лет!</p><span class="groups__price">от 15 300 тенге</span><div class="groups__button"></div><button id="uven">Подробнее</button></div></div><div class="groups__card"><div class="groups-wrap"><strong class="groups__name">"Ювеналы 2"</strong><p class="groups__description">В этой группе тренеруются дети от 9- 12 лет!</p><span class="groups__price">от 17 500 тенге</span><div class="groups__button"></div><button id="uven2">Подробнее</button></div></div><div class="groups__card"><div class="groups-wrap"><strong class="groups__name">"Юниоры"</strong><p class="groups__description">В этой группе тренируются дети от 13- 16 лет!</p><span class="groups__price">от 18 900 тенге</span><div class="groups__button"></div><button id="junior">Подробнее</button></div></div></div></div></section><section class="section abonements"><div class="container"><h2 class="section__title abonements__title">Наши абонементы</h2><div class="section__ball"><img src="img/ball.png" alt="ball"></div><div class="cards abonements__cards wrap"><div class="abonements__card"><div class="abonements__name">Абонемент “Light”</div><ul class="abonements__list"><li class="abonements__item">2 раза в неделю</li><li class="abonements__item">По выходным дням</li><li class="abonements__item">1,5 часа занятий</li><li class="abonements__item">8 занятий в месяц</li><li class="abonements__item">Бесплатная форма</li></ul><div class="abonements__free">бесплатная пробная тренировка</div><button class="button abonements__button" id="light">Записаться на тренировку</button></div><div class="abonements__card"><div class="abonements__name">Абонемент “INTENSIVE”</div><ul class="abonements__list"><li class="abonements__item">3 раза в неделю</li><li class="abonements__item">Расписание уточнять</li><li class="abonements__item">1 час занятий</li><li class="abonements__item">12 занятий в месяц</li><li class="abonements__item">Бесплатная форма</li></ul><div class="abonements__free">бесплатная пробная тренировка</div><button class="button abonements__button" id="light">Записаться на тренировку</button></div></div></div></section><section class="section filials"><div class="container"><h2 class="section__title filials__title">Наши филиалы</h2><div class="section__ball"><img src="img/ball.png" alt="ball"></div><div class="flex filials-wrap"><div class="filials__adres"><a href="#" data-nord="51.146348" data-west="71.389538"><div class="filials__link"><div><strong>QSI</strong></div><div><span>ул. Баян Сулу, 15</span> </div></div></a><a href="#" data-nord="50.065585" data-west="72.975765"><div class="filials__link"><div><strong>Дворец «Жастар»</strong></div><div><span>проспект Республики, 34</span></div></div></a><a href="#" data-nord="55.732605" data-west="52.642327"><div class="filials__link"><div><strong>Тарлан АРЕНА</strong></div><div><span>ул. Г. Алиева с пересечением Тауелсыздык</span></div></div></a><a href="#" data-nord="51.149851" data-west="71.438361"><div class="filials__link"><div><strong>Ташенова 16А</strong></div><div><span>улицаТашенова 16А</span> </div></div></a></div><div class="map" id="map"></div></div></div></section><footer class="footer"><div class="container align-center"><div class="footer__logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div><div class="footer__city-list city-list"><div class="city-enter">Выберите город<img src="img/arrow-top.png" alt="arrow"></div><ul class="d-none"><a href="#"><li class="city-list__item">Астана </li></a><a href="#"><li class="city-list__item">Новокузнецк </li></a><a href="#"><li class="city-list__item">Калининград</li></a></ul></div><nav class="footer__nav nav"><ul class="flex"><li class="nav__item"> <a href="#">О нас</a></li><li class="nav__item"> <a href="#">Статистика</a></li><li class="nav__item"> <a href="#">Новости</a></li><li class="nav__item"> <a href="#">Контакты</a></li></ul></nav><div class="footer__phone phone"> <a href="tel:+77024407007">+7 702 <span>440 70 07</span> </a></div><buttom class="footer__button button">перезвоните мне</buttom></div><div class="footer__copyright"><div class="container align-center justify-space-between"><p>© www.pro-football.kz 2008-2015. Все права защищены.</p><p class="align-center">Сделано в:<img src="img/web.png" alt="web"></p></div></div></footer><script src="main.js"></script></body></html>

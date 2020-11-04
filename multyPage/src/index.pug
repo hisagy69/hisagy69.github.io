@@ -9,7 +9,7 @@ block hero
 		.container
 			h1.hero__title академия футбола
 			p.hero__description для детей от 3 до 16 лет
-			form.hero__form
+			form.hero__form#hero-form(method="POST")
 				.hero__inputs
 					.input-wrap
 						input(class="hero__input", id="user-name", data-type="name", type="text", placeholder="Ваше имя")

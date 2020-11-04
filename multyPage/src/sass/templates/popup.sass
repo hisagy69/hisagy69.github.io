@@ -1,0 +1,30 @@
+.popup
+	background: rgba(#000, 0.5)
+	width: 100%
+	height: 100%
+	overflow: hidden
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 9999
+	&__dialog
+		width: 300px
+		padding: 2rem
+		background-color: #fff
+	&__close
+		position: relative
+		width: 10px
+		height: 10px
+		cursor: pointer
+		&>span
+			display: block
+			background-color: #000
+			width: 1px
+			height: 10px
+			position: absolute
+			left: 50%
+			top: 50%
+			&:first-child
+				transform: translate(-50%, -50%) rotate(45deg)
+			&:last-child
+				transform: translate(-50%, -50%) rotate(-45deg)
