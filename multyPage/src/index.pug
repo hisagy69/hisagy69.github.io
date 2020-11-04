@@ -11,8 +11,10 @@ block hero
 			p.hero__description для детей от 3 до 16 лет
 			form.hero__form
 				.hero__inputs
-					input(class="hero__input", id="user-name", type="text", placeholder="Ваше имя")
-					input(class="hero__input", id="user-phone", type="tel", placeholder="Номер телефона")
+					.input-wrap
+						input(class="hero__input", id="user-name", data-type="name", type="text", placeholder="Ваше имя")
+					.input-wrap
+						input(class="hero__input", id="user-phone", data-type="phone", type="tel", placeholder="Номер телефона")
 				button.button.hero__button Записаться на тренеровку
 			p.hero__message Поделитесь с друзьями им будет интересно
 			.hero__social.justify-center

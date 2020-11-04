@@ -24,4 +24,7 @@ import './sass/templates/footer.sass';
 // 	})
 // }
 import './components/map';
+import './components/listShow';
+import Valid from './components/valid';
+new Valid({selectorValid: '.hero__form'}).init();
 // import './components/js';

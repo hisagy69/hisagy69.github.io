@@ -62,10 +62,37 @@
 		border-radius: 50px
 		color: #ffffff
 		cursor: pointer
+		position: relative
+		margin-right: 4.533rem
+		&>ul
+			background-color: rgb(244, 215, 51)
+			list-style-type: none
+			width: 100%
+			position: absolute
+			left: 0
+			top: 4rem
+			font-weight: 300
+			z-index: 9
+		&__item
+			text-align: center
+			color: rgb(65, 65, 65)
+			padding: 1.066rem 0
+			transition: background-color 0.3s
+			&:hover
+				background-color: rgba(#c65a4d, 0.3)
 	&-enter
 		font-weight: 300
 		padding: 1.066rem 0.933rem
 		&>img
 			width: auto
 			margin-left: 1.466rem
-
+.input-wrap
+	position: relative
+.invalid-message
+	color: tomato
+	position: absolute
+	left: 50%
+	bottom: -1.2rem
+	transform: translateX(-50%)
+	width: max-content
+	z-index: 9
