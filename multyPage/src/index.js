@@ -31,4 +31,7 @@ import Valid from './components/valid';
 new Valid({selectorValid: '.hero__form'}).init();
 import Mail from './components/mail';
 new Mail('hero-form').init();
+import ShowMenu from './components/showMenu';
+new ShowMenu('.burger', '.burger-menu').init();
+new ShowMenu('.filials__share', '.filials__adres').init();
 // import './components/js';
