@@ -33,5 +33,7 @@ import Mail from './components/mail';
 new Mail('hero-form').init();
 import ShowMenu from './components/showMenu';
 new ShowMenu('.burger', '.burger-menu').init();
-new ShowMenu('.filials__share', '.filials__adres').init();
+new ShowMenu('.filials__share', '.filials__adres', {iteration: 3}).init();
+import videoModal from './components/video';
+videoModal('.descriptions__video', '.descriptions__modal');
 // import './components/js';
