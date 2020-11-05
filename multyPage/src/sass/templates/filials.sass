@@ -19,7 +19,6 @@
 		background-color: rgb(255, 255, 255)
 		position: relative
 		padding: 1.533rem 1.266rem
-		margin-bottom: 0.866rem
 		transition: all 0.3s
 		&::after
 			content: ""
@@ -45,6 +44,9 @@
 			&::after
 				border-left: 1.133rem solid rgb(244, 215, 51)
 				transform: translateX(1.133rem)
+		&>a
+			&:not(:last-child)>.filials__link
+				margin-bottom: 0.866rem
 	& strong
 		font-size: 1.333rem
 		font-weight: 700
@@ -52,6 +54,7 @@
 		font-size: 1.066rem
 		font-weight: 300
 .map
-	width: 787px
-	height: 400px
+	width: 56.466rem
+	height: 26.666rem
 	margin-left: 2rem
+	overflow-x: hidden

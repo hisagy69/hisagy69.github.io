@@ -18,6 +18,9 @@
 	&__link
 		width: 2.866rem
 		height: 2.866rem
+		display: flex
+		align-items: center
+		justify-content: center
 		border-radius: 50%
 		overflow: hidden
 		border: 1px solid #fff
@@ -29,6 +32,22 @@
 		&:hover
 			background-color: rgb(244, 215, 51)
 			border-color: rgb(244, 215, 51)
+		&>svg
+			fill: #fff
+			width: 20px
+			height: 20px
+		&:first-child
+			&>svg
+				&:hover
+					fill: #4a76a8
+		&:nth-child(2)
+			&>svg
+				&:hover
+					fill: #d66910
+		&:last-child
+			&>svg
+				&:hover
+					fill: #fd0606
 	&__form
 		margin: 0 auto
 		width: fit-content
@@ -68,21 +87,3 @@
 		margin-bottom: 1rem
 	&__social
 		margin: 0 auto
-	&__link
-		padding: 10px
-		&>svg
-			fill: #fff
-			width: 20px
-			height: 20px
-		&:first-child
-			&>svg
-				&:hover
-					fill: #4a76a8
-		&:nth-child(2)
-			&>svg
-				&:hover
-					fill: #d66910
-		&:last-child
-			&>svg
-				&:hover
-					fill: #fd0606
