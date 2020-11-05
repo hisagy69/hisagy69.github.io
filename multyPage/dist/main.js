@@ -118,6 +118,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_valid__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(59);
 /* harmony import */ var _components_mail__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(60);
 /* harmony import */ var _components_showMenu__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(61);
+/* harmony import */ var _components_video__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(62);
 // import component from './components/dom';
 // const element = component('привет');
 // document.body.appendChild(element);
@@ -154,7 +155,11 @@ new _components_valid__WEBPACK_IMPORTED_MODULE_16__["default"]({
 new _components_mail__WEBPACK_IMPORTED_MODULE_17__["default"]('hero-form').init();
 
 new _components_showMenu__WEBPACK_IMPORTED_MODULE_18__["default"]('.burger', '.burger-menu').init();
-new _components_showMenu__WEBPACK_IMPORTED_MODULE_18__["default"]('.filials__share', '.filials__adres').init(); // import './components/js';
+new _components_showMenu__WEBPACK_IMPORTED_MODULE_18__["default"]('.filials__share', '.filials__adres', {
+  iteration: 3
+}).init();
+
+Object(_components_video__WEBPACK_IMPORTED_MODULE_19__["default"])('.descriptions__video', '.descriptions__modal'); // import './components/js';
 
 /***/ }),
 /* 2 */
@@ -934,7 +939,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".burger {\n  width: 3rem;\n  height: 3rem;\n  background-color: #f4d733;\n  border-radius: 50%;\n  position: fixed;\n  left: 1rem;\n  top: 1rem;\n  z-index: 99999;\n  cursor: pointer;\n  display: none; }\n  .burger > span {\n    display: block;\n    width: 80%;\n    height: 3px;\n    background: #414141;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%); }\n    .burger > span:first-child {\n      top: 39%;\n      transform: translate(-50%, -39%); }\n    .burger > span:last-child {\n      top: 63%;\n      transform: translate(-50%, -63%); }\n  .burger-menu {\n    display: flex;\n    background-color: #f4d733;\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    left: 0;\n    top: 0;\n    overflow: hidden;\n    z-index: 9999;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n    transform: translateX(-130%); }\n    .burger-menu__list {\n      text-align: center;\n      width: fit-content;\n      list-style-type: none;\n      font-size: 2rem; }\n    .burger-menu__item {\n      margin-bottom: 2rem; }\n      .burger-menu__item > a {\n        color: #414141; }\n    .burger-menu__city-list {\n      font-size: 1.5rem;\n      display: block;\n      border: 1px solid #414141;\n      color: #414141;\n      top: -15rem;\n      display: block !important; }\n  .burger.active > span {\n    top: 50%; }\n    .burger.active > span:first-child {\n      transform: translateX(-50%) rotate(45deg); }\n    .burger.active > span:last-child {\n      transform: translateX(-50%) rotate(-45deg); }\n    .burger.active > span:nth-child(2) {\n      display: none; }\n\n.nav__item {\n  list-style-type: none;\n  padding: 6px; }\n  .nav__item:not(:last-child) {\n    border-right: rgba(255, 255, 255, 0.4) 1px dashed; }\n  .nav__item > a {\n    font-weight: 300;\n    color: #ececec;\n    width: fit-content;\n    position: relative;\n    transition: color 0.3s; }\n    .nav__item > a::after {\n      content: \"\";\n      width: 0;\n      height: 1px;\n      position: absolute;\n      bottom: -5px;\n      left: 0;\n      background-color: #f4d733;\n      transition: width 0.3s; }\n    .nav__item > a:hover {\n      color: #f4d733; }\n      .nav__item > a:hover::after {\n        width: 100%; }\n\n.phone > a {\n  font-size: 1.266rem;\n  font-weight: 300;\n  color: #f9e952; }\n  .phone > a > span {\n    font-weight: 700;\n    color: #ffffff; }\n\n.button {\n  font-size: 0.866rem;\n  font-weight: 400;\n  color: #414141;\n  background: #f4d733;\n  border-radius: 50px;\n  text-transform: uppercase;\n  cursor: pointer;\n  padding: 1.2rem 1.466rem;\n  position: relative;\n  overflow: hidden; }\n  .button::before {\n    content: \"\";\n    width: 0;\n    height: 100%;\n    border-radius: 50px;\n    background-color: rgba(198, 90, 77, 0.3);\n    position: absolute;\n    left: 0;\n    top: 0;\n    transition: width 0.5s; }\n  .button:hover::before {\n    width: 100%; }\n\n.city-list {\n  font-weight: 300;\n  border-radius: 50px;\n  cursor: pointer;\n  position: relative; }\n  .city-list > ul {\n    background-color: #f4d733;\n    list-style-type: none;\n    width: 100%;\n    position: absolute;\n    left: 0;\n    top: 4rem;\n    font-weight: 300;\n    z-index: 9; }\n  .city-list__item {\n    text-align: center;\n    color: #414141;\n    padding: 1.066rem 0;\n    position: relative; }\n    .city-list__item::before {\n      content: \"\";\n      width: 0;\n      height: 100%;\n      background-color: rgba(198, 90, 77, 0.3);\n      position: absolute;\n      left: 0;\n      top: 0;\n      transition: width 0.3s; }\n    .city-list__item:hover::before {\n      width: 100%; }\n\n.city-enter {\n  display: flex;\n  align-items: center;\n  font-weight: 300;\n  padding: 1.066rem 0.933rem; }\n  .city-enter > img {\n    width: auto;\n    margin-left: 1.466rem; }\n\n.input-wrap {\n  position: relative; }\n\n.invalid-message {\n  color: tomato;\n  position: absolute;\n  left: 50%;\n  bottom: -1.2rem;\n  transform: translateX(-50%);\n  width: max-content;\n  z-index: 9; }\n\n.loader {\n  position: absolute;\n  left: 50%;\n  bottom: -3.5rem;\n  transform: translateX(-50%); }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".burger {\n  width: 3rem;\n  height: 3rem;\n  background-color: #f4d733;\n  border-radius: 50%;\n  position: fixed;\n  left: 1rem;\n  top: 1rem;\n  z-index: 99999;\n  cursor: pointer;\n  display: none; }\n  .burger > span {\n    display: block;\n    width: 80%;\n    height: 3px;\n    background: #414141;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    transition: transform 0.3s; }\n    .burger > span:first-child {\n      top: 39%;\n      transform: translate(-50%, -39%); }\n    .burger > span:last-child {\n      top: 63%;\n      transform: translate(-50%, -63%); }\n  .burger-menu {\n    display: flex;\n    background-color: #f4d733;\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    left: 0;\n    top: 0;\n    overflow: hidden;\n    z-index: 9999;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n    transform: translateX(-130%); }\n    .burger-menu__list {\n      text-align: center;\n      width: fit-content;\n      list-style-type: none;\n      font-size: 2rem; }\n    .burger-menu__item {\n      margin-bottom: 2rem; }\n      .burger-menu__item > a {\n        color: #414141; }\n    .burger-menu__city-list {\n      font-size: 1.5rem;\n      display: block;\n      border: 1px solid #414141;\n      color: #414141;\n      top: -15rem;\n      display: block !important; }\n  .burger.active > span {\n    top: 50%; }\n    .burger.active > span:first-child {\n      transform: translateX(-50%) rotate(45deg); }\n    .burger.active > span:last-child {\n      transform: translateX(-50%) rotate(-45deg); }\n    .burger.active > span:nth-child(2) {\n      display: none; }\n\n.nav__item {\n  list-style-type: none;\n  padding: 6px; }\n  .nav__item:not(:last-child) {\n    border-right: rgba(255, 255, 255, 0.4) 1px dashed; }\n  .nav__item > a {\n    font-weight: 300;\n    color: #ececec;\n    width: fit-content;\n    position: relative;\n    transition: color 0.3s; }\n    .nav__item > a::after {\n      content: \"\";\n      width: 0;\n      height: 1px;\n      position: absolute;\n      bottom: -5px;\n      left: 0;\n      background-color: #f4d733;\n      transition: width 0.3s; }\n    .nav__item > a:hover {\n      color: #f4d733; }\n      .nav__item > a:hover::after {\n        width: 100%; }\n\n.phone > a {\n  font-size: 1.266rem;\n  font-weight: 300;\n  color: #f9e952; }\n  .phone > a > span {\n    font-weight: 700;\n    color: #ffffff; }\n\n.button {\n  font-size: 0.866rem;\n  font-weight: 400;\n  color: #414141;\n  background: #f4d733;\n  border-radius: 50px;\n  text-transform: uppercase;\n  cursor: pointer;\n  padding: 1.2rem 1.466rem;\n  position: relative;\n  overflow: hidden; }\n  .button::before {\n    content: \"\";\n    width: 0;\n    height: 100%;\n    border-radius: 50px;\n    background-color: rgba(198, 90, 77, 0.3);\n    position: absolute;\n    left: 0;\n    top: 0;\n    transition: width 0.5s; }\n  .button:hover::before {\n    width: 100%; }\n\n.city-list {\n  font-weight: 300;\n  border-radius: 50px;\n  cursor: pointer;\n  position: relative; }\n  .city-list > ul {\n    background-color: #f4d733;\n    list-style-type: none;\n    width: 100%;\n    position: absolute;\n    left: 0;\n    top: 4rem;\n    font-weight: 300;\n    z-index: 9; }\n  .city-list__item {\n    text-align: center;\n    color: #414141;\n    padding: 1.066rem 0;\n    position: relative; }\n    .city-list__item::before {\n      content: \"\";\n      width: 0;\n      height: 100%;\n      background-color: rgba(198, 90, 77, 0.3);\n      position: absolute;\n      left: 0;\n      top: 0;\n      transition: width 0.3s; }\n    .city-list__item:hover::before {\n      width: 100%; }\n\n.city-enter {\n  display: flex;\n  align-items: center;\n  font-weight: 300;\n  padding: 1.066rem 0.933rem; }\n  .city-enter > img {\n    width: auto;\n    margin-left: 1.466rem; }\n\n.input-wrap {\n  position: relative; }\n\n.invalid-message {\n  color: tomato;\n  position: absolute;\n  left: 50%;\n  bottom: -1.2rem;\n  transform: translateX(-50%);\n  width: max-content;\n  z-index: 9; }\n\n.loader {\n  position: absolute;\n  left: 50%;\n  bottom: -3.5rem;\n  transform: translateX(-50%); }\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -1128,7 +1133,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_img_play_png__WEBPACK_IMPORTED_MODULE_2__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".advantages {\n  background-color: #f5f9fa;\n  padding: 4rem 0 2rem; }\n  .advantages__title {\n    line-height: 1.767; }\n    .advantages__title > span {\n      color: #6eb6d0;\n      font-weight: 900; }\n\n.descriptions__title {\n  width: 30%;\n  line-height: 1.349;\n  text-align: center;\n  margin-right: 2rem; }\n  .descriptions__title > strong {\n    text-transform: uppercase;\n    color: #6eb6d0;\n    font-weight: 900; }\n    .descriptions__title > strong:first-child {\n      font-size: 4.2rem; }\n    .descriptions__title > strong:last-child {\n      font-size: 3.2rem; }\n  .descriptions__title > p {\n    font-size: 1.266rem;\n    font-weight: 400;\n    color: #414141; }\n\n.descriptions__text {\n  width: 65%;\n  font-size: 1rem;\n  color: #414141;\n  line-height: 1.467;\n  font-weight: 300;\n  margin-right: 2rem;\n  text-align: justify; }\n  .descriptions__text > p:not(:last-child) {\n    margin-bottom: 1rem; }\n\n.descriptions__video {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .descriptions__video > span {\n    color: #6eb6d0;\n    font-size: 1.133rem;\n    font-weight: 900;\n    line-height: 1.235;\n    text-transform: uppercase;\n    text-align: center; }\n  .descriptions__video > button {\n    border-radius: 50%;\n    background: #f4d733 url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center;\n    width: 4.866rem;\n    height: 4.866rem;\n    margin-top: 0.6rem; }\n    .descriptions__video > button:hover {\n      background-size: 30%; }\n\n.descriptions__modal {\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n  position: fixed;\n  left: 0;\n  top: 0;\n  display: flex;\n  display: none;\n  align-items: center;\n  justify-content: center; }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".advantages {\n  background-color: #f5f9fa;\n  padding: 4rem 0 2rem; }\n  .advantages__title {\n    line-height: 1.767; }\n    .advantages__title > span {\n      color: #6eb6d0;\n      font-weight: 900; }\n\n.descriptions__title {\n  width: 31%;\n  line-height: 1.349;\n  text-align: center;\n  margin-right: 2rem; }\n  .descriptions__title > strong {\n    text-transform: uppercase;\n    color: #6eb6d0;\n    font-weight: 900; }\n    .descriptions__title > strong:first-child {\n      font-size: 4.2rem; }\n    .descriptions__title > strong:last-child {\n      font-size: 3.2rem; }\n  .descriptions__title > p {\n    font-size: 1.266rem;\n    font-weight: 400;\n    color: #414141; }\n\n.descriptions__text {\n  width: 47%;\n  font-size: 1rem;\n  color: #414141;\n  line-height: 1.467;\n  font-weight: 300;\n  margin-right: 2rem;\n  text-align: justify; }\n  .descriptions__text > p:not(:last-child) {\n    margin-bottom: 1rem; }\n\n.descriptions__video {\n  width: 15%;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .descriptions__video > span {\n    color: #6eb6d0;\n    font-size: 1.133rem;\n    font-weight: 900;\n    line-height: 1.235;\n    text-transform: uppercase;\n    text-align: center; }\n  .descriptions__video > button {\n    border-radius: 50%;\n    background: #f4d733 url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center;\n    width: 4.866rem;\n    height: 4.866rem;\n    margin-top: 0.6rem; }\n    .descriptions__video > button:hover {\n      background-size: 30%; }\n\n.descriptions__modal {\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.4);\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 99999; }\n  .descriptions__modal > iframe {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%); }\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -1408,7 +1413,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "@media screen and (max-width: 1200px) {\n  html {\n    font-size: 13px; }\n  .container {\n    padding: 0 2rem; }\n  .burger {\n    display: block; }\n  .nav {\n    display: none; }\n  .header > .container, .footer > .container {\n    justify-content: space-around; }\n  .map {\n    width: 46rem;\n    margin-left: 0; }\n  .advantages__descriptions {\n    justify-content: space-between; }\n  .descriptions__text {\n    margin-right: 0; }\n  .descriptions__title > strong:first-child {\n    font-size: 3rem; }\n  .descriptions__title > strong:last-child {\n    font-size: 2rem; }\n  .descriptions__video {\n    width: 100%;\n    order: -1;\n    margin: 0 auto;\n    margin-bottom: 2rem; }\n  .filials-wrap {\n    padding: 0; }\n    .filials-wrap::before {\n      display: none; }\n  .filials__link {\n    width: 17rem;\n    height: 5rem;\n    padding: 1rem; }\n    .filials__link::after {\n      border-top: 2.5rem solid transparent;\n      border-bottom: 2.5rem solid transparent; }\n  .filials__adres > a.active > .filials__link::after {\n    transform: translateX(1.2rem); }\n  .filials__share {\n    display: flex; }\n  .filials strong {\n    font-size: 1.1rem; }\n  .filials span {\n    font-size: 1rem; }\n  .footer__copyright::before {\n    width: 90%; } }\n\n@media screen and (max-width: 960px) {\n  .hero {\n    padding-bottom: 4rem; }\n    .hero__title {\n      font-size: 4rem; }\n    .hero__description {\n      font-size: 2rem; }\n  .filials-wrap {\n    position: relative; }\n  .filials__adres {\n    position: absolute;\n    transform: translateX(-130%);\n    z-index: 9; }\n  .map {\n    margin: 0 auto; } }\n\n@media screen and (max-width: 768px) {\n  .header__logo, .footer__logo {\n    width: 5rem;\n    height: 5rem;\n    margin-right: 0; }\n  .city-enter {\n    padding: 0.9rem; }\n  .header__city-list, .footer__city-list {\n    display: none; }\n  .hero__title {\n    font-size: 3.5rem; }\n  .hero__form {\n    width: auto; }\n    .hero__form::before {\n      display: none; }\n  .hero__inputs {\n    flex-direction: column;\n    width: 80%;\n    margin: 0 auto 1.4rem; }\n  .hero__input {\n    width: 100%; }\n  .hero__input:first-child {\n    margin-right: 0; }\n  .input-wrap:first-child {\n    margin-bottom: 1.5rem; }\n  .cards__card {\n    margin-bottom: 2rem;\n    width: 50%; }\n  .descriptions__title {\n    width: 60%;\n    margin: 0 auto 1.5rem; }\n  .descriptions__text {\n    width: auto; }\n  .advantages {\n    padding-bottom: 3rem; }\n  .groups, .abonements {\n    padding-bottom: 1rem; }\n  .abonements__card {\n    margin-bottom: 2rem; } }\n\n@media screen and (max-width: 640px) {\n  .container {\n    padding: 0 1rem; }\n  .phone > a {\n    font-size: 1rem; }\n  .button {\n    padding: 1rem 1.2rem; }\n  .phone {\n    margin-right: 0; }\n  .header__logo, .footer__logo {\n    width: 4rem;\n    height: 4rem; }\n  .hero {\n    padding: 1.666rem 0 4rem; }\n    .hero__title {\n      font-size: 3rem; }\n    .hero__description {\n      font-size: 1.7rem; }\n    .hero__inputs {\n      width: 100%; }\n    .hero__button {\n      width: 100%; }\n  .descriptions__title {\n    width: 100%; }\n    .descriptions__title > strong:first-child {\n      font-size: 2.5rem; }\n    .descriptions__title > strong:last-child {\n      font-size: 1.5rem; }\n    .descriptions__title > span {\n      font-size: 1.2rem; }\n  .section__title, .groups__name {\n    font-size: 1.5rem; }\n  .groups__price {\n    font-size: 1.3rem; }\n  .cards {\n    width: 70%;\n    margin: 0 auto 3rem; }\n    .cards__card {\n      margin: 0 auto;\n      width: 70%; }\n  .groups__cards, .abonements__cards {\n    width: 100%; }\n  .filials {\n    padding-bottom: 0; }\n    .filials > .container {\n      padding: 0; } }\n\n@media screen and (max-width: 360px) {\n  .container {\n    padding: 0 1rem; }\n  .button {\n    padding: 1rem 0.8rem; }\n  .hero__title {\n    font-size: 2.14rem; }\n  .footer__copyright > div {\n    flex-direction: column;\n    text-align: center; }\n    .footer__copyright > div > p:first-child {\n      margin-bottom: 1rem; } }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "@media screen and (max-width: 1200px) {\n  html {\n    font-size: 13px; }\n  .container {\n    padding: 0 2rem; }\n  .burger {\n    display: block; }\n  .nav {\n    display: none; }\n  .header > .container, .footer > .container {\n    justify-content: space-around; }\n  .map {\n    width: 46rem;\n    margin-left: 0; }\n  .advantages__descriptions {\n    justify-content: space-between; }\n  .descriptions__text {\n    margin-right: 0; }\n  .descriptions__title > strong:first-child {\n    font-size: 3rem; }\n  .descriptions__title > strong:last-child {\n    font-size: 2rem; }\n  .descriptions__video {\n    width: 100%;\n    order: -1;\n    margin: 0 auto;\n    margin-bottom: 2rem; }\n  .filials-wrap {\n    padding: 0; }\n    .filials-wrap::before {\n      display: none; }\n  .filials__link {\n    width: 17rem;\n    height: 5rem;\n    padding: 1rem; }\n    .filials__link::after {\n      border-top: 2.5rem solid transparent;\n      border-bottom: 2.5rem solid transparent; }\n  .filials__adres > a.active > .filials__link::after {\n    transform: translateX(1.2rem); }\n  .filials strong {\n    font-size: 1.1rem; }\n  .filials span {\n    font-size: 1rem; }\n  .footer__copyright::before {\n    width: 90%; } }\n\n@media screen and (max-width: 960px) {\n  .hero {\n    padding-bottom: 4rem; }\n    .hero__title {\n      font-size: 4rem; }\n    .hero__description {\n      font-size: 2rem; }\n  .filials-wrap {\n    position: relative; }\n  .filials__share {\n    display: block; }\n    .filials__share.active {\n      display: none; }\n  .filials__adres {\n    position: absolute;\n    transform: translateX(-130%);\n    z-index: 9; }\n  .map {\n    margin: 0 auto; } }\n\n@media screen and (max-width: 768px) {\n  .header__logo, .footer__logo {\n    width: 5rem;\n    height: 5rem;\n    margin-right: 0; }\n  .city-enter {\n    padding: 0.9rem; }\n  .header__city-list, .footer__city-list {\n    display: none; }\n  .hero__title {\n    font-size: 3.5rem; }\n  .hero__form {\n    width: auto; }\n    .hero__form::before {\n      display: none; }\n  .hero__inputs {\n    flex-direction: column;\n    width: 80%;\n    margin: 0 auto 1.4rem; }\n  .hero__input {\n    width: 100%; }\n  .hero__input:first-child {\n    margin-right: 0; }\n  .input-wrap:first-child {\n    margin-bottom: 1.5rem; }\n  .cards__card {\n    margin-bottom: 2rem;\n    width: 50%; }\n  .descriptions__title {\n    width: 60%;\n    margin: 0 auto 1.5rem; }\n  .descriptions__text {\n    width: auto; }\n  .descriptions__modal > iframe {\n    width: 100%; }\n  .advantages {\n    padding-bottom: 3rem; }\n  .groups, .abonements {\n    padding-bottom: 1rem; }\n  .abonements__card {\n    margin-bottom: 2rem; } }\n\n@media screen and (max-width: 640px) {\n  .container {\n    padding: 0 1rem; }\n  .phone > a {\n    font-size: 1rem; }\n  .button {\n    padding: 1rem 1.2rem; }\n  .phone {\n    margin-right: 0; }\n  .header__logo, .footer__logo {\n    width: 4rem;\n    height: 4rem; }\n  .hero {\n    padding: 1.666rem 0 4rem; }\n    .hero__title {\n      font-size: 3rem; }\n    .hero__description {\n      font-size: 1.7rem; }\n    .hero__inputs {\n      width: 100%; }\n    .hero__button {\n      width: 100%; }\n  .descriptions__title {\n    width: 100%; }\n    .descriptions__title > strong:first-child {\n      font-size: 2.5rem; }\n    .descriptions__title > strong:last-child {\n      font-size: 1.5rem; }\n    .descriptions__title > span {\n      font-size: 1.2rem; }\n  .section__title, .groups__name {\n    font-size: 1.5rem; }\n  .groups__price {\n    font-size: 1.3rem; }\n  .cards {\n    width: 70%;\n    margin: 0 auto 3rem; }\n    .cards__card {\n      margin: 0 auto;\n      width: 70%; }\n  .groups__cards, .abonements__cards {\n    width: 100%; }\n  .filials {\n    padding-bottom: 0; }\n    .filials > .container {\n      padding: 0; } }\n\n@media screen and (max-width: 360px) {\n  .container {\n    padding: 0 1rem; }\n  .button {\n    padding: 1rem 0.8rem; }\n  .hero__title {\n    font-size: 2.14rem; }\n  .footer__copyright > div {\n    flex-direction: column;\n    text-align: center; }\n    .footer__copyright > div > p:first-child {\n      margin-bottom: 1rem; } }\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -1741,7 +1746,7 @@ class ShowMenu {
   constructor(buttonSelector, menuSelector, buttonAnimate = false) {
     this.button = document.querySelector(buttonSelector);
     this.menu = document.querySelector(menuSelector);
-    this.buttonAnimate;
+    this.buttonAnimate = buttonAnimate;
   }
 
   animate(show) {
@@ -1758,12 +1763,8 @@ class ShowMenu {
       end = -130;
     }
 
-    const animateShowHide = timestamp => {
-      if (!start) {
-        start = timestamp;
-      }
-
-      show ? n++ : n--;
+    const animateShowHide = () => {
+      show ? n += 5 : n -= 5;
       this.menu.style.transform = `translateX(${n}%)`;
 
       if (n !== end) {
@@ -1787,14 +1788,92 @@ class ShowMenu {
     }
   }
 
+  pulse() {
+    let key = null,
+        n = 0,
+        i = 0,
+        max = 15,
+        start = null;
+
+    const pulseAnimate = () => {
+      if (n === max) {
+        n = 0;
+        i++;
+        return;
+      }
+
+      n += 1;
+      this.button.style.transform = `translateY(${n}px)`;
+      requestAnimationFrame(pulseAnimate);
+    };
+
+    const animate = timestamp => {
+      if (!start) {
+        start = timestamp;
+      }
+
+      if (timestamp - start >= 1000) {
+        start = timestamp;
+        requestAnimationFrame(pulseAnimate);
+      }
+
+      if (i === this.buttonAnimate.iteration) return;
+      key = requestAnimationFrame(animate);
+    };
+
+    key = requestAnimationFrame(animate);
+  }
+
   init() {
-    console.log(this.button);
+    if (this.buttonAnimate) this.pulse();
     this.button.addEventListener('click', this.handler.bind(this));
+
+    if (document.documentElement.clientWidth < 1200) {
+      this.menu.addEventListener('click', event => {
+        console.log('hand');
+        if (!event.target.closest('a')) return;
+        this.button.classList.remove('active');
+        this.animate(false);
+      });
+    }
   }
 
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (ShowMenu);
+
+/***/ }),
+/* 62 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const videoModal = (buttonSelector, modalSelector) => {
+  const button = document.querySelector(buttonSelector),
+        modal = document.querySelector(modalSelector);
+
+  const showHide = event => {
+    const target = event.target;
+
+    if (modal.matches('.d-none') && target.closest(buttonSelector)) {
+      console.log(modal);
+      modal.classList.remove('d-none');
+      return;
+    }
+
+    if (!modal.matches('.d-none') && !target.closest('iframe')) {
+      console.log('close');
+      modal.classList.add('d-none');
+      return;
+    }
+  };
+
+  document.addEventListener('click', event => {
+    showHide(event);
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (videoModal);
 
 /***/ })
 /******/ ]);
