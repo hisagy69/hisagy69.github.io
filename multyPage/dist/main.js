@@ -1848,21 +1848,51 @@ class ShowMenu {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+const script = document.createElement('script');
+script.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(script, firstScriptTag);
+let player;
+
+const onPlayerReady = () => {
+  player.playVideo();
+};
+
+const stopVideo = () => {
+  player.stopVideo();
+};
+
+const onYouTubeIframeAPIReady = () => {
+  player = new YT.Player('player', {
+    height: '315',
+    width: '560',
+    videoId: '4ttLL4tLwV8',
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+};
+
 const videoModal = (buttonSelector, modalSelector) => {
-  const button = document.querySelector(buttonSelector),
-        modal = document.querySelector(modalSelector);
+  const modal = document.querySelector(modalSelector);
 
   const showHide = event => {
     const target = event.target;
 
     if (modal.matches('.d-none') && target.closest(buttonSelector)) {
-      console.log(modal);
       modal.classList.remove('d-none');
+
+      if (!player) {
+        onYouTubeIframeAPIReady();
+        return;
+      }
+
+      onPlayerReady();
       return;
     }
 
     if (!modal.matches('.d-none') && !target.closest('iframe')) {
-      console.log('close');
+      stopVideo();
       modal.classList.add('d-none');
       return;
     }
