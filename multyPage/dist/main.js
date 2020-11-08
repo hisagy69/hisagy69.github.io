@@ -1849,7 +1849,7 @@ class ShowMenu {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 const script = document.createElement('script');
-script.src = "https://www.youtube.com/iframe_api";
+script.src = 'https://www.youtube.com/iframe_api';
 const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(script, firstScriptTag);
 let player;
@@ -1867,6 +1867,10 @@ const onYouTubeIframeAPIReady = () => {
     height: '315',
     width: '560',
     videoId: '4ttLL4tLwV8',
+    host: 'https://www.youtube.com',
+    playerVars: {
+      origin: 'https://hisagy69.github.io'
+    },
     events: {
       'onReady': onPlayerReady
     }
