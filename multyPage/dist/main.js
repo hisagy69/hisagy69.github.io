@@ -1869,7 +1869,7 @@ const onYouTubeIframeAPIReady = () => {
     videoId: '4ttLL4tLwV8',
     host: 'https://www.youtube.com',
     playerVars: {
-      origin: 'https://hisagy69.github.io'
+      origin: 'https://hisagy69.github.io/multyPage/dist/'
     },
     events: {
       'onReady': onPlayerReady
