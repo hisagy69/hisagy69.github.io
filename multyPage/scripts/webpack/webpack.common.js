@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'),
 	{HotModuleReplacementPlugin} = require('webpack'),
 	{CleanWebpackPlugin} = require('clean-webpack-plugin'),
+	CopyWebpackPlugin = require('copy-webpack-plugin'),
 	{ROOT_DIRECTORY, SRC_DIRECTORY, DIST_DIRECTORY} = require('./constants');
 module.exports = () => {
 	return {
@@ -34,6 +35,9 @@ module.exports = () => {
 				favicon: './src/favicon.ico'
 			}),
 			new CleanWebpackPlugin({root: ROOT_DIRECTORY}),
+			// new CopyWebpackPlugin(patterns: [
+			// 	from:
+			// ]),
 			new HotModuleReplacementPlugin(),
 		]
 	}

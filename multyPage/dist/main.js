@@ -119,6 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_mail__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(60);
 /* harmony import */ var _components_showMenu__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(61);
 /* harmony import */ var _components_video__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(62);
+/* harmony import */ var _components_popup__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(63);
 // import component from './components/dom';
 // const element = component('привет');
 // document.body.appendChild(element);
@@ -159,7 +160,9 @@ new _components_showMenu__WEBPACK_IMPORTED_MODULE_18__["default"]('.filials__sha
   iteration: 3
 }).init();
 
-Object(_components_video__WEBPACK_IMPORTED_MODULE_19__["default"])('.descriptions__video', '.descriptions__modal'); // import './components/js';
+Object(_components_video__WEBPACK_IMPORTED_MODULE_19__["default"])('.descriptions__video', '.descriptions__modal');
+
+new _components_popup__WEBPACK_IMPORTED_MODULE_20__["default"]('button[data-toggle="modal"]').init(); // import './components/js';
 
 /***/ }),
 /* 2 */
@@ -1868,7 +1871,7 @@ const onYouTubeIframeAPIReady = () => {
     width: '560',
     videoId: '4ttLL4tLwV8',
     playerVars: {
-      origin: 'https://hisagy69.github.io/multyPage/dist/'
+      origin: 'https://hisagy69.github.io'
     },
     events: {
       'onReady': onPlayerReady
@@ -1907,6 +1910,147 @@ const videoModal = (buttonSelector, modalSelector) => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (videoModal);
+
+/***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Popup; });
+class Popup {
+  constructor(buttonSelector) {
+    this.buttonSelector = buttonSelector;
+    this.modal = document.querySelector('.popup');
+    this.style = document.querySelector('.popup-style');
+  }
+
+  toggleModal() {
+    if (this.modal) {
+      this.modal.style.display = '';
+      this.modal.querySelector('.popup__title').textContent = this.title;
+      return;
+    }
+
+    this.modal = document.createElement('div');
+    this.modal.classList.add('popup');
+    this.modal.insertAdjacentHTML('beforeend', `
+			<div class="popup__dialog">
+				<div class="popup__close">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="popup__title">${this.title}</div>
+				<form class="popup__form form" id="popup-form" method="POST">
+					<div class="input-wrap">
+						<input class="popup__input" id="user-name" data-type="name" type="text" placeholder="Ваше имя">
+					</div>
+					<div class="input-wrap">
+						<input class="popup__input" id="user-phone" data-type="phone" type="tel" placeholder="Ваш номер телефона">
+					</div>
+					<button class="button popup__button">Отправить заявку</button>
+				</form>
+			</div>
+		`);
+    this.style = document.createElement('style');
+    this.style.textContent = `
+			.popup {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: 34;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.popup__dialog {
+				width: 397px;
+				padding: 0;
+				background: #000 url("img/popup.jpg") no-repeat 0 116% / contain;
+				position: relative;
+			}
+			.popup__dialog::before {
+				content: "";
+				background-color: rgba(0, 0, 0, 0.8);
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.popup__title {
+				font-size: 1.466rem;
+				background-color: #33b7d2;
+				color: rgb(255, 255, 255);
+				line-height: 1.045;
+				text-align: center;
+				padding: 1.666rem 0;
+				position: relative;
+			}
+			.popup__form {
+				padding: 3.2rem 3.266rem 2rem;
+				position: relative;
+				display: flex;
+				align-items:center;
+				flex-direction: column;
+			}
+			.popup__input {
+				font-size: 0.866rem;
+				font-weight: 300;
+				color: #606060;
+				width: 19.333rem;
+				border-radius: 50px;
+				padding: 1.333rem 1.733rem;
+				border: none;
+				margin-bottom: 1rem
+			}
+			.popup__form::before {
+				content: url(img/popupline.png);
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.popup__close {
+				position: absolute;
+				right: -17px;
+				top: -17px;
+				width: 17px;
+				height: 17px;
+			}
+			.popup__close span {
+				background: #fff;
+				height: 17px;
+				width: 2px
+			}
+			.popup__button {
+				margin-top: 0.666rem;
+				text-transform: none;
+			}
+		`;
+    document.head.appendChild(this.style);
+    document.body.appendChild(this.modal);
+  }
+
+  init() {
+    const handler = event => {
+      if (this.modal && (event.target.closest('.popup__close') || !event.target.closest('.popup__dialog'))) {
+        this.modal.style.display = 'none';
+      }
+
+      if (event.target.closest(this.buttonSelector)) {
+        this.button = event.target.closest(this.buttonSelector);
+        this.title = this.button.parentNode.firstChild.textContent || 'Обратный звонок';
+        this.toggleModal(event);
+      }
+    };
+
+    document.addEventListener('click', handler.bind(this));
+  }
+
+}
 
 /***/ })
 /******/ ]);

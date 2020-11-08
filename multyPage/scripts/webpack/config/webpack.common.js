@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'),
-	{SRC_DIRECTORY, DIST_DIRECTORY,  FONTS, FONTSTO, IMG, IMGTO} = require('../constants'),
+	{SRC_DIRECTORY, DIST_DIRECTORY,  FONTS, FONTSTO, IMG, IMGTO, MAILER, MAILERTO, SEND, SENDTO} = require('../constants'),
 	CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = () => {
@@ -37,6 +37,10 @@ module.exports = () => {
 					test: /\.(ttf|woff|woff2|eot)$/,
 					use: ['file-loader']
 				},
+				{
+					test: /\.php$/,
+					use: ['html-minify', 'php-loader']
+				}
 			]
 		},
 		plugins: [
@@ -53,6 +57,14 @@ module.exports = () => {
 					{
 						from: IMG,
 						to: IMGTO
+					},
+					{
+						from: SEND,
+						to: SENDTO
+					},
+					{
+						from: MAILER,
+						to: MAILERTO
 					}
 				]
 			})
