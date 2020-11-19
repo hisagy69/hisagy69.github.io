@@ -1,3 +1,4 @@
+import Popup from './popup';
 export default class Mail {
 	constructor(formId) {
 		this.form = document.getElementById(formId);
@@ -10,30 +11,11 @@ export default class Mail {
 		});
 	}
 	errorData() {
+		new Popup(null, `
+			<h2 class="popup__message_error">Ошибка отправки!</h2>
+		`).init();
 		console.error(this.response);
 		this.clearMessage();
-		const errorPopup = document.createElement('div');
-		errorPopup.className = 'popup error-popup';
-		errorPopup.innerHTML = `
-			<div class="popup-dialog error-popup__dialog">
-				<div class="popup__close">
-					<span></span>
-					<span></span>
-				</div>
-				<h2 class="error-popup__message">Ошибка отправки!</h2>
-			</div>
-		`;
-		document.head.insertAdjacentHTML('beforeend', `
-			<style>
-				.error-popup__dialog {
-					border: 2px solid tomato;
-				}
-				.error-popup__message {
-					color: tomato;
-				}
-			</style>
-		`);
-		document.body.appendChild(errorPopup);
 	}
 	output(response) {
 		cancelAnimationFrame(this.key);
@@ -128,10 +110,10 @@ export default class Mail {
 		}
 		this.animate();
 		this.postData(body)
-			.then(this.output.bind(this))
-			.catch(this.errorData.bind(this));
+			.then(this.output.bind(this));
 	}
 	init() {
+		if (!this.form) return;
 		if (this.form.querySelector('.invalid-message')) {
 			return;
 		}

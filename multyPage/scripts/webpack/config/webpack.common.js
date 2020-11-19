@@ -8,7 +8,6 @@ module.exports = () => {
 		output: {
 			path: DIST_DIRECTORY
 		},
-		
 		module: {
 			rules: [
 				{
@@ -31,7 +30,7 @@ module.exports = () => {
 				},
 				{
 					test: /\.(png|jpg|svg|gif)$/,
-					use: ['file-loader']//позволяеь работать с файлами помимо js
+					use: ['file-loader']
 				},
 				{
 					test: /\.(ttf|woff|woff2|eot)$/,
@@ -46,6 +45,21 @@ module.exports = () => {
 		plugins: [
 			new HtmlWebpackPlugin({
 				template: './src/index.pug',
+				favicon: './src/favicon.ico'
+			}),
+			new HtmlWebpackPlugin({
+				filename: 'search.html',
+				template: './src/search.pug',
+				favicon: './src/favicon.ico'
+			}),
+			new HtmlWebpackPlugin({
+				filename: 'news.html',
+				template: './src/news.pug',
+				favicon: './src/favicon.ico'
+			}),
+			new HtmlWebpackPlugin({
+				filename: 'contacts.html',
+				template: './src/contacts.pug',
 				favicon: './src/favicon.ico'
 			}),
 			new CopyWebpackPlugin({

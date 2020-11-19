@@ -1,0 +1,183 @@
+// @media screen and ( max-width: 1600px )
+	
+@media screen and ( max-width: 1200px )
+	html
+		font-size: 13px
+	.container
+		padding: 0 2rem 
+	.burger
+		display: block
+	.nav
+		display: none
+	.header, .footer 
+		& > .container
+			justify-content: space-around
+	.map
+		width: 46rem
+		margin-left: 0
+	.advantages__descriptions
+		justify-content: space-between
+	.descriptions
+		&__text
+			margin-right: 0
+		&__title>strong
+			&:first-child
+				font-size: 3rem
+			&:last-child
+				font-size: 2rem
+		&__video
+			width: 100%
+			order: -1
+			margin: 0 auto
+			margin-bottom: 2rem
+	.filials
+		&-wrap
+			padding: 0
+			&::before
+				display: none
+		&__link
+			width: 17rem
+			height: 5rem
+			padding: 1rem
+			&::after
+				border-top: 2.5rem solid transparent
+				border-bottom: 2.5rem solid transparent
+		&__adres > a.active > .filials__link::after
+			transform: translateX(1.2rem)
+		& strong
+			font-size: 1.1rem
+		& span
+			font-size: 1rem
+	.footer
+		&__copyright
+			&::before
+				width: 90%
+@media screen and ( max-width: 960px )
+	.hero
+		padding-bottom: 4rem
+		&__title
+			font-size: 4rem
+		&__description
+			font-size: 2rem
+	.filials
+		&-wrap
+			position: relative
+		&__share
+			display: block
+			&.active
+				display: none
+		&__adres
+			position: absolute
+			transform: translateX(-130%)
+			z-index: 9
+	.map
+		margin: 0 auto
+@media screen and ( max-width: 768px )
+	.header, .footer
+		&__logo
+			width: 5rem
+			height: 5rem
+			margin-right: 0
+	.city
+		&-enter
+			padding: 0.9rem
+	.header, .footer
+		&__city-list
+			display: none
+	.hero
+		&__title
+			font-size: 3.5rem
+		&__form
+			width: auto
+			&::before
+				display: none
+		&__inputs
+			flex-direction: column
+			width: 80%
+			margin: 0 auto 1.4rem
+		&__input
+			width: 100%
+		&__input:first-child
+			margin-right: 0
+	.input-wrap:first-child
+		margin-bottom: 1.5rem
+	.cards__card
+		margin-bottom: 2rem
+		width: 50%
+	.descriptions
+		&__title
+			width: 60%
+			margin: 0 auto 1.5rem
+		&__text
+			width: auto
+		&__modal
+			&>iframe
+				width: 100%
+	.advantages
+		padding-bottom: 3rem
+	.groups, .abonements
+		padding-bottom: 1rem
+	.abonements
+		&__card
+			margin-bottom: 2rem
+@media screen and ( max-width: 640px )
+	.container
+		padding: 0 1rem
+	.phone > a
+		font-size: 1rem
+	.button
+		padding: 1rem 1.2rem
+	.phone
+		margin-right: 0
+	.header, .footer
+		&__logo
+			width: 4rem
+			height: 4rem
+	.hero
+		padding: 1.666rem 0 4rem
+		&__title
+			font-size: 3rem
+		&__description
+			font-size: 1.7rem
+		&__inputs
+			width: 100%
+		&__button
+			width: 100%
+	.descriptions__title
+		width: 100%
+		&>strong
+			&:first-child
+				font-size: 2.5rem
+			&:last-child
+				font-size: 1.5rem
+		&>span
+			font-size: 1.2rem
+	.section__title, .groups__name
+		font-size: 1.5rem
+	.groups__price
+		font-size: 1.3rem
+	.cards
+		width: 70%
+		margin: 0 auto 3rem
+		&__card
+			margin: 0 auto
+			width: 70%
+	.groups__cards, .abonements__cards
+		width: 100%
+	.filials
+		background-color: #f5f9fa
+		padding-bottom: 0
+		&>.container
+			padding: 0
+@media screen and ( max-width: 360px )
+	.container
+		padding: 0 1rem
+	.button
+		padding: 1rem 0.8rem
+	.hero__title
+		font-size: 2.14rem
+	.footer__copyright>div
+		flex-direction: column
+		text-align: center
+		&>p:first-child
+			margin-bottom: 1rem
