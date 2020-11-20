@@ -15,6 +15,7 @@ import './sass/templates/advantages.sass';
 import './sass/templates/groups.sass';
 import './sass/templates/abonements.sass';
 import './sass/templates/filials.sass';
+import './sass/templates/search.sass';
 import './sass/templates/footer.sass';
 import './sass/media.sass';
 // import logo from './img/logo.png';

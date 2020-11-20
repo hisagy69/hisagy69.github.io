@@ -1,0 +1,8 @@
+block variables
+.bread-crumbs
+	.container
+		for item in crumbs
+			if item.last
+				span.bread-crumbs__item.bread-crumbs__item_curent=item.name
+			else
+				a.bread-crumbs__item(href=item.link)=item.name

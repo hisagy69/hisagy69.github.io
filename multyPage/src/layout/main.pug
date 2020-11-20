@@ -8,5 +8,8 @@ html(lang="ru")
 		block links
 	body
 		include ../modules/header
+		block crumbs
+			if crumbs
+				include ../modules/bread			
 		block content
 		include ../modules/footer

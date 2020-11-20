@@ -1,6 +1,5 @@
 const init = () => {
 	if (!document.getElementById('map')) return;
-	console.log('хуй');
 	const adres = document.querySelector('.filials__adres'),
 		links = adres.querySelectorAll('a'),
 		linkCords = [+links[0].dataset.nord, +links[0].dataset.west],

@@ -175,3 +175,26 @@
 	left: 50%
 	bottom: -3.5rem
 	transform: translateX(-50%)
+.bread-crumbs
+	background-color: rgb(242, 248, 249)
+	opacity: 0.8
+	padding: 1.6rem 0
+	&__item
+		font-size: 13px
+		line-height: 1.308
+		transition: text-decoration, color 0.3s
+		&:not(&_curent)
+			color: rgb(151, 151, 151)
+			text-decoration: underline
+			margin-right: 1.666rem
+			&::after
+				content: url("../img/arrow-left.png")
+				margin-left: 12px
+				
+			&:hover
+				text-decoration: none
+				color: #48bcd5
+				
+		&_curent
+			text-decoration: none
+			color: #48bcd5
