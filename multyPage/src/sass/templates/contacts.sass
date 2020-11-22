@@ -1,0 +1,106 @@
+.contacts
+	padding: 2.133rem 0
+	&__title
+		font-size: 2rem
+		color: rgb(63, 63, 63)
+		line-height: 0.767
+		position: relative
+		margin-bottom: 2.733rem
+		&::after
+			content: ""
+			height: 1px
+			width: 100%
+			position: absolute
+			bottom: -1rem
+			left: 0
+			background-color: #33b7d2
+	&__location
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 3.866rem
+	&__item
+		border: 1px solid rgb(51, 183, 210)
+		width: 17.4rem
+		text-align: center
+		padding: 2.266rem 0
+		transition: all 0.3s
+		&>strong
+			color: rgb(63, 63, 63)
+			font-size: 1.333rem
+			font-weight: 700
+		&:hover, &.active
+			background-color: rgb(255, 216, 1)
+			border-color: rgb(255, 216, 1)
+			box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.17)
+	&__date
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		color: rgb(59, 59, 59)
+		margin-bottom: 5rem
+	&__adres
+		font-size: 1.2rem
+		line-height: 1.333
+		font-weight: 300
+		width: 47%
+		display: flex
+		align-items: center
+
+		&::before
+			content: url("../../img/contacts-marker.png")
+			margin-right: 1.133rem
+		&::after
+			content: ""
+			margin-left: 7.133rem
+			background-color: #33b7d2
+			width: 1px
+			height: 150%
+	&__links
+		width: 47%
+		&>a
+			display: block
+	&__phone, &__mail
+		font-size: 1.4rem
+		font-weight: 700
+		line-height: 1.048
+		transition: color 0.3s
+		&::before
+			margin-right: 1.133rem
+		&>span
+			position: relative
+			&::after
+				content: ""
+				width: 0
+				height: 1px
+				position: absolute
+				left: 0
+				bottom: 0
+				background-color: rgb(51, 183, 210)
+				transition: width 0.3s
+			&:hover
+				color: rgb(51, 183, 210)
+				&::after
+					width: 100%
+	&__phone
+		margin-bottom: 1.733rem
+		&::before
+			content: url("../../img/phone.png")
+	&__mail
+		&::before
+			content: url("../../img/mail.png")
+	&__wrap
+		position: relative
+		&::before
+			content: ""
+			border: 4px solid  rgb(40, 180, 208)
+			width: 100%
+			height: 346px
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+	&__map
+		padding: 0 2.466rem
+		width: 1080px
+		height: 446px

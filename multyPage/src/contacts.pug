@@ -2,4 +2,49 @@ extends layout/main
 
 block variables
 	-var pageTitle = 'Контакты'
+	-var crumbs = [{link: 'index.html', name: 'Главная'}, {name: 'Контакты', last: true}]
+block links
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=8bbb09ba-b39a-460b-b485-44da6dff4991&lang=ru_RU")
+	script(src="https://www.google.com/recaptcha/api.js")
 block content
+	main
+		section.section.contacts
+			.container
+				h2.contacts__title Контакты
+				.contacts__location
+					a(href="#", data-nord="51.146348", data-west="71.389538").contacts__item 
+						strong QSI
+					a(href="#", data-nord="50.065585", data-west="72.975765").contacts__item 
+						strong Дворец Жастар
+					a(href="#", data-nord="55.732605", data-west="52.642327").contacts__item 
+						strong Тарлан АРЕНА
+					a(href="#", data-nord="51.149851", data-west="71.438361").contacts__item 
+						strong Иашенова 16А
+				.contacts__date
+					p.contacts__adres.
+						606020, Россия, Нижегородская обл., г. Дзержинск,
+						ул. Либкнехта, д. 41, копр.2
+					.contacts__links
+						a(href="tel:88312808447").contacts__phone 
+							span +7 831 280-84-47
+						a(href="mailto:info@melsytech.com").contacts__mail 
+							span info@melsytech.com
+				.contacts__wrap
+					.map.contacts__map#map
+		section.section.callback
+			.container
+				h2.callback__title Остались вопросы?
+				form.callback__form(method="POST")
+					.callback__inputs.flex
+						.callback__date
+							.input-wrap
+								input.callback__input#user-name(type="text", placeholder="Имя...", data-type="name")
+							.input-wrap
+								input.callback__input#user-phone(type="tel", placeholder="Номер телефона...", data-type="phone")
+							.input-wrap
+								input.callback__input#user-email(type="email", placeholder="Email...", data-type="email")
+						.callback__text
+							textarea.callback__input.callback__input_text#user-text(placeholder="Сообщение...", data-type="text")
+					.align-center.flex-end
+						.callback__captcha i'm not a robot
+						button.button.callback__button.g-recaptcha(data-sitekey="reCAPTCHA_site_key", data-callback='onSubmit', data-action='submit') Отправить!

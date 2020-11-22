@@ -16,17 +16,16 @@ import './sass/templates/groups.sass';
 import './sass/templates/abonements.sass';
 import './sass/templates/filials.sass';
 import './sass/templates/search.sass';
+import './sass/templates/contacts.sass';
+import './sass/templates/callback.sass';
 import './sass/templates/footer.sass';
 import './sass/media.sass';
-// import logo from './img/logo.png';
-// if (module.hot) {
-// 	module.hot.accept('./components/dom', function() {
-// 		document.body.removeChild(element);
-// 		element = component();
-// 		document.body.appendChild(element);
-// 	})
+// function onSubmit(token) {
+// 	document.getElementById('.callback__form').submit();
 // }
-import './components/map';
+import map from './components/map';
+map('.contacts__location');
+map('.filials__adres');
 import './components/listShow';
 import Valid from './components/valid';
 new Valid({selectorValid: '.hero__form'}).init();

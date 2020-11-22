@@ -5,8 +5,7 @@ class ShowMenu {
 		this.buttonAnimate = buttonAnimate;
 	}
 	animate(show) {
-		let key = null, 
-			start = null,
+		let key = null,
 			n,
 			end;
 		if (show) {
@@ -66,11 +65,11 @@ class ShowMenu {
 		key = requestAnimationFrame(animate);
 	}
 	init() {
+		if (!this.button) return;
 		if (this.buttonAnimate) this.pulse();
 		this.button.addEventListener('click', this.handler.bind(this));
 		if (document.documentElement.clientWidth < 1200) {
 			this.menu.addEventListener('click', (event) => {
-				console.log('hand');
 				if (!event.target.closest('a')) return;
 				this.button.classList.remove('active');
 				this.animate(false);

@@ -2,7 +2,6 @@ class Valid {
 	constructor({selectorValid, pattern}) {
 		this.pattern = pattern;
 		this.form = document.querySelector(selectorValid);
-		this.inputs = this.form.querySelectorAll('input');
 	}
 	valid(event) {
 		const target = event.target;
@@ -28,6 +27,8 @@ class Valid {
 		input.style.border = '1px solid tomato';
 	}
 	init() {
+		if (!this.form) return;
+		this.inputs = this.form.querySelectorAll('input');
 		if (!this.pattern) {
 			this.pattern = {
 				name: {
