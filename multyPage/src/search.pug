@@ -2,16 +2,15 @@ extends layout/main
 
 block variables
 	- var pageTitle = 'Поиск'
-	- var crumbs = [{link: 'index.html', name: 'Главная'}, {link: '#', name: 'Статистика', last: true}]
+	- var crumbs = [{link: 'index.html', name: 'Главная'}, {name: 'Статистика', last: true}]
 block content
-	section.section.search
-		.container
-			h2.section__title.search__title.
-				Введите имя и фамилию Вашего ребенка
-			.section__ball
-				img(src="img/ball.png", alt="ball")
-			h3.section__subtitle.search__subtitle.
-				Чтобы посмотреть его данные по результатам тренировок и сдачи нормативов
-			.search__block
-				input(type="text" class="search__input" placeholder="Имя и фамилия")
-				button.button.search__button Найти статистику
+	main
+		section.section.search
+			.container
+				h2.section__title.search__title.
+					Введите имя и фамилию Вашего ребенка
+				.section__ball
+					img(src="img/ball.png", alt="ball")
+				h3.section__subtitle.search__subtitle.
+					Чтобы посмотреть его данные по результатам тренировок и сдачи нормативов
+				include modules/searchInput

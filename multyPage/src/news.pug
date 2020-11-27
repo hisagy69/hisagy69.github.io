@@ -1,6 +1,8 @@
 extends layout/main
 block variables
 	- var pageTitle = 'Новости'
-	- var crumbs = [{link: 'index.html', name: 'Главная'}, {link: '#', name: 'Статистика'}, {name: 'Дмитрий Новиков', last: true}]
+	- var crumbs = [{link: 'index.html', name: 'Главная'}, {link: 'statistic.html', name: 'Статистика'}, {name: 'Дмитрий Новиков', last: true}]
 block content
-	
+	main
+		section.section.news
+			.container

@@ -62,6 +62,11 @@ module.exports = () => {
 				template: './src/contacts.pug',
 				favicon: './src/favicon.ico'
 			}),
+			new HtmlWebpackPlugin({
+				filename: 'statistic.html',
+				template: './src/statistic.pug',
+				favicon: './src/favicon.ico'
+			}),
 			new CopyWebpackPlugin({
 				patterns: [
 					{

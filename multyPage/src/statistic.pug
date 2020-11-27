@@ -1,0 +1,84 @@
+extends layout/main
+
+block variables
+	- var pageTitle = Статистика
+	- var crumbs = [{link: 'index.html', name: 'Главная'}, {link: 'search.html', name: 'Статистика'}, {name: 'Дмитрий Иванов', last: true}]
+block content
+	main
+		section.section.statistic
+			.container
+				include modules/searchInput
+				.statistic__person
+					.statistic__img
+						img(src="img/statistic.jpg", alt="statistic")
+					div
+						.statistic__information
+							.statistic__name Имя
+							.statistic__value Дмитрий
+						.statistic__information
+							.statistic__name Фамилия
+							.statistic__value Иванов
+						.statistic__information
+							.statistic__name Дата рождения
+							.statistic__value 11 ноября 2006 года
+						.statistic__information
+							.statistic__name Группа
+							.statistic__value "Ювеналы 2"
+						.statistic__information
+							.statistic__name Филиал
+							.statistic__value Дворец "Жастар"
+				.statistic__achievements
+					.statistic__row.statistic__row_name
+						.statistic__col Дата
+						.statistic__col Бег 30 метров
+						.statistic__col Удар по воротам
+						.statistic__col Результативные пасы
+						.statistic__col Комментарий тренера
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке
+					.statistic__row.statistic__row
+						.statistic__col 23.10.2016г.
+						.statistic__col 30 секунд
+						.statistic__col 3/6
+						.statistic__col 8/12
+						.statistic__col Отлично выкладывался на тренеровке

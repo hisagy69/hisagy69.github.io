@@ -48,6 +48,9 @@
 			font-size: 1.1rem
 		& span
 			font-size: 1rem
+	.statistic
+		&__col
+			padding: 1.333rem
 	.footer
 		&__copyright
 			&::before
@@ -70,6 +73,11 @@
 			position: absolute
 			transform: translateX(-130%)
 			z-index: 9
+	.statistic
+		&__achievements
+			font-size: 0.8rem
+		&__col
+			padding: 0.7rem
 	.map
 		margin: 0 auto
 @media screen and ( max-width: 768px )
@@ -135,6 +143,8 @@
 		&__logo
 			width: 4rem
 			height: 4rem
+	.bread-crumbs__item
+		font-size: 0.666rem
 	.hero
 		padding: 1.666rem 0 4rem
 		&__title
@@ -171,11 +181,26 @@
 		padding-bottom: 0
 		&>.container
 			padding: 0
-	.search
+	.search-block
+		display: flex
 		&__input
-			width: fit-content
+			width: auto
+			flex-grow: 1
 		&__subtitle
 			font-size: 1rem
+	.statistic
+		&__person
+			flex-direction: column
+			&>div:last-child
+				width: fit-content
+				margin: auto
+		&__img
+			margin: 0 auto 2rem
+		&__col
+			padding: 0.5rem 0
+			font-size: 0.7rem
+		&__information
+			width: fit-content
 @media screen and ( max-width: 360px )
 	.container
 		padding: 0 1rem
