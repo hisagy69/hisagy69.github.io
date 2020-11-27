@@ -1,10 +1,12 @@
 const map = locationLinksSelector => {
+	if (!document.querySelector(locationLinksSelector)) return;
+	console.log(ymaps);
 	const init = () => {
-		if (!locationLinksSelector) return;
 		const adres = document.querySelector(locationLinksSelector),
-			links = document.querySelectorAll(`${locationLinksSelector}>a`),
-			linkCords = [+links[0].dataset.nord, +links[0].dataset.west],
-			linkName = links[0].querySelector('strong').textContent;
+			links = document.querySelectorAll(`${locationLinksSelector}>a`);
+			if (!links[0]) return;
+		const linkCords = [+links[0].dataset.nord, +links[0].dataset.west],
+				linkName = links[0].querySelector('strong').textContent;
 		const map = new ymaps.Map('map', {
 			center: linkCords,
 			zoom: 17,

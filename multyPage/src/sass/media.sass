@@ -51,10 +51,21 @@
 	.statistic
 		&__col
 			padding: 1.333rem
+	.contacts
+		&__item
+			width: 15rem
+		&__map
+			width: 100%
 	.footer
 		&__copyright
 			&::before
 				width: 90%
+	.callback
+		&__text
+			flex-grow: 1
+		&__input
+			&_text
+				width: 100%
 @media screen and ( max-width: 960px )
 	.hero
 		padding-bottom: 4rem
@@ -80,6 +91,8 @@
 			padding: 0.7rem
 	.map
 		margin: 0 auto
+	.contacts__item
+		width: 12rem
 @media screen and ( max-width: 768px )
 	.header, .footer
 		&__logo
@@ -130,6 +143,15 @@
 			margin-bottom: 2rem
 	.search__subtitle
 		font-size: 1.3rem
+	.contacts__item
+		width: 10rem
+		&>strong
+			font-size: 1.1rem
+	.callback
+		&__input
+			width: 15rem
+			&_text
+				width: 100%
 @media screen and ( max-width: 640px )
 	.container
 		padding: 0 1rem
@@ -201,6 +223,35 @@
 			font-size: 0.7rem
 		&__information
 			width: fit-content
+	.contacts
+		&__item
+			width: 49%
+			margin-bottom: 1rem
+		&__wrap::before
+			display: none
+		&__map
+			height: 28rem
+			padding: 0
+			margin-bottom: 4rem
+		&__date
+			order: 1
+		&__adres, &__phone, &__mail
+			font-size: 0.8rem
+			&::before
+				margin-right: 0.2rem
+		&__adres::after
+			margin-left: 1rem
+	.callback
+		&__title
+			font-size: 1.5rem
+		&__inputs
+			flex-direction: column
+		&__input
+			width: 100%
+		&__date
+			flex-grow: 1
+			margin-right: 0
+			margin-bottom: 1rem
 @media screen and ( max-width: 360px )
 	.container
 		padding: 0 1rem

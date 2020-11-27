@@ -6,7 +6,6 @@ export default class Popup {
 		this.content = content;
 	}
 	toggleModal() {
-		console.log('modal');
 		if (!this.content) {this.content = `
 			<div class="popup__title">${this.title}</div>
 			<form class="popup__form form" id="popup-form" method="POST">

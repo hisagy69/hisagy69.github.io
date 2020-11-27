@@ -26,6 +26,7 @@ const video = (buttonSelector, modalSelector) => {
 
 	(() => {
 		const modal = document.querySelector(modalSelector);
+		if (!modal) return;
 		const showHide = event => {
 			const target = event.target;
 			if (modal.matches('.d-none') && target.closest(buttonSelector)) {
