@@ -1,0 +1,63 @@
+.news
+	padding: 2.133rem 0 11.2rem
+	&__title
+		display: flex
+		justify-content: space-between
+		position: relative
+		margin-bottom: 2.4rem
+		&::after
+			content: ""
+			height: 1px
+			width: 100%
+			position: absolute
+			bottom: -1rem
+			left: 0
+			background-color: #33b7d2
+			transparent: border-color 0.3s
+	&__button
+		border: 1px solid #cdcdcd
+		width: 35px
+		height: 35px
+		display: flex
+		align-items: center
+		justify-content: center
+		background: transparent
+		&:first-child
+			margin-right: 3px
+		&.active
+			border-color: rgb(110, 182, 208)
+		&:hover
+			border-color: rgb(110, 182, 208)
+	&__cards
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__card
+		display: flex
+		width: 49%
+		margin-bottom: 2.266rem
+.card
+	&__image
+		width: 17.466rem
+		height: 13.533rem
+		flex: none
+		margin-right: 2rem
+		overflow: hidden
+	&__title
+		font-size: 1.066rem
+		color: rgb(110, 182, 208)
+		line-height: 1.25
+		cursor: pointer
+		font-weight: 500
+		margin-bottom: 0.9rem
+		&:hover
+			text-decoration: underline
+	&__text
+		font-size: 0.933rem
+		font-weight: 300
+		color: #414141
+		margin-bottom: 1rem
+	&__date
+		font-size: 0.866rem
+		font-weight: 300
+		color: #b0b0b0

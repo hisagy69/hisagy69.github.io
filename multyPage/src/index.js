@@ -19,6 +19,7 @@ import './sass/templates/search.sass';
 import './sass/templates/contacts.sass';
 import './sass/templates/callback.sass';
 import './sass/templates/statistic.sass';
+import './sass/templates/news.sass';
 import './sass/templates/footer.sass';
 import './sass/media.sass';
 // function onSubmit(token) {
