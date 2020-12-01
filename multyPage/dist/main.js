@@ -124,6 +124,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_showMenu__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(76);
 /* harmony import */ var _components_video__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(77);
 /* harmony import */ var _components_popup__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(75);
+/* harmony import */ var _components_pagination__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(78);
 // import component from './components/dom';
 // const element = component('привет');
 // document.body.appendChild(element);
@@ -168,7 +169,9 @@ new _components_showMenu__WEBPACK_IMPORTED_MODULE_23__["default"]('.filials__sha
 
 Object(_components_video__WEBPACK_IMPORTED_MODULE_24__["default"])('.descriptions__video', '.descriptions__modal');
 
-new _components_popup__WEBPACK_IMPORTED_MODULE_25__["default"]('button[data-toggle="modal"]').init(); // import './components/js';
+new _components_popup__WEBPACK_IMPORTED_MODULE_25__["default"]('button[data-toggle="modal"]').init();
+
+Object(_components_pagination__WEBPACK_IMPORTED_MODULE_26__["default"])(); // import './components/js';
 
 /***/ }),
 /* 2 */
@@ -2358,6 +2361,30 @@ const video = (buttonSelector, modalSelector) => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (video);
+
+/***/ }),
+/* 78 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const pagination = () => {
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.news__button') || event.target.closest('.active')) return;
+    event.preventDefault();
+    document.querySelector('.news__button.active').classList.remove('active');
+    event.target.closest('.news__button').classList.add('active');
+    const newsCards = document.querySelector('.news__cards');
+
+    if (event.target.closest('#list-button')) {
+      newsCards.classList.add('active');
+    } else {
+      newsCards.classList.remove('active');
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (pagination);
 
 /***/ })
 /******/ ]);

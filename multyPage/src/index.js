@@ -40,4 +40,6 @@ import video from './components/video';
 video('.descriptions__video', '.descriptions__modal');
 import Popup from './components/popup';
 new Popup('button[data-toggle="modal"]').init();
+import pagination from './components/pagination';
+pagination();
 // import './components/js';
