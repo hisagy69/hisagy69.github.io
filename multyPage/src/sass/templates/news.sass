@@ -32,6 +32,9 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+		&.active>.news__card
+			width: 100%
+			height: auto
 	&__card
 		display: flex
 		width: 49%
@@ -57,6 +60,9 @@
 		font-weight: 300
 		color: #414141
 		margin-bottom: 1rem
+		height: 6.466rem
+		text-overflow: ellipsis
+		overflow-y: hidden
 	&__date
 		font-size: 0.866rem
 		font-weight: 300
