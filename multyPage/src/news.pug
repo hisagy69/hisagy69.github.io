@@ -1,7 +1,7 @@
 extends layout/main
 block variables
 	- var pageTitle = 'Новости'
-	- var crumbs = [{link: 'index.html', name: 'Главная'}, {name: 'Статистика', last: true}]
+	- var crumbs = [{link: 'index.html', name: 'Главная'}, {name: 'Новости', last: true}]
 block content
 	main
 		section.section.news
@@ -9,16 +9,16 @@ block content
 				h2.section__title.news__title Новости
 					.flex
 						button.news__button#square-button.active
-							img(src="img/square.png", alt="square")
+							include img/blocks.svg
 						button.news__button#list-button
-							img(src="img/list.png", alt="list")
+							include img/list.svg
 				.news__cards
 					.news__card.card
 						.card__image
 							img(src="img/news/news1.jpg", alt="photo")
 						div
-							.card__title
-								h3 Де Врей может пропустить до 2 месяцев
+							a(href="article.html")
+								h3.card__title Де Врей может пропустить до 2 месяцев
 							p.card__text.
 								Сообщается, что на одной из последних тренировок римлян голландец 
 								серьезно повредил правый голеностоп — врачи обнаружили у него сильный 
@@ -33,7 +33,8 @@ block content
 						.card__image
 							img(src="img/news/news2.jpg", alt="photo")
 						div
-							h3.card__title Сельта — Аякс 2:2
+							a(href="article.html")
+								h3.card__title Сельта — Аякс 2:2
 							p.card__text.
 								Представляем вашему вниманию видеообзор поединка 3-го тура группового 
 								раунда Лиги Европы между испанской Сельтой и голландским Аяксом. 
@@ -46,7 +47,8 @@ block content
 						.card__image
 							img(src="img/news/news3.jpg", alt="photo")
 						div
-							h3.card__title Командные и индивидуальные действия киевского "Динамо"
+							a(href="article.html")
+								h3.card__title Командные и индивидуальные действия киевского "Динамо"
 							p.card__text.
 								Второе домашнее поражение "Динамо" оказалось достаточно противоречивым. 
 								Многие статистические показатели киевлян превзошли...
@@ -59,7 +61,8 @@ block content
 						.card__image
 							img(src="img/news/news4.jpg", alt="photo")
 						div
-							h3.card__title Манчестер Юнайтед выходит на первое место в группе А
+							a(href="article.html")
+								h3.card__title Манчестер Юнайтед выходит на первое место в группе А
 							p.card__text.
 								Игра на Олд Траффорд выдалась крайне интересной. Жозе Моуриньо со 
 								старта выпустил на поле Уэйна Руни, оставив вне заявки Златана 
@@ -68,12 +71,13 @@ block content
 								вне заявки Златана Ибрахимовича Игра на Олд Траффорд выдалась 
 								крайне интересной. Жозе Моуриньо со старта выпустил на поле Уэйна 
 								Руни, оставив вне заявки Златана Ибрахимовича 
-							span.card__date
+							span.card__date 12.08.2106г.
 					.news__card.card
 						.card__image
 							img(src="img/news/news5.jpg", alt="photo")
 						div
-							h3.card__title Коноплянка забил первый гол за "Шальке"
+							a(href="article.html")
+								h3.card__title Коноплянка забил первый гол за "Шальке"
 							p.card__text.
 								Украинец вышел в стартовом составе "Шальке" на матч против "Краснодара". 
 								Евгений забил на 10-й минуте матча, когда с линии штрафной удачно 
@@ -87,7 +91,8 @@ block content
 						.card__image
 							img(src="img/news/news6.jpg", alt="photo")
 						div
-							h3.card__title Пятов: Не думаем о втором матче с "Гентом"
+							a(href="article.html")
+								h3.card__title Пятов: Не думаем о втором матче с "Гентом"
 							p.card__text.
 								Представляем вашему вниманию видеообзор поединка 3-го тура группового 
 								раунда Лиги Европы между испанской Сельтой и голландским Аяксом. 
@@ -100,7 +105,8 @@ block content
 						.card__image
 							img(src="img/news/news7.jpg", alt="photo")
 						div
-							h3.card__title Очаровательные любимые и сестры звезд "Стали"
+							a(href="article.html")
+								h3.card__title Очаровательные любимые и сестры звезд "Стали"
 							p.card__text.
 								В мероприятии "Сталь, нам нужны твои победы!" приняли участие Надежда 
 								Панькив, Наталья Ищенко, Ирина Воронина, Татьяна Довгая, Ольга Каленчук, 
@@ -115,7 +121,8 @@ block content
 						.card__image
 							img(src="img/news/news8.jpg", alt="photo")
 						div
-							h3.card__title Лига Европы. "Генк" ошеломил "Атлетик"
+							a(href="article.html")
+								h3.card__title Лига Европы. "Генк" ошеломил "Атлетик"
 							p.card__text.
 								"Маккаби" одержало первую победу в Лиге Европы. Счет открыл почти тезка 
 								чемпиона мира 1930 года – Скарионе. Во втором тайме Мюрен один мяч отквитал
@@ -124,7 +131,8 @@ block content
 						.card__image
 							img(src="img/news/news8.jpg", alt="photo")
 						div
-							h3.card__title Будущие звезды. Что из себя представляет новое поколение
+							a(href="article.html")
+								h3.card__title Будущие звезды. Что из себя представляет новое поколение
 							p.card__text.
 								Основной состав "Динамо" провально выступает в Лиге чемпионов, занимая 
 								последнее место в группе с "Наполи", "Бешикташем" и "Бенфикой" после трех 
@@ -138,7 +146,8 @@ block content
 						.card__image
 							img(src="img/news/news9.jpg", alt="photo")
 						div
-							h3.card__title "Антунеш вообще в курсе, что он за "Динамо" играет?"
+							a(href="article.html")
+								h3.card__title "Антунеш вообще в курсе, что он за "Динамо" играет?"
 							p.card__text.
 								Каждого главного тренера "Динамо", который работал после Валерия Васильевича 
 								Лобановского, непременно сравнивали с Мэтром. А как бы отреагировал сам 

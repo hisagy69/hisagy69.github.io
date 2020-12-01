@@ -22,10 +22,14 @@
 		align-items: center
 		justify-content: center
 		background: transparent
+		&>svg
+			transition: fill 0.3s
 		&:first-child
 			margin-right: 3px
 		&.active
 			border-color: rgb(110, 182, 208)
+			&>svg
+				fill: rgb(110, 182, 208)
 		&:hover
 			border-color: rgb(110, 182, 208)
 	&__cards

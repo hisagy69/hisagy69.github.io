@@ -1,0 +1,51 @@
+.article
+	padding: 2.4rem 0 4rem
+	&__title
+		font-weight: 400
+		text-align: left
+		position: relative
+		color: rgb(65, 65, 65);
+		margin-bottom: 2.2rem
+		&::after
+			content: ""
+			height: 1px
+			width: 100%
+			position: absolute
+			bottom: -1rem
+			left: 0
+			background-color: #33b7d2;
+	&__date
+		font-size: 0.8rem
+		color: rgb(137, 137, 137)
+		line-height: 1.667
+	&__text
+		font-size: 1.066rem
+		color: rgb(61, 61, 61)
+		font-weight: 300
+		line-height: 1.625
+		margin-bottom: 1rem
+		&_bold
+			font-weight: 700
+	&__img
+		max-width: 63rem
+		max-height: 28rem
+		overflow: hidden
+		margin: 1.333rem auto 2rem
+.flex>.article__img
+	width: 49%
+	height: 25rem
+	margin: 1.2rem 0 2.666rem
+.date
+	margin-bottom: 2rem
+	&__item
+		cursor: pointer
+		margin-right: 2rem
+		&:hover
+			text-decoration: underline
+		&:last-child
+			margin-right: 0
+			&::before
+				content: url("../../img/eye.png")
+				margin-right: 5px
+				vertical-align: middle
+	
