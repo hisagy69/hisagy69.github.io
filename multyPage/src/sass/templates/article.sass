@@ -33,8 +33,10 @@
 		margin: 1.333rem auto 2rem
 .flex>.article__img
 	width: 49%
-	height: 25rem
+	max-height: 25rem
 	margin: 1.2rem 0 2.666rem
+	&>img
+		transform: scale(1.2)
 .date
 	margin-bottom: 2rem
 	&__item
@@ -45,7 +47,7 @@
 		&:last-child
 			margin-right: 0
 			&::before
-				content: url("../../img/eye.png")
+				content: url("../img/eye.png")
 				margin-right: 5px
 				vertical-align: middle
 	

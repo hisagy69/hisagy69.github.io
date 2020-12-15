@@ -21,20 +21,22 @@ module.exports = () => {
 					use: ['style-loader', 'css-loader']
 				},
 				{
-					test: /\.s[ac]ss$/,
-					use: ['style-loader', 'css-loader', 'sass-loader']
-				},
-				{
 					test: /\.pug$/,
 					use: ['pug-loader']
 				},
 				{
 					test: /\.(png|jpg|svg|gif)$/,
-					use: ['file-loader']
+					loader: 'file-loader',
+					options: {
+						outputPath: 'img'
+					}
 				},
 				{
 					test: /\.(ttf|woff|woff2|eot)$/,
-					use: ['file-loader']
+					loader: 'file-loader',
+					options: {
+						outputPath: 'fonts'
+					}
 				},
 				{
 					test: /\.php$/,
@@ -74,14 +76,6 @@ module.exports = () => {
 			}),
 			new CopyWebpackPlugin({
 				patterns: [
-					{
-						from: FONTS,
-						to: FONTSTO
-					},
-					{
-						from: IMG,
-						to: IMGTO
-					},
 					{
 						from: SEND,
 						to: SENDTO

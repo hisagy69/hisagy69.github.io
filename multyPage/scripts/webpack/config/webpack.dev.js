@@ -10,6 +10,14 @@ module.exports = () => {
 			'webpack-hot-middleware/client?path=/__what&timeout=2000&overlay=false',
 		],
 		devtool: false,
+		module: {
+			rules: [
+				{
+					test: /\.s(a|c)ss$/,
+					use: ['style-loader', 'css-loader', 'sass-loader']
+				}
+			]
+		},
 		plugins: [
 			new HotModuleReplacementPlugin()
 		]

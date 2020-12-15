@@ -5,6 +5,25 @@ export default class Popup {
 		this.style = document.querySelector('.popup-style');
 		this.content = content;
 	}
+	animateShow() {
+		let key,
+			start;
+		const animate = timestamp => {
+			if (!start) {
+				start = timestamp;
+			}
+			if (timestamp - start >= 20) {
+				if (this.modal.style.opacity >= 1){
+					this.modal.style.opacity = '';
+					cancelAnimationFrame(key);
+					return;
+				}
+				this.modal.style.opacity = (+this.modal.style.opacity + 0.1);
+			}
+			key = requestAnimationFrame(animate);
+		};
+		key = requestAnimationFrame(animate);
+	}
 	toggleModal() {
 		if (!this.content) {this.content = `
 			<div class="popup__title">${this.title}</div>
@@ -142,7 +161,9 @@ export default class Popup {
 					}
 				}
 				`;
+			this.modal.style.opacity = 0;
 			this.style.classList.add('popup-style');
+			this.animateShow();
 			document.head.appendChild(this.style);
 		}
 		document.body.appendChild(this.modal);
