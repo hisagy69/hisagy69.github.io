@@ -1,6 +1,5 @@
 const map = locationLinksSelector => {
 	if (!document.querySelector(locationLinksSelector)) return;
-	console.log(ymaps);
 	const init = () => {
 		const adres = document.querySelector(locationLinksSelector),
 			links = document.querySelectorAll(`${locationLinksSelector}>a`);

@@ -7,18 +7,25 @@ export default class Popup {
 	}
 	animateShow() {
 		let key,
-			start;
+			start,
+			valueStart = this.modal.style.opacity;
 		const animate = timestamp => {
 			if (!start) {
 				start = timestamp;
 			}
 			if (timestamp - start >= 20) {
-				if (this.modal.style.opacity >= 1){
-					this.modal.style.opacity = '';
+				if (valueStart === '0' && this.modal.style.opacity >= 1 || valueStart === '1' && this.modal.style.opacity <= '0'){
+					if (valueStart === '0') {
+						this.modal.style.opacity = 1;
+					} else { 
+						this.modal.style.opacity = 0;
+						this.modal.style.display = 'none';
+					}
 					cancelAnimationFrame(key);
 					return;
 				}
-				this.modal.style.opacity = (+this.modal.style.opacity + 0.1);
+				valueStart === '0' ? this.modal.style.opacity = (+this.modal.style.opacity + 0.1) :
+				this.modal.style.opacity = (+this.modal.style.opacity - 0.1);
 			}
 			key = requestAnimationFrame(animate);
 		};
@@ -163,15 +170,15 @@ export default class Popup {
 				`;
 			this.modal.style.opacity = 0;
 			this.style.classList.add('popup-style');
-			this.animateShow();
 			document.head.appendChild(this.style);
 		}
 		document.body.appendChild(this.modal);
+		this.animateShow();
 	}
 	init() {
 		const handler = event => {
 			if (this.modal && (event.target.closest('.popup__close') || !event.target.closest('.popup__dialog'))) {
-				this.modal.style.display = 'none';
+				this.animateShow();
 			}
 			if (event.target.closest(this.buttonSelector)) {
 				this.button = event.target.closest(this.buttonSelector);
