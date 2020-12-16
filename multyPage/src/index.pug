@@ -1,7 +1,7 @@
 extends layout/main
 
 block links
-	script(src="https://api-maps.yandex.ru/2.1/?apikey=8bbb09ba-b39a-460b-b485-44da6dff4991&lang=ru_RU", async)
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=8bbb09ba-b39a-460b-b485-44da6dff4991&lang=ru_RU")
 block variables
 	- var pageTitle = 'Главная'
 block hero
@@ -30,26 +30,26 @@ block content
 			h2.section__title.advantages__title.
 				Более #[span 800 детей] пришли обучение в нашей академии!
 			.section__ball
-				img(src="img/ball.png", alt="ball")
+				img(src=require("./img/ball.png").default, alt="ball")
 			.cards.advantages__cards.wrap
 				.cards__card
 					.cards__image
-						img(src="img/ball-mono.png", alt="ball")
+						img(src=require("./img/ball-mono.png").default, alt="ball")
 					p.cards__text.
 						Новый профессиональный инвентарь и экипировка
 				.cards__card
 					.cards__image
-						img(src="img/socer.png", alt="socer")
+						img(src=require("./img/socer.png").default, alt="socer")
 					p.cards__text.
 						Современные спортивные залы и мини-футбольные поля
 				.cards__card
 					.cards__image
-						img(src="img/reward.png", alt="reward")
+						img(src=require("./img/reward.png").default, alt="reward")
 					p.cards__text.
 						Товарищеские матчи с детсикими футбольными школами
 				.cards__card
 					.cards__image
-						img(src="img/go.png", alt="go")
+						img(src=require("./img/go.png").default, alt="go")
 					p.cards__text.
 						Социальная программа и скидки для семей с особым статусом
 			.descriptions.advantages__descriptions.align-center.wrap
@@ -75,7 +75,7 @@ block content
 			h2.section__title.groups__title.
 				Наши группы
 			.section__ball
-				img(src="img/ball.png", alt="ball")
+				img(src=require("./img/ball.png").default, alt="ball")
 			.cards.groups__cards.wrap
 				.groups__card
 					.groups-wrap
@@ -117,7 +117,7 @@ block content
 			h2.section__title.abonements__title.
 				Наши абонементы
 			.section__ball
-				img(src="img/ball.png", alt="ball")
+				img(src=require("./img/ball.png").default, alt="ball")
 			.cards.abonements__cards.wrap
 				.abonements__card
 					.abonements__name Абонемент “Light”
@@ -144,7 +144,7 @@ block content
 			h2.section__title.filials__title.
 				Наши филиалы
 			.section__ball
-				img(src="img/ball.png", alt="ball")
+				img(src=require("./img/ball.png").default, alt="ball")
 			.flex.filials-wrap.align-center.justify-space-between
 				.filials__share
 					include img/share.svg

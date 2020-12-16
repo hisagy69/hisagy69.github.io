@@ -26,10 +26,10 @@ header.header
 	.container.align-center
 		.header__logo
 			a(href="index.html")
-				img(src="img/logo.png", alt="logo")
+				img(src=require("./img/logo.png").default, alt="logo")
 		.header__city-list.city-list
 			.city-enter Выберите город
-				img(src="img/arrow-top.png", alt="arrow")
+				img(src=require("./img/arrow-top.png").default, alt="arrow")
 			ul.d-none
 				a(href="#")
 					li.city-list__item Астана 

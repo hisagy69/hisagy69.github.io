@@ -1,5 +1,4 @@
 import './sass/style.sass';//добавит css  в head
-import 'normalize.css/normalize.css';
 import map from './components/map';
 map('.contacts__location');
 map('.filials__adres');

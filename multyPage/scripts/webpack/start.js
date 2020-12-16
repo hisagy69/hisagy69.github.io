@@ -7,6 +7,7 @@ const webpack = require('webpack'),
 
 const compiler = webpack(getDevConfig());
 const server = new DevServer(compiler, {
+	open: true,
 	host: HOST,
 	port: PORT,
 	historyApiFallback: true,

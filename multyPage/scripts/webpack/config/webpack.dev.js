@@ -9,7 +9,7 @@ module.exports = () => {
 		entry: [
 			'webpack-hot-middleware/client?path=/__what&timeout=2000&overlay=false',
 		],
-		devtool: false,
+		devtool: 'cheap-module-eval-source-map',
 		module: {
 			rules: [
 				{
