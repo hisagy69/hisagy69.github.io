@@ -24,7 +24,10 @@ export default class Mail {
 			this.response = response.status;
 			throw this.errorData();
 		}
-		this.message.textContent = 'готово';
+		this.message.textContent = '';
+		new Popup(null, `
+			<h2 class="popup__message_success">Готово!</h2>
+		`).init();
 		this.clearMessage();
 	}
 	animate() {
@@ -92,7 +95,7 @@ export default class Mail {
 		this.key = requestAnimationFrame(animateShow);
 	}
 	postData(body) {
-		return fetch('./server.php', {
+		return fetch('./send.php', {
 			method: this.form.method,
 			headers: {
 				'Content-Type': 'multypart/form-data'
@@ -107,7 +110,7 @@ export default class Mail {
 		let body = {};
 		for(let val of formData.entries()) {
 			body[val[0]] = val[1];
-		}
+		}console.log(body);
 		this.animate();
 		this.postData(body)
 			.then(this.output.bind(this));

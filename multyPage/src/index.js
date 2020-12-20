@@ -7,6 +7,7 @@ import ShowMenu from './components/showMenu';
 import video from './components/video';
 import Popup from './components/popup';
 import pagination from './components/pagination';
+import './components/scroll';
 const init = () => {
 	map('.contacts__location');
 	map('.filials__adres');

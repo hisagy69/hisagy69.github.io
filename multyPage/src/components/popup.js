@@ -79,7 +79,7 @@ export default class Popup {
 					width: 397px;
 					min-height: 300px;
 					padding: 0;
-					background: #000 url("img/popup.jpg") no-repeat 0 116% / cover;
+					background: #000 url(${require("../img/popup.jpg").default}) no-repeat 0 116% / cover;
 					position: relative;
 				}
 				.popup__message_error {
@@ -87,6 +87,12 @@ export default class Popup {
 					position: relative;
 					padding-top: 2rem;
 					color: tomato;
+				}
+				.popup__message_success {
+					color: green;
+					text-align: center;
+					padding-top: 2 rem;
+					position: relative;
 				}
 				.popup__dialog::before {
 					content: "";
@@ -124,7 +130,7 @@ export default class Popup {
 					margin-bottom: 1rem
 				}
 				.popup__form::before {
-					content: url(img/popupline.png);
+					content: url(${require('../img/popupline.png').default});
 					position: absolute;
 					left: 50%;
 					top: 50%;
