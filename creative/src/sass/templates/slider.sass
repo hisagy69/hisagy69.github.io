@@ -1,0 +1,119 @@
+.slider
+	&__wrap
+	&__slide
+		max-width: 89.933rem
+		opacity: 0
+		display: flex
+		justify-content: space-between
+		position: relative
+		&.active
+			opacity: 1
+	&__property
+		max-width: 20.866rem
+	&__subtitle
+		font-size: 1.2rem
+		font-family: "Montserrat"
+		text-transform: uppercase
+		line-height: 2.944
+	&__text
+		font-size: 0.8rem
+		font-family: "Arial"
+		color: rgba(255, 255, 255, 0.6)
+		line-height: 1.679
+		margin-bottom: 2rem
+	&__list
+	&__advantages
+		font-size: 0.933rem
+		font-family: "Montserrat"
+		text-transform: uppercase
+		line-height: 1.857
+		list-style: none
+		&::before
+			margin-right: 8px
+	&__img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		&::before
+			content: ""
+			width: 801px
+			height: 37px
+			background: url("../img/line.png") no-repeat center
+			position: absolute
+			left: 50%
+			bottom: 5%
+			transform: translateX(-50%)
+			z-index: -1
+	&__used-techno
+		border-radius: 8px
+		background-color: rgb(99, 95, 109)
+		display: flex
+		align-items: center
+		margin-bottom: 2rem
+	&__image-techno
+		flex-grow: 1
+		width: 5.466rem
+		padding: 1.333rem 0.666rem
+		text-align: center
+		font-family: "Montserrat"
+		text-transform: uppercase
+		font-size: 0.8rem
+		&:not(:last-child)
+			border-right: 2px solid #413d4a
+		&::before
+			font-size: 2.6rem
+	&__view
+		font-size: 0.933rem
+		font-family: "Montserrat"
+		text-transform: uppercase
+		text-decoration: none
+		color: #ffffff
+	&__pagination
+		display: flex
+		align-items: center
+		width: fit-content
+		margin: 10.266rem auto 0
+	&__button_prev, &__button_next
+		font-size: 0.8rem
+		font-family: "Montserrat"
+		color: rgb(51, 51, 51)
+		text-transform: uppercase
+		position: relative
+		z-index: 1
+		width: 13rem
+		height: 2.933rem
+		display: flex
+		align-items: center
+		justify-content: center
+		&::after
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
+	&__button_prev::after
+		content: url("../img/button-left.png")
+	&__button_next::after
+		content: url("../img/button-right.png")
+	&__number
+		font-size: 1.2rem
+		font-family: "Montserrat"
+		width: 4.666rem
+		height: 3.733rem
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #fff
+		position: relative
+		z-index: 2
+		&::after
+			content: url("../img/square.png")
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
+
+
+
