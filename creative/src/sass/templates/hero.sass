@@ -1,11 +1,11 @@
 .hero
-	padding-bottom: 28.466rem
-	background: url("../img/devices.png") no-repeat center 300%, url("../img/mountain.png") no-repeat center 170%
+	background: url("../img/devices.png") no-repeat center 227%, url("../img/mountain.png") no-repeat center 166%
+	padding: 3.266rem 0 28.466rem
 	&__offer
-		align-items: center
+		align-items: flex-start
 		width: fit-content
 		margin: 0 auto
-		text-align: right
+		position: relative
 	&__title
 		font-size: 8.133rem
 		font-family: "Kenyan Coffee"
@@ -13,13 +13,51 @@
 		font-weight: 700
 		text-transform: uppercase
 		line-height: 0
-		margin: 0 12px
+		margin: 0 9px
 	&__font
 		&_italic
+			display: inline-block
 			font-size: 2.666rem
 			font-family: "Pacifico"
 			color: rgb(63, 59, 72)
 			line-height: 1.325
+			width: 105px
+			height: 40px
+			top: -4.5rem
+			position: absolute
+			&>span
+				display: block
+				position: absolute
+				transform-origin: 50% 100%
+				&:first-child
+					transform: rotate(-10deg)
+					width: 40px
+					height: 37px
+					left: 0
+					top: 15px
+				&:nth-child(2)
+					transform: rotate(-10deg)
+					width: 22px
+					height: 37px
+					left: 32px
+					top: 10px
+				&:nth-child(3)
+					transform: rotate(-10deg)
+					width: 7px
+					height: 25px
+					left: 52px
+					top: 10px
+				&:nth-child(4)
+					width: 20px
+					height: 20px
+					right: 25px
+					top: 10px
+				&:last-child
+					transform: rotate(10deg)
+					width: 22px
+					height: 30px
+					right: 5px
+					top: 13px
 		&_bold
 			font-size: 3.733rem
 			font-family: "Kenyan Coffee"
