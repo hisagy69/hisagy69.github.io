@@ -30,7 +30,7 @@
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "php-loader": "^0.2.0",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "pug-loader": "^2.4.0",
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^10.0.3",
